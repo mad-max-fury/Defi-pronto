@@ -13,7 +13,7 @@ export const GlobalStyles = createGlobalStyle`
         margin: 0;
         font-size: 16px;
         box-sizing: border-box;
-        font-family: 'Monument Extended;', sans-serif;
+        font-family: 'Monument Extended', sans-serif;
         scroll-behavior: smooth;
 
     }
