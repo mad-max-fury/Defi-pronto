@@ -57,7 +57,11 @@ export const GlobalStyles = createGlobalStyle`
     }
 
     h6 {
-        font-size: 0.85rem;
+        font-size: 1.25rem;
+        font-weight: 400;
+        font-family: Monument Extended, sans-serif;
+        color: ${colors.white};
+
     }
 
     p {
