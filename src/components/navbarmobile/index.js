@@ -38,7 +38,7 @@ const NavBarMobile = ({ toggle, isOpen }) => {
           </NavLinks>
           <NavBtnLinkWrap>
             <NavBtnLink to="/connect" activeStyle>
-              <Button filled={true} />
+              <Button filled={true} text={"Connect Wallet"} />
             </NavBtnLink>
           </NavBtnLinkWrap>
         </NavBarLinksWrapper>

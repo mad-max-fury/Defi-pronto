@@ -30,7 +30,7 @@ const Navbar = () => {
             <span>Staking</span>
           </NavLink>
           <NavBtnLink to="/connect" activeStyle>
-            <Button filled={true} />
+            <Button filled={true} text={"Connect Wallet"} />
           </NavBtnLink>
         </NavMenu>
         <NavBarMobile toggle={toggle} isOpen={isOpen} />

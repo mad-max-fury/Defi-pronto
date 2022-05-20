@@ -9,12 +9,16 @@ export const ButtonWrapper = styled.button`
       ? "transparent"
       : filled && bgColor
       ? bgColor
+      : !filled && bgColor
+      ? "transparent"
       : colors.secondary};
   color: ${({ filled, bgColor }) =>
     !filled && !bgColor
       ? colors.white
       : filled && !bgColor
       ? colors.white
+      : !filled && bgColor
+      ? bgColor
       : filled && bgColor
       ? colors.secondary
       : colors.secondary};
@@ -25,11 +29,17 @@ export const ButtonWrapper = styled.button`
   cursor: pointer;
   text-decoration: none;
   display: flex;
+  flex-direction: ${({ reverse }) => (reverse ? "row-reverse" : "row")};
   transition: all 0.2s ease-in-out;
   border: 2px solid
-    ${({ filled, bgColor }) => (filled && bgColor ? bgColor : colors.secondary)};
-  & > span:last-of-type {
-    margin-left: 5px;
+    ${({ filled, bgColor }) =>
+      filled && bgColor
+        ? bgColor
+        : !filled && bgColor
+        ? bgColor
+        : colors.secondary};
+  gap: 8px;
+  & > span.last-span {
     display: flex;
     align-items: center;
   }
