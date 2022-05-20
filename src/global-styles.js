@@ -64,7 +64,7 @@ export const GlobalStyles = createGlobalStyle`
 export const Container = styled.div`
   z-index: 1;
   width: 100%;
-  max-width: 1300px;
+  max-width: 1400px;
   margin-right: auto;
   margin-left: auto;
   padding-left: 50px;
