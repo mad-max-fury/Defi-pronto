@@ -15,7 +15,11 @@ export const GlobalStyles = createGlobalStyle`
         box-sizing: border-box;
         font-family: 'Monument Extended', sans-serif;
         scroll-behavior: smooth;
+        
 
+    }
+    body{
+        background-color: ${colors.primary};
     }
     
     h1, h2, h3, h4, h5, h6 {
