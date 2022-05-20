@@ -2,7 +2,11 @@ import logo from "./logo.svg";
 import "./App.css";
 
 function App() {
-  return <div className="App">GGGGGGGGGGGhjhhjjhhj</div>;
+  return (
+    <div className="App">
+      sdsdsds
+    </div>
+  )
 }
 
 export default App;
