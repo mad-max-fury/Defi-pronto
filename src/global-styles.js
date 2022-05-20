@@ -41,7 +41,14 @@ export const GlobalStyles = createGlobalStyle`
     }
 
     h3 {
-        font-size: 1.5rem;
+        font-size: 2.44125rem;
+        color: ${colors.white};
+        font-weight: 400;
+        font-family: Monument Extended, sans-serif;
+        @media screen and (max-width: 600px) {
+          font-size: 1.6rem;
+        }
+
     }
 
     h4 {
@@ -53,47 +60,17 @@ export const GlobalStyles = createGlobalStyle`
     }
 
     h6 {
-        font-size: 0.85rem;
+        font-size: 1.25rem;
+        font-weight: 400;
+        font-family: Monument Extended, sans-serif;
+        color: ${colors.white};
+
     }
 
     p {
         font-size: 1rem;
+        font-weight: 400;
+        font-family: DM Sans, sans-serif;
+        color: ${colors.grey_text};
     }
-`;
-
-export const Container = styled.div`
-  z-index: 1;
-  width: 100%;
-  max-width: 1300px;
-  margin-right: auto;
-  margin-left: auto;
-  padding-left: 50px;
-
-  @media screen and (max-width: 991px) {
-    padding-right: 30px;
-    padding-left: 30px;
-  }
-`;
-
-export const Button1 = styled.button`
-  border-radius: 15px;
-  background: ${({ primary }) => (primary ? "#fff" : "#0467FB")};
-  white-space: nowrap;
-  padding: ${({ big }) => (big ? "12px 64px" : "10px 20px")};
-  color: #fff;
-  font-size: ${({ fontBig }) => (fontBig ? "20px" : "16px")};
-  outline: none;
-  cursor: pointer;
-  /* border-bottom-right-radius: 40px;
-  border-top-right-radius: 40px; */
-
-  &:hover {
-    transition: all 0.3s ease-out;
-    background: #fff;
-    background: ${({ primary }) => (primary ? "#4B59F7" : "#0467FB")};
-  }
-
-  @media screen and (max-width: 960px) {
-    width: 100%;
-  }
 `;

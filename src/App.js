@@ -1,23 +1,15 @@
-import logo from "./logo.svg";
 import "./App.css";
-import { Button, Navbar, Footer } from "./components";
+import { Button, Navbar, SectionIntroCards, r, Footer } from "./components";
 import { BrowserRouter as Router } from "react-router-dom";
 import { colors } from "./colors";
 import { FaBars } from "react-icons/fa";
+import { HowItWorks } from "./pages/landingpage/components";
 function App() {
   return (
     <div className="App">
       <Router>
         <Navbar />
-        <Button
-          filled={false}
-          bgColor={colors.white}
-          text={"Go To App"}
-          reverse={false}
-          Icon={FaBars}
-          noIcon
-        />
-        <Footer />
+        <HowItWorks />
       </Router>
     </div>
   );
