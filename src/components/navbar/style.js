@@ -33,7 +33,7 @@ export const NavLink = styled(Link)`
 export const Bars = styled(FaBars)`
   display: none;
   color: ${colors.white};
-  @media (max-width: 768px) {
+  @media (max-width: 840px) {
     display: block;
     position: absolute;
     top: 0;
@@ -47,7 +47,7 @@ export const NavMenu = styled.div`
   display: flex;
   align-items: center;
   margin-right: 30px;
-  @media (max-width: 768px) {
+  @media (max-width: 840px) {
     display: none;
   }
 `;
@@ -56,7 +56,7 @@ export const NavBtn = styled.nav`
   align-items: center;
   font-family: "DM Sans", sans-serif;
 
-  @media (max-width: 768px) {
+  @media (max-width: 840px) {
     display: none;
   }
 `;

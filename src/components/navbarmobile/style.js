@@ -19,7 +19,7 @@ export const NavBarMobileContainer = styled.div`
   opacity: ${({ isOpen }) => (isOpen ? "100%" : "0")};
   top: ${({ isOpen }) => (isOpen ? "0" : "-100%")};
   box-shadow: -1px 0px 10px 0px rgba(0, 0, 0, 0.2);
-  @media (min-width: 768px) {
+  @media (min-width: 840px) {
     display: none;
   }
 `;
@@ -51,7 +51,7 @@ export const NavLinks = styled.ul`
   grid-template-columns: 1fr;
   grid-template-rows: repeat(5, 70px);
   text-align: start;
-  @media (max-width: 768px) {
+  @media (max-width: 840px) {
     grid-template-columns: 1fr;
     grid-template-rows: repeat(5, 65px);
   }
