@@ -31,15 +31,37 @@ export const Item = styled.div`
   gap: 1rem;
   align-items: center;
   margin-top: 1.5rem;
-  &::after {
-    content: "";
-    width: 3px;
-    height: 2rem;
-    background-color: ${colors.secondary};
-    margin-top: 1rem;
+  position: relative;
+
+  @media screen and (max-width: 600px) {
+    &::after {
+      content: "";
+      width: 3px;
+      height: 2rem;
+      background-color: ${colors.secondary};
+      margin-top: 1rem;
+    }
+    &:last-child {
+      &::after {
+        display: none;
+      }
+    }
   }
-  &:last-of-type &::after {
-    display: none;
+  @media screen and (min-width: 1080px) {
+    &::before {
+      content: "";
+      width: 4rem;
+      height: 3px;
+      background-color: ${colors.secondary};
+      margin-top: 1rem;
+      position: absolute;
+      left: 85%;
+    }
+    &:last-child {
+      &::before {
+        display: none;
+      }
+    }
   }
 `;
 export const SpanNum = styled.span`
