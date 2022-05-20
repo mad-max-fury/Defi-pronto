@@ -1,5 +1,5 @@
 import styled from "styled-components";
-import { colors } from "../../../colors";
+import { colors } from "../../colors";
 
 export const FooterWrapper = styled.div`
   display: flex;
@@ -67,13 +67,13 @@ export const FooterLinks = styled.div`
   flex: 1;
   padding-left: 40px;
 
-  @media (max-width: 500px){
+  @media (max-width: 500px) {
     flex-wrap: wrap;
     padding-left: 0px;
     // padding-top: 20px;
   }
 
-  @media (min-width: 501px) and (max-width: 816px){
+  @media (min-width: 501px) and (max-width: 816px) {
     padding-left: 0px;
   }
 `;
@@ -82,7 +82,7 @@ export const MarketplaceContainer = styled.div`
   display: flex;
   flex-direction: column;
 
-  @media (max-width: 500px){
+  @media (max-width: 500px) {
     justify-content: flex-start;
     align-items: flex-start;
     margin-top: 20px;

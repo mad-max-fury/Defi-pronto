@@ -1,7 +1,7 @@
 import React from "react";
 import { NavBarMobile } from "../navbarmobile";
-import { FiArrowUpRight } from "react-icons/fi";
-import { Nav, NavLink, Bars, NavMenu, NavBtn, NavBtnLink } from "./style";
+import { defiProntoLogo } from "../../assets";
+import { Nav, NavLink, Bars, NavMenu, NavBtnLink } from "./style";
 import { Button } from "../button";
 const Navbar = () => {
   const [isOpen, setIsOpen] = React.useState(false);
@@ -10,7 +10,7 @@ const Navbar = () => {
     <>
       <Nav>
         <NavLink to="/">
-          <span>logo</span>
+          <img src={defiProntoLogo} alt="logo" />
         </NavLink>
         <Bars onClick={toggle} />
         <NavMenu>

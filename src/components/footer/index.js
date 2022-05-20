@@ -31,9 +31,7 @@ const Footer = () => {
     <Container>
       <FooterWrapper>
         <FooterIntro>
-          <FooterLogo>
-            <img src={octasea} alt="logo" />
-          </FooterLogo>
+          <FooterLogo>{/* <img src={octasea} alt="logo" /> */}</FooterLogo>
           <FooterIntroText>
             Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla
             turpis et quis turpis elementum.
