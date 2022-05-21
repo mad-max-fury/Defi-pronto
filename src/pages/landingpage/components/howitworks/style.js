@@ -50,12 +50,12 @@ export const Item = styled.div`
   @media screen and (min-width: 1080px) {
     &::before {
       content: "";
-      width: 4rem;
-      height: 3px;
+      width: 10rem;
+      height: 1px;
       background-color: ${colors.secondary};
       margin-top: 1rem;
       position: absolute;
-      left: 85%;
+      left: 80%;
     }
     &:last-child {
       &::before {
