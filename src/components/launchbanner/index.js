@@ -50,7 +50,6 @@ const LaunchBannerContainer = styled.div`
   & span {
     width: fit-content;
     height: fit-content;
-    /* margin: 0 auto; */
     & > button {
       &:hover {
         color: ${colors.white};
