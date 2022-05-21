@@ -7,6 +7,7 @@ import blockChainDark from "./blockchain_dark_7.svg";
 import braille from "./braille.svg";
 import deepSake from "./deepsake.svg";
 import defiProntoLogo from "./defi-logo.svg";
+import defiProntoLogoText from "./defiprontologo.svg";
 import defiPronto from "./DefiPronto.svg";
 import defiProntoWhite from "./DefiProntoWhite.svg";
 import etherni from "./etherni.svg";
@@ -39,6 +40,7 @@ export {
   braille,
   deepSake,
   defiProntoLogo,
+  defiProntoLogoText,
   defiPronto,
   defiProntoWhite,
   etherni,
