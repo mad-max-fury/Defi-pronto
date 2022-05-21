@@ -10,6 +10,7 @@ function App() {
       <Router>
         <Navbar />
         <HowItWorks />
+        <Footer />
       </Router>
     </div>
   );
