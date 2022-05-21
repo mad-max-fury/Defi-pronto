@@ -6,17 +6,19 @@ import {
   Footer,
   IntroWrap,
   MiniFutureCard,
+  LaunchBanner,
 } from "./components";
 import { BrowserRouter as Router } from "react-router-dom";
 import { colors } from "./colors";
 import { FaBars } from "react-icons/fa";
-import { HowItWorks } from "./pages/landingpage/components";
+import { HowItWorks, OurSupporter } from "./pages/landingpage/components";
 import { star } from "./assets";
 function App() {
   return (
     <div className="App">
       <Router>
         <Navbar />
+        <OurSupporter />
         <HowItWorks />
         <MiniFutureCard
           src={star}
@@ -24,6 +26,7 @@ function App() {
           paragraph={"Lorem ipsum dolor sit amet, consectetur adipiscing elit."}
         />
         <IntroWrap />
+        <LaunchBanner />
         <Footer />
       </Router>
     </div>

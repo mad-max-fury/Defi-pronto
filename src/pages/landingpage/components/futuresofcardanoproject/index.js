@@ -1,5 +1,5 @@
 import React from "react";
-
+import styled from "styled-components";
 const FutureOfCardanoIntroSection = () => {
   return (
     <SecContainer>
@@ -9,3 +9,6 @@ const FutureOfCardanoIntroSection = () => {
 };
 
 export { FutureOfCardanoIntroSection };
+
+const SecContainer = styled.section``;
+const Intro = styled.div``;
