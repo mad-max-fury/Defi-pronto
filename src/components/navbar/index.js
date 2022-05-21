@@ -1,10 +1,10 @@
-import React from "react";
+import React, { useState } from "react";
 import { NavBarMobile } from "../navbarmobile";
 import { defiProntoLogo } from "../../assets";
 import { Nav, NavLink, Bars, NavMenu, NavBtnLink } from "./style";
 import { Button } from "../button";
 const Navbar = () => {
-  const [isOpen, setIsOpen] = React.useState(false);
+  const [isOpen, setIsOpen] = useState(false);
   const toggle = () => setIsOpen(!isOpen);
   return (
     <>
