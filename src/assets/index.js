@@ -35,31 +35,51 @@ export {
   a02,
   a03,
   a04,
+  // the above four are the icons labeled 1 through to four
   aboutLooper,
+  // about screen hero section bg
   blockChainDark,
+  // image immediately after hero section and it is not the defipronto image hero section bg
   braille,
   deepSake,
   defiProntoLogo,
+  // Logo without the text
   defiProntoLogoText,
+  // Logo with the text
   defiPronto,
+  // Defipronto itself
   defiProntoWhite,
+  // this is the white variant of defipronto
   etherni,
   heroSectionBg,
+  // Hero section background
   imageColors,
   imageGalaxy,
   imagePaint,
   imageSolid,
-  imageWater,
+  imageWater, 
+  // Under upcoming projects, the above five images represents the images there
+  // image waters os the one with phone and water together
+  // ImageSolid is the second to the last image
+  // ImageColors is the third image
+  // ImageGalaxy is the last image
+  // ImagePaint is the second image
   kubb,
   kwoon,
   morello,
   nami,
   people,
+
+  // For the future of Cardano project section, this is the second image
   rocket,
+  // For the future of Cardano project section, this is the third image
   skyBox,
   sloWave,
   speaker,
+  // For the future of Cardano project section, this is the last image
   star,
+  // For the future of Cardano project section, this is the first image
   swirl,
+  // landing page swirl background
   topology,
 };

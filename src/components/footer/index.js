@@ -25,9 +25,11 @@ import {
   FooterWrapper,
   FooterIntro,
   FooterLink,
+  IntroContainer,
   FooterMenu,
   MenuHeader,
   FooterIntroWrap,
+  FooterCreditCont,
   FooterCredit,
   FooterSocial,
   
@@ -38,7 +40,7 @@ const Footer = () => {
        <Container>  
             <FooterWrapper>
     
-                <FooterMenu>
+                <IntroContainer>
                         <FooterLink to="/">
                             <img src={ defiProntoLogoText } alt="" />
                         </FooterLink>
@@ -47,7 +49,7 @@ const Footer = () => {
                             Odio imperdiet nibh at et neque. Sed adipiscing risus aenean neque imperdiet amet fermentum.  
 
                         </FooterIntro>
-                </FooterMenu>
+                </IntroContainer>
 
 
                 <FooterIntroWrap>
@@ -106,26 +108,32 @@ const Footer = () => {
 
                 
             </FooterWrapper>
-            <FooterCredit>
-                <p>© 2021 Defipronto. All rights reserved.</p>
+            <FooterCreditCont>
+
+
+                <FooterCredit>
+                © 2021 Defipronto. All rights reserved
+
+                </FooterCredit>
+                
                 
                 <FooterSocial>
 
-                <FooterLink to="/">
-                    <RiDiscordFill size="25px" color= "#E74141"/>
-                    
-                </FooterLink>
+                    <FooterLink to="/">
+                        <ImTelegram size="25px" color= "#E74141"/>
+                    </FooterLink>
 
-                <FooterLink to="/">
-                    <ImTelegram size="25px" color= "#E74141"/>
-                </FooterLink>
+                    <FooterLink to="/">
+                        <RiDiscordFill size="25px" color= "#E74141"/>
+                        
+                    </FooterLink>
 
-                <FooterLink to="/">
-                    <ImTwitter size="25px" color= "#E74141"/>
-                </FooterLink>
+                    <FooterLink to="/">
+                        <ImTwitter size="25px" color= "#E74141"/>
+                    </FooterLink>
 
                 </FooterSocial>
-            </FooterCredit>
+            </FooterCreditCont>
         </Container>
   );
 };
