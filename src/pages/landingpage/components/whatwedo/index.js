@@ -28,13 +28,16 @@ const Container = styled.section`
   justify-content: space-between;
   padding: 0.5rem calc((100vw - 1300px) / 2);
   gap: 2rem;
-  font-family: "DM Sans", sans-serif;
   flex-direction: column;
-  padding-bottom: 10rem;
+  padding-top: 14rem;
+  position: relative;
   &:before {
     content: "";
     width: 100%;
     height: 10rem;
+    top: 12.5%;
+    left: 0;
+    position: absolute;
     background-image: url(${defiPronto});
     background-repeat: no-repeat;
     background-size: contain;
@@ -45,6 +48,18 @@ const Container = styled.section`
 const InnerWrap = styled.div`
   width: 100%;
   display: flex;
-  justify-content: space-between;
+
+  justify-content: space-between !important;
+  & > div {
+    & > img {
+      width: 100%;
+    }
+    &:last-of-type {
+      max-width: 40%;
+      width: 45%;
+      justify-self: flex-end;
+      margin: unset;
+    }
+  }
 `;
 const ImgWrap = styled.div``;

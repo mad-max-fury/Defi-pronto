@@ -34,10 +34,10 @@ export const HeroSectionWrap = styled.section`
 
 export const HeroInner = styled.div`
   font-family: "DM Sans", sans-serif;
-  width: 50%;
+  width: 60%;
   margin-left: 9px;
   height: fit-content;
-  margin-top: 80px;
+  margin-top: 60px;
   display: flex;
   flex-direction: column;
   gap: 2rem;

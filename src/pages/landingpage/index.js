@@ -1,6 +1,5 @@
 import React from "react";
 import styled from "styled-components";
-import { LaunchBanner } from "../../components";
 import { HeroSection, OurSupporter, Whatwedo } from "./components";
 const LandingPage = () => {
   return (
@@ -9,7 +8,6 @@ const LandingPage = () => {
       <Whatwedo />
       <Ceneter></Ceneter>
       <OurSupporter />
-      <LaunchBanner />
     </Container>
   );
 };
