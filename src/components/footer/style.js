@@ -12,7 +12,7 @@ export const FooterWrapper = styled.div`
   display: flex;
   flex-direction: row;
   justify-content: space-between;
-  align-items: center;
+  align-items: end;
   width: calc(100% - 0px);
   padding: 70px 0;
   margin: 0 auto;
@@ -21,9 +21,10 @@ export const FooterWrapper = styled.div`
 
   @media (max-width: 550px){
     flex-direction: column-reverse;
+    padding: 40px 0;
   }
 
-  @media (max-width: 899px) {
+  @media (min-width: 551px) and (max-width: 899px) {
     flex-wrap: wrap;
     align-items: center;
     justify-content: start;
@@ -31,8 +32,9 @@ export const FooterWrapper = styled.div`
     flex-direction: column-reverse;
   }
 
-  @media (max-width: 1315px){
+  @media (min-width: 900px) and (max-width: 1315px){
     padding-left: 20px;
+    align-items: end;
   }
 `;
 
@@ -62,6 +64,11 @@ width: max-content;
 cursor: pointer;
 transition: all 0.3s ease-in-out;
 font-family: "DM Sans", sans-serif;
+
+&:hover {
+  color: ${colors.white};
+  transition: all 0.3s ease-in-out;
+}
 
 `;
 
@@ -189,7 +196,7 @@ export const FooterSocial = styled.div`
 
   @media (max-width: 550px){
     padding-top: 40px;
-    max-width: 45%;
+    max-width: 45% !important;
   }
 
   @media (max-width: 930px){

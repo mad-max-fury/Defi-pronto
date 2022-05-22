@@ -1,13 +1,11 @@
 import React from "react";
 import styled from "styled-components";
-const IntroWrap = () => {
+const IntroWrap = ({title, desc}) => {
   return (
     <Wrapper>
-      <Heading>The Future of Cardano Projects</Heading>
+      <Heading>{title}</Heading>
       <Paragraph>
-        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Odio imperdiet
-        nibh at et neque. Sed adipiscing risus aenean neque imperdiet amet
-        fermentum.
+        {desc}
       </Paragraph>
     </Wrapper>
   );
@@ -24,7 +22,6 @@ const Wrapper = styled.div`
   justify-content: center;
   margin: 0 auto;
   gap: 1rem;
-  border: 1px solid red;
 `;
 const Heading = styled.h2`
   text-align: center;

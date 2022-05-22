@@ -8,3 +8,4 @@ export * from "./minifuturecard";
 export * from "./launchbanner";
 export * from "./accordion";
 export * from "./projectcard";
+export * from "./tokenomics";

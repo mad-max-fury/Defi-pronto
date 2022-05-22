@@ -9,6 +9,7 @@ import {
   LaunchBanner,
   Accordion,
   ProjectCard,
+  Tokenomics
 } from "./components";
 import { BrowserRouter as Router } from "react-router-dom";
 import { colors } from "./colors";
@@ -70,7 +71,8 @@ function App() {
           headingtext={"Vetted Projects"}
           paragraph={"Lorem ipsum dolor sit amet, consectetur adipiscing elit."}
         />
-        <IntroWrap />
+        <IntroWrap title={"The Future of Cardano Projects"} desc={"Lorem ipsum dolor sit amet, consectetur adipiscing elit. Odio imperdiet nibh at et neque. Sed adipiscing risus aenean neque imperdiet amet fermentum."} />
+        <Tokenomics token={"Token Name"} pronto={"Defipronto"} marketcap={"Market Cap"} figure1={"$1,000,000"} initial={"Initial Supply"} figure2={"400,000"} current={"Current Total Supply"} figure3={"200,000"} burned={"Defipronto Burned"} figure4={"30,000"} circulation={"Defipronto in Circulation"} figure5={"100,000"} />
         <LaunchBanner />
         <Footer />
       </Router>
