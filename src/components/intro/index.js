@@ -1,12 +1,10 @@
 import React from "react";
 import styled from "styled-components";
-const IntroWrap = ({title, desc}) => {
+const IntroWrap = ({ title, desc }) => {
   return (
     <Wrapper>
       <Heading>{title}</Heading>
-      <Paragraph>
-        {desc}
-      </Paragraph>
+      <Paragraph>{desc}</Paragraph>
     </Wrapper>
   );
 };
@@ -24,6 +22,6 @@ const Wrapper = styled.div`
   gap: 1rem;
 `;
 const Heading = styled.h2`
-  text-align: center;
+  text-align: start;
 `;
 const Paragraph = styled.p``;
