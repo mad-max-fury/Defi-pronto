@@ -2,6 +2,7 @@ import a01 from "./a01.svg";
 import a02 from "./a02.svg";
 import a03 from "./a03.svg";
 import a04 from "./a04.svg";
+import allocationChart from "./allocation-chart.svg";
 import aboutLooper from "./about-looper.svg";
 import blockChainDark from "./blockchain_dark_7.svg";
 import braille from "./braille.svg";
@@ -36,6 +37,7 @@ export {
   a02,
   a03,
   a04,
+  allocationChart,
   heroSection2,
   // the above four are the icons labeled 1 through to four
   aboutLooper,

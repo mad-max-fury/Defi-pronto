@@ -9,3 +9,4 @@ export * from "./launchbanner";
 export * from "./accordion";
 export * from "./projectcard";
 export * from "./tokenomics";
+export * from "./allocation"
