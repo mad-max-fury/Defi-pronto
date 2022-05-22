@@ -2,7 +2,7 @@ import styled from "styled-components";
 import { colors } from "../../colors";
 import { Link } from "react-router-dom";
 export const Container = styled.div`
-  width: 25.69rem;
+  width: 24.69rem;
   height: 38.625rem;
   background-color: rgba(47, 40, 46, 1);
   border-radius: 10px;
@@ -14,6 +14,10 @@ export const Container = styled.div`
     transition: all 0.3s ease-in-out;
     cursor: pointer;
     box-shadow: -10px 14px 34px 0px rgba(231, 65, 65, 0.2);
+  }
+  @media screen and (max-width: 400px) {
+    width: 20rem;
+    height: 34rem;
   }
 `;
 export const Image = styled.img`
@@ -29,6 +33,9 @@ export const TextArea = styled.div`
   display: flex;
   flex-direction: column;
   justify-content: space-between;
+  @media screen and (max-width: 400px) {
+    padding: 1rem;
+  }
 `;
 export const BottomCol = styled.div`
   display: flex;

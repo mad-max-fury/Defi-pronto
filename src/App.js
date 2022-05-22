@@ -24,7 +24,9 @@ function App() {
           style={{
             display: "flex",
             width: "100%",
-            padding: "0.5rem calc((100vw - 1300px)/ 2)",
+            padding: "0.5rem calc((100vw - 1250px)/ 2)",
+            flexFlow: "row wrap",
+            gap: "1rem",
           }}
         >
           <ProjectCard
