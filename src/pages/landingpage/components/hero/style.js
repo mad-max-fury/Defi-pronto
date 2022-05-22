@@ -25,18 +25,29 @@ export const HeroSectionWrap = styled.section`
     background-position: bottom;
     max-height: 62rem;
   }
+  @media screen and (max-width: 900px) {
+    width: 100%;
+    padding-left: 2rem;
+    height: calc(100vh - 100px);
+  }
 `;
 
 export const HeroInner = styled.div`
   font-family: "DM Sans", sans-serif;
-  width: 50%;
+  width: 60%;
   margin-left: 9px;
   height: fit-content;
-  margin-top: 80px;
-  border: 1px solid red;
+  margin-top: 60px;
   display: flex;
   flex-direction: column;
   gap: 2rem;
+  @media screen and (max-width: 900px) {
+    width: 80%;
+    padding-left: 2rem;
+  }
+  @media screen and (max-width: 600px) {
+    width: 100%;
+  }
 `;
 
 export const TextUp = styled.div`
@@ -45,8 +56,10 @@ export const TextUp = styled.div`
   gap: 2rem;
   h1 {
     width: 90%;
+    font-size: 4.2rem;
+
     & > span {
-      font-size: 3.9rem;
+      font-size: 4.9rem;
       font-weight: 400;
       font-family: Monument Extended, sans-serif;
       color: ${colors.secondary};

@@ -2,7 +2,7 @@ import React from "react";
 import styled from "styled-components";
 import { colors } from "../../colors";
 import { motion } from "framer-motion";
-import { Footer, Navbar } from "../../components";
+import { Footer, LaunchBanner, Navbar } from "../../components";
 
 const DashBoardLayout = ({ children }) => {
   return (
@@ -16,6 +16,7 @@ const DashBoardLayout = ({ children }) => {
       <Navbar />
 
       {children}
+      <LaunchBanner />
       <Footer />
     </Wrapper>
   );

@@ -3,6 +3,7 @@ import styled from "styled-components";
 import {
   braille,
   deepSake,
+  defiPronto,
   kubb,
   kwoon,
   morello,
@@ -39,8 +40,21 @@ const OurSupportWrap = styled.section`
   gap: 2rem;
   font-family: "DM Sans", sans-serif;
   flex-direction: column;
+  padding-bottom: 10rem;
+  /* position: relative; */
+  &:before {
+    content: "";
+    width: 100%;
+    left: 0;
+    height: 10rem;
+    background-image: url(${defiPronto});
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center;
+  }
 `;
 const Heading = styled.h3`
+  margin: 0 auto;
   span {
     font-size: inherit;
     font-weight: inherit;

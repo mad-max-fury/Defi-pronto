@@ -1,12 +1,10 @@
 import React from "react";
 import styled from "styled-components";
-const IntroWrap = ({title, desc}) => {
+const IntroWrap = ({ title, desc }) => {
   return (
     <Wrapper>
       <Heading>{title}</Heading>
-      <Paragraph>
-        {desc}
-      </Paragraph>
+      <Paragraph>{desc}</Paragraph>
     </Wrapper>
   );
 };

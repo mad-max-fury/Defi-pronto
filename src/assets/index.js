@@ -31,6 +31,7 @@ import star from "./star.svg";
 import swirl from "./swirl-1.svg";
 import topology from "./Topology-2.svg";
 import heroSection2 from "./heroSection2.svg";
+import looperGroup from "./looper-group.svg";
 
 export {
   a01,
@@ -39,6 +40,7 @@ export {
   a04,
   allocationChart,
   heroSection2,
+  looperGroup,
   // the above four are the icons labeled 1 through to four
   aboutLooper,
   // about screen hero section bg

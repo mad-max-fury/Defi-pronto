@@ -6,9 +6,17 @@ import { Button } from "../button";
 const Navbar = () => {
   const [isOpen, setIsOpen] = useState(false);
   const toggle = () => setIsOpen(!isOpen);
+  const [scrolled, setScrolled] = useState(false);
+  window.addEventListener("scroll", () => {
+    if (window.scrollY > 100) {
+      setScrolled(true);
+    } else {
+      setScrolled(false);
+    }
+  });
   return (
     <>
-      <Nav>
+      <Nav scrolled={scrolled}>
         <NavLink to="/">
           <img src={defiProntoLogo} alt="logo" />
         </NavLink>
