@@ -7,6 +7,7 @@ import {
   IntroWrap,
   MiniFutureCard,
   LaunchBanner,
+  Accordion,
 } from "./components";
 import { BrowserRouter as Router } from "react-router-dom";
 import { colors } from "./colors";
@@ -20,6 +21,9 @@ function App() {
         <Navbar />
         <OurSupporter />
         <HowItWorks />
+        <Accordion heading={"Governance"} />
+        <Accordion heading={"Staking"} />
+
         <MiniFutureCard
           src={star}
           headingtext={"Vetted Projects"}
