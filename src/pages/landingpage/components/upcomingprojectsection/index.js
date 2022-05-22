@@ -1,11 +1,13 @@
 import React from "react";
 import styled from "styled-components";
 import {
+  aboutLooper,
   imageColors,
   imageGalaxy,
   imagePaint,
   imageSolid,
   imageWater,
+  looperGroup,
   swirl,
 } from "../../../../assets";
 import { colors } from "../../../../colors";
@@ -96,20 +98,11 @@ const Container = styled.section`
   display: flex;
   justify-content: space-between;
   padding: 0.5rem calc((100vw - 1300px) / 2);
-  border: 1px solid red;
   flex-direction: column;
   position: relative;
+  background-image: url(${looperGroup});
+  background-image: contain;
   gap: 2rem;
-  &:before {
-    content: "";
-    width: 100%;
-    height: 100vh;
-    top: -4%;
-    z-index: -1;
-    left: 0%;
-    position: absolute;
-    background-image: url(${swirl});
-  }
 `;
 const Headingwrap = styled.div`
   width: 100%;
@@ -131,7 +124,6 @@ const Headingwrap = styled.div`
 const ProjectWraps = styled.div`
   width: 100%;
   height: fit-content;
-  border: 1px solid red;
   display: flex;
   flex-flow: row wrap;
   column-gap: 2rem;
