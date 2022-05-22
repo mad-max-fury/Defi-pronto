@@ -2,14 +2,15 @@ import styled from "styled-components";
 import { colors } from "../../../../colors";
 
 export const HowItWorksWraps = styled.section`
-  padding: 0.5rem calc((100vw - 1300px) / 2);
   width: 100%;
   height: fit-content;
   display: flex;
   flex-direction: column;
   gap: 2rem;
 `;
-export const Heading = styled.h3``;
+export const Heading = styled.h3`
+  margin: 0 auto;
+`;
 
 export const ItemsRow = styled.div`
   width: 100%;
