@@ -1,7 +1,7 @@
 import styled from "styled-components";
 import { heroSection2, heroSectionBg } from "../../../../assets";
 import { colors } from "../../../../colors";
-
+import { Link } from "react-router-dom";
 export const HeroSectionWrap = styled.section`
   height: calc(100vh);
   display: flex;
@@ -30,5 +30,65 @@ export const HeroSectionWrap = styled.section`
 export const HeroInner = styled.div`
   font-family: "DM Sans", sans-serif;
   width: 50%;
+  margin-left: 9px;
+  height: fit-content;
+  margin-top: 80px;
   border: 1px solid red;
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+`;
+
+export const TextUp = styled.div`
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+  h1 {
+    width: 90%;
+    & > span {
+      font-size: 3.9rem;
+      font-weight: 400;
+      font-family: Monument Extended, sans-serif;
+      color: ${colors.secondary};
+    }
+  }
+  p {
+    width: 80%;
+  }
+`;
+export const BtnWrap = styled.div`
+  width: fit-content !important;
+  display: flex;
+  align-self: start;
+  gap: 1rem;
+  & > button {
+    margin: 0;
+  }
+`;
+export const FooterSocial = styled.div`
+  display: flex;
+  width: fit-content;
+  align-items: center;
+  padding: 0.5rem 0;
+  gap: 1rem;
+`;
+export const FooterLink = styled(Link)`
+  color: ${colors.white};
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-decoration: none;
+  padding: 0 0 11px 0;
+  cursor: pointer;
+  transition: all 0.3s ease-in-out;
+  font-family: "DM Sans", sans-serif;
+
+  &:hover {
+    color: ${colors.secondary};
+    transition: all 0.3s ease-in-out;
+  }
+  &.active {
+    color: ${colors.secondary};
+    transition: all 0.3s ease-in-out;
+  }
 `;
