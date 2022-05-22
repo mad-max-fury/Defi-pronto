@@ -33,7 +33,13 @@ export const GlobalStyles = createGlobalStyle`
 
 
     h1 {
-        font-size: 3rem;
+    font-size: 3.9rem;
+        color: ${colors.white};
+        font-weight: 400;
+        font-family: Monument Extended, sans-serif;
+        @media screen and (max-width: 600px) {
+          font-size: 1.6rem;
+        }
     }
 
     h2 {
@@ -85,6 +91,7 @@ export const GlobalStyles = createGlobalStyle`
         font-weight: 400;
         font-family: DM Sans, sans-serif;
         color: ${colors.grey_text};
+        line-height: 1 * 1.618;
     }
 
 `;
