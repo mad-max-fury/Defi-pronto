@@ -36,6 +36,7 @@ const LaunchBannerWrap = styled.section`
 `;
 const LaunchBannerHeading = styled.h2`
   max-width: 40.875rem;
+  text-align: center;
 `;
 const LaunchBannerContainer = styled.div`
   background-image: url(${defiProntoWhite});
@@ -51,6 +52,7 @@ const LaunchBannerContainer = styled.div`
     width: fit-content;
     height: fit-content;
     & > button {
+      margin: 0 auto;
       &:hover {
         color: ${colors.white};
         border-color: ${colors.white};

@@ -40,5 +40,9 @@ export const SpanNum = styled.span`
     object-fit: cover;
   }
 `;
-export const ItemHeading = styled.h6``;
-export const ItemParagraph = styled.p``;
+export const ItemHeading = styled.h6`
+  text-align: center;
+`;
+export const ItemParagraph = styled.p`
+  text-align: center;
+`;

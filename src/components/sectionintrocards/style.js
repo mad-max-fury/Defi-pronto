@@ -1,13 +1,18 @@
 import styled from "styled-components";
 
 export const SectionWrap = styled.aside`
-  border: 1px solid red;
+  max-width: 614px;
   width: 100%;
-  max-width: 26.75rem;
   display: flex;
   flex-direction: column;
-  gap: 1.5rem;
-  text-align: start;
+  align-items: center;
+  justify-content: center;
+  margin: 0 auto;
+  gap: 1rem;
 `;
-export const SecHeading = styled.h3``;
-export const SecParagraph = styled.p``;
+export const SecHeading = styled.h2`
+  text-align: center;
+`;
+export const SecParagraph = styled.p`
+  text-align: center;
+`;

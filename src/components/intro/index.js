@@ -22,9 +22,9 @@ const Wrapper = styled.div`
   gap: 1rem;
 `;
 const Heading = styled.h2`
-  text-align: center;
-  font-family: 'DM Sans';
+  text-align: start;
+  font-family: "DM Sans";
 `;
 const Paragraph = styled.p`
-  text-align: center;
+  text-align: start;
 `;

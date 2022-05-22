@@ -1,6 +1,7 @@
 import React from "react";
 import styled from "styled-components";
 import {
+  FutureOfCardanoIntroSection,
   HeroSection,
   OurSupporter,
   UpcomingProject,
@@ -12,6 +13,7 @@ const LandingPage = () => {
       <HeroSection />
       <Whatwedo />
       <UpcomingProject />
+      <FutureOfCardanoIntroSection />
       <Ceneter></Ceneter>
       <OurSupporter />
     </Container>
@@ -19,7 +21,7 @@ const LandingPage = () => {
 };
 
 export { LandingPage };
-
+//
 const Container = styled.main``;
 const Ceneter = styled.div`
   width: 100%;
