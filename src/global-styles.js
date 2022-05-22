@@ -91,7 +91,7 @@ export const GlobalStyles = createGlobalStyle`
         font-weight: 400;
         font-family: DM Sans, sans-serif;
         color: ${colors.grey_text};
-        font-size: 1 * 1.618;
+        line-height: 1 * 1.618;
     }
 
 `;
