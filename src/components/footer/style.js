@@ -12,8 +12,9 @@ export const FooterWrapper = styled.div`
   display: flex;
   flex-direction: row;
   justify-content: space-between;
+  align-items: center;
   width: calc(100% - 0px);
-  padding: 50px 0;
+  padding: 70px 0;
   margin: 0 auto;
   background-color: ${colors.primary };
   color: ${colors.white};
@@ -22,11 +23,16 @@ export const FooterWrapper = styled.div`
     flex-direction: column-reverse;
   }
 
-  @media (max-width: 1000px) {
+  @media (max-width: 899px) {
     flex-wrap: wrap;
     align-items: center;
     justify-content: start;
     gap: 1rem;
+    flex-direction: column-reverse;
+  }
+
+  @media (max-width: 1315px){
+    padding-left: 20px;
   }
 `;
 
@@ -40,9 +46,23 @@ export const IntroContainer = styled.div`
     padding: 50px 20px;
   }
 
-  @media (min: 551px) and (max-width: 911px){
-    padding: 50px 20px;
+  @media (min: 551px) and (max-width: 899px){
+    padding: 50px 90px;
   }
+`;
+
+export const FooterLogoLink = styled(Link)`
+color: ${colors.white};
+display: flex;
+align-items: center;
+text-decoration: none;
+padding: 40px 20px 11px 20px;
+color: #A4A4A4;
+width: max-content;
+cursor: pointer;
+transition: all 0.3s ease-in-out;
+font-family: "DM Sans", sans-serif;
+
 `;
 
 export const FooterIntroWrap = styled.div`
@@ -50,9 +70,14 @@ export const FooterIntroWrap = styled.div`
   flex-direction: row;
   justify-content: space-between;
 
-  @media (max-width: 550px){
+  @media (max-width: 447px){
     flex-wrap: wrap;
     padding: 0 20px;
+  }
+
+  @media (min-width: 447px) and (max-width: 899px) {
+    padding: 0 20px;
+    flex-wrap: wrap;
   }
 
 `;
@@ -60,11 +85,19 @@ export const FooterIntroWrap = styled.div`
 export const FooterIntro = styled.p`
   max-width: 20.9rem;  
   width: fit-content;
+  padding-top: 8px;
   text-align: start;
+  line-height: 25.89px;
 
   @media(max-width: 550px){
     max-width: max-content;  
     width: fit-content;
+  }
+
+  @media (min-width: 551px) and (max-width: 899px) {
+    max-width: max-content;  
+    width: fit-content;
+    padding: 0 20px;
   }
 `;
 
@@ -75,6 +108,7 @@ export const FooterLink = styled(Link)`
   text-decoration: none;
   padding: 0 0 11px 0;
   color: #A4A4A4;
+  width: max-content;
   cursor: pointer;
   transition: all 0.3s ease-in-out;
   font-family: "DM Sans", sans-serif;
@@ -97,13 +131,19 @@ export const FooterMenu = styled.div`
   align-items: start;
   margin-right: 80px;
 
-  @media (max-width: 550px){
+  @media (max-width: 447px){
     padding-top: 20px;
     margin-right: 30px;
   }
 
-  @media (min-width: ;) (max-width: 768px) {
-    display: none;
+  @media (min-width: 447px) and (max-width: 596px) {
+    padding-top: 20px;
+    margin-right: 80px;
+  }
+
+  @media (min-width: 597px) and (max-width: 899px) {
+    padding-top: 20px;
+    margin-right: 165px;
   }
 `;
 
@@ -113,11 +153,12 @@ export const MenuHeader = styled.p`
   font-weight: 400;
   font-family: 'Monument Extended' montserrat;
   color: ${colors.white};
+  width: max-content;
 `;
 
 export const FooterCreditCont = styled.div`
   display: flex;
-  padding: 50px 0px;
+  padding: 40px 0px 60px;
   justify-content: space-between;
   color: ${colors.grey_text};
   font-family: 'DM Sans';
@@ -126,8 +167,13 @@ export const FooterCreditCont = styled.div`
     flex-direction: column;
     // flex-wrap: wrap;  
     justify-content: flex-start;
-    padding: 0 20px;
+    padding: 0px 20px 60px;
     
+  }
+
+  @media (max-width: 1315px){
+    padding-left: 20px;
+    padding-right: 20px;
   }
 `;
 
@@ -144,6 +190,10 @@ export const FooterSocial = styled.div`
   @media (max-width: 550px){
     padding-top: 40px;
     max-width: 45%;
+  }
+
+  @media (max-width: 930px){
+    max-width: 15%;
   }
 `;
 
