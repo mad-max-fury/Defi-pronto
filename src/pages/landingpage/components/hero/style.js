@@ -8,10 +8,12 @@ export const HeroSectionWrap = styled.section`
   justify-content: space-between;
   padding: 0.5rem calc((100vw - 1300px) / 2);
   position: relative;
+  max-height: 62rem;
   & > .image-wrap {
     position: absolute;
     top: -100px;
     left: 0;
+    right: 0;
     width: 100%;
     max-width: 1550px;
     margin: 0 auto;
@@ -21,10 +23,12 @@ export const HeroSectionWrap = styled.section`
     background-repeat: no-repeat;
     background-size: cover;
     background-position: bottom;
+    max-height: 62rem;
   }
 `;
 
 export const HeroInner = styled.div`
   font-family: "DM Sans", sans-serif;
-  width: 100%;
+  width: 50%;
+  border: 1px solid red;
 `;
