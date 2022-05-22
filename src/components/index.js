@@ -6,3 +6,4 @@ export * from "./sectionintrocards";
 export * from "./intro";
 export * from "./minifuturecard";
 export * from "./launchbanner";
+export * from "./accordion";
