@@ -29,12 +29,14 @@ import speaker from "./speaker.svg";
 import star from "./star.svg";
 import swirl from "./swirl-1.svg";
 import topology from "./Topology-2.svg";
+import heroSection2 from "./heroSection2.svg";
 
 export {
   a01,
   a02,
   a03,
   a04,
+  heroSection2,
   // the above four are the icons labeled 1 through to four
   aboutLooper,
   // about screen hero section bg
@@ -57,7 +59,7 @@ export {
   imageGalaxy,
   imagePaint,
   imageSolid,
-  imageWater, 
+  imageWater,
   // Under upcoming projects, the above five images represents the images there
   // image waters os the one with phone and water together
   // ImageSolid is the second to the last image
@@ -69,7 +71,6 @@ export {
   morello,
   nami,
   people,
-
   // For the future of Cardano project section, this is the second image
   rocket,
   // For the future of Cardano project section, this is the third image

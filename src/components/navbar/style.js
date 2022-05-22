@@ -10,6 +10,7 @@ export const Nav = styled.nav`
   padding: 0.5rem calc((100vw - 1300px) / 2);
   z-index: 10;
   font-family: "DM Sans", sans-serif;
+  /* background-image: linear-gradient(30deg, rgba(0, 0, 0, 1), rgba(0, 0, 0, 1)); */
 `;
 export const NavLink = styled(Link)`
   color: ${colors.white};
