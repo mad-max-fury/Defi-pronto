@@ -64,7 +64,13 @@ export const GlobalStyles = createGlobalStyle`
     }
 
     h4 {
-        font-size: 1.2rem;
+        font-size: 1.95rem;
+        color: ${colors.white};
+        font-weight: 400;
+        font-family: Monument Extended, sans-serif;
+        @media screen and (max-width: 600px) {
+          font-size: 1.6rem;
+        }
     }
 
     h5 {

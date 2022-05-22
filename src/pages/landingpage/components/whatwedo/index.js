@@ -31,6 +31,7 @@ const Container = styled.section`
   flex-direction: column;
   padding-top: 14rem;
   position: relative;
+  padding-bottom: 3rem;
   &:before {
     content: "";
     width: 100%;
@@ -48,7 +49,6 @@ const Container = styled.section`
 const InnerWrap = styled.div`
   width: 100%;
   display: flex;
-
   justify-content: space-between !important;
   & > div {
     & > img {

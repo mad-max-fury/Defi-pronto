@@ -1,11 +1,17 @@
 import React from "react";
 import styled from "styled-components";
-import { HeroSection, OurSupporter, Whatwedo } from "./components";
+import {
+  HeroSection,
+  OurSupporter,
+  UpcomingProject,
+  Whatwedo,
+} from "./components";
 const LandingPage = () => {
   return (
     <Container>
       <HeroSection />
       <Whatwedo />
+      <UpcomingProject />
       <Ceneter></Ceneter>
       <OurSupporter />
     </Container>
