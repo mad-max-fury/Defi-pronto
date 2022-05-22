@@ -25,6 +25,11 @@ export const HeroSectionWrap = styled.section`
     background-position: bottom;
     max-height: 62rem;
   }
+  @media screen and (max-width: 900px) {
+    width: 100%;
+    padding-left: 2rem;
+    height: calc(100vh - 100px);
+  }
 `;
 
 export const HeroInner = styled.div`
@@ -33,10 +38,16 @@ export const HeroInner = styled.div`
   margin-left: 9px;
   height: fit-content;
   margin-top: 80px;
-  border: 1px solid red;
   display: flex;
   flex-direction: column;
   gap: 2rem;
+  @media screen and (max-width: 900px) {
+    width: 80%;
+    padding-left: 2rem;
+  }
+  @media screen and (max-width: 600px) {
+    width: 100%;
+  }
 `;
 
 export const TextUp = styled.div`
