@@ -10,6 +10,7 @@ import {
   ProjectCard,
   Tokenomics,
   Allocation,
+  SuccessCard
 } from "../../components";
 import { HowItWorks, OurSupporter } from "../landingpage/components";
 
@@ -72,6 +73,7 @@ function Components() {
       <IntroWrap title={"The Future of Cardano Projects"} desc={"Lorem ipsum dolor sit amet, consectetur adipiscing elit. Odio imperdiet nibh at et neque. Sed adipiscing risus aenean neque imperdiet amet fermentum."} /> 
       <Tokenomics token={"Token Name"} pronto={"Defipronto"} marketcap={"Market Cap"} figure1={"$1,000,000"} initial={"Initial Supply"} figure2={"400,000"} current={"Current Total Supply"} figure3={"200,000"} burned={"Defipronto Burned"} figure4={"30,000"} circulation={"Defipronto in Circulation"} figure5={"100,000"} />
       <Allocation />
+      <SuccessCard />
     </div>
   );
 }

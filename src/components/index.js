@@ -10,3 +10,4 @@ export * from "./accordion";
 export * from "./projectcard";
 export * from "./tokenomics";
 export * from "./allocation"
+export * from "./successcard"
