@@ -3,11 +3,11 @@ import { colors } from "../../colors";
 
 import { FaTwitter, FaTiktok } from "react-icons/fa";
 import {
-  RiDiscordFill,
-  RiRedditFill,
-  RiInstagramLine,
-  RiGoogleFill,
-  RiYoutubeFill,
+    RiDiscordLine,
+    RiRedditFill,
+    RiInstagramLine,
+    RiGoogleFill,
+    RiYoutubeFill,
 } from "react-icons/ri";
 
 import {
@@ -26,6 +26,7 @@ import {
   FooterIntro,
   FooterLink,
   IntroContainer,
+  FooterLogoLink,
   FooterMenu,
   MenuHeader,
   FooterIntroWrap,
@@ -41,9 +42,9 @@ const Footer = () => {
             <FooterWrapper>
     
                 <IntroContainer>
-                        <FooterLink to="/">
+                        <FooterLogoLink to="/">
                             <img src={ defiProntoLogoText } alt="" />
-                        </FooterLink>
+                        </FooterLogoLink>
                         <FooterIntro>
                             Lorem ipsum dolor sit amet, consectetur adipiscing elit. 
                             Odio imperdiet nibh at et neque. Sed adipiscing risus aenean neque imperdiet amet fermentum.  
@@ -120,16 +121,16 @@ const Footer = () => {
                 <FooterSocial>
 
                     <FooterLink to="/">
-                        <ImTelegram size="25px" color= "#E74141"/>
+                        <ImTelegram size="30px" color= "#E74141"/>
                     </FooterLink>
 
                     <FooterLink to="/">
-                        <RiDiscordFill size="25px" color= "#E74141"/>
+                        <RiDiscordLine size="30px" color= "#E74141"/>
                         
                     </FooterLink>
 
                     <FooterLink to="/">
-                        <ImTwitter size="25px" color= "#E74141"/>
+                        <ImTwitter size="30px" color= "#E74141"/>
                     </FooterLink>
 
                 </FooterSocial>
