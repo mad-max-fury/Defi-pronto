@@ -1,9 +1,63 @@
 import React from "react";
 import styled from "styled-components";
-import { imageColors, swirl } from "../../../../assets";
+import {
+  imageColors,
+  imageGalaxy,
+  imagePaint,
+  imageSolid,
+  imageWater,
+  swirl,
+} from "../../../../assets";
 import { colors } from "../../../../colors";
 import { ProjectCard } from "../../../../components";
 const UpcomingProject = () => {
+  const data = [
+    {
+      src: imageWater,
+      heading: "Hyper Drive Metaverse",
+      paragraph:
+        "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Odio imperdiet nibh at et neque.",
+      progress: null,
+      targetAmount: "20,000",
+      targetRaised: "0.00",
+    },
+    {
+      src: imagePaint,
+      heading: "Hyper Drive Metaverse",
+      paragraph:
+        "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Odio imperdiet nibh at et neque.",
+      progress: null,
+      targetAmount: "20,000",
+      targetRaised: "0.00",
+    },
+    {
+      src: imageColors,
+      heading: "Hyper Drive Metaverse",
+      paragraph:
+        "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Odio imperdiet nibh at et neque.",
+      progress: null,
+      targetAmount: "20,000",
+      targetRaised: "0.00",
+    },
+    {
+      src: imageSolid,
+      heading: "Hyper Drive Metaverse",
+      paragraph:
+        "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Odio imperdiet nibh at et neque.",
+      progress: null,
+      targetAmount: "20,000",
+      targetRaised: "0.00",
+    },
+    {
+      src: imageGalaxy,
+      heading: "Hyper Drive Metaverse",
+      paragraph:
+        "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Odio imperdiet nibh at et neque.",
+      progress: null,
+      targetAmount: "20,000",
+      targetRaised: "0.00",
+    },
+  ];
   return (
     <Container>
       <Headingwrap>
@@ -12,18 +66,24 @@ const UpcomingProject = () => {
         <h4>Upcoming Projects</h4>
       </Headingwrap>
       <ProjectWraps>
-        {[...Array(5)].map((item) => (
-          <ProjectCard
-            src={imageColors}
-            heading={"Hyper Drive Metaverse"}
-            paragraph={
-              "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Odio imperdiet nibh at et neque."
-            }
-            progress={37}
-            targetAmount={"20,000"}
-            targetRaised={"7,400"}
-          />
-        ))}
+        {data.map(
+          ({
+            src,
+            heading,
+            paragraph,
+            progress,
+            targetAmount,
+            targetRaised,
+          }) => (
+            <ProjectCard
+              src={src}
+              heading={heading}
+              paragraph={paragraph}
+              targetAmount={targetAmount}
+              targetRaised={targetRaised}
+            />
+          )
+        )}
       </ProjectWraps>
     </Container>
   );
@@ -42,11 +102,11 @@ const Container = styled.section`
   gap: 2rem;
   &:before {
     content: "";
-    width: 90%;
+    width: 100%;
     height: 100vh;
     top: -4%;
     z-index: -1;
-    left: 5%;
+    left: 0%;
     position: absolute;
     background-image: url(${swirl});
   }
