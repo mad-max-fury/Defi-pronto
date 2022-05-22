@@ -14,7 +14,7 @@ export const FooterWrapper = styled.div`
   justify-content: space-between;
   align-items: end;
   width: calc(100% - 0px);
-  padding: 70px 0;
+  padding: 50px 0;
   margin: 0 auto;
   background-color: ${colors.primary };
   color: ${colors.white};
@@ -45,7 +45,7 @@ export const IntroContainer = styled.div`
   align-items: start;
 
   @media (max-width: 550px){
-    padding: 50px 20px;
+    padding: 0px 20px;
   }
 
   @media (min: 551px) and (max-width: 899px){
@@ -54,21 +54,17 @@ export const IntroContainer = styled.div`
 `;
 
 export const FooterLogoLink = styled(Link)`
-color: ${colors.white};
-display: flex;
-align-items: center;
-text-decoration: none;
-padding: 40px 20px 11px 20px;
-color: #A4A4A4;
-width: max-content;
-cursor: pointer;
-transition: all 0.3s ease-in-out;
-font-family: "DM Sans", sans-serif;
-
-&:hover {
-  color: ${colors.white};
+  padding: 40px 20px 5px 0px;
+  color: #A4A4A4;
+  width: max-content;
+  cursor: pointer;
   transition: all 0.3s ease-in-out;
-}
+  font-family: "DM Sans", sans-serif;
+
+  &:hover {
+    color: ${colors.white};
+    transition: all 0.3s ease-in-out;
+  }
 
 `;
 
@@ -165,7 +161,7 @@ export const MenuHeader = styled.p`
 
 export const FooterCreditCont = styled.div`
   display: flex;
-  padding: 40px 0px 60px;
+  padding: 20px 0px 60px;
   justify-content: space-between;
   color: ${colors.grey_text};
   font-family: 'DM Sans';
@@ -174,7 +170,7 @@ export const FooterCreditCont = styled.div`
     flex-direction: column;
     // flex-wrap: wrap;  
     justify-content: flex-start;
-    padding: 0px 20px 60px;
+    padding: 0px 20px 40px;
     
   }
 
