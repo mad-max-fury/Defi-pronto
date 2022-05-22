@@ -56,8 +56,10 @@ export const TextUp = styled.div`
   gap: 2rem;
   h1 {
     width: 90%;
+    font-size: 4.2rem;
+
     & > span {
-      font-size: 3.9rem;
+      font-size: 4.9rem;
       font-weight: 400;
       font-family: Monument Extended, sans-serif;
       color: ${colors.secondary};
