@@ -57,6 +57,7 @@ export const Item = styled.div`
       margin-top: 1rem;
       position: absolute;
       left: 80%;
+      top: 6%;
     }
     &:last-child {
       &::before {
@@ -77,4 +78,6 @@ export const SpanNum = styled.span`
   justify-content: center;
 `;
 export const ItemHeading = styled.h6``;
-export const ItemParagraph = styled.p``;
+export const ItemParagraph = styled.p`
+  text-align: center;
+`;

@@ -73,7 +73,7 @@ export const BtnWrap = styled.div`
   width: fit-content !important;
   display: flex;
   align-self: start;
-  gap: 1rem;
+  gap: 2rem;
   & > button {
     margin: 0;
   }
@@ -82,16 +82,15 @@ export const FooterSocial = styled.div`
   display: flex;
   width: fit-content;
   align-items: center;
-  padding: 0.5rem 0;
-  gap: 1rem;
+  justify-content: center;
+  gap: 1.5rem;
 `;
 export const FooterLink = styled(Link)`
   color: ${colors.white};
   display: flex;
   justify-content: center;
-  align-items: center;
+  align-self: center;
   text-decoration: none;
-  padding: 0 0 11px 0;
   cursor: pointer;
   transition: all 0.3s ease-in-out;
   font-family: "DM Sans", sans-serif;

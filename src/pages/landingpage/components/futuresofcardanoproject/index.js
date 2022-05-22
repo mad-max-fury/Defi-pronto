@@ -1,6 +1,6 @@
 import React from "react";
 import styled from "styled-components";
-import { star, topology } from "../../../../assets";
+import { people, rocket, speaker, star, topology } from "../../../../assets";
 import { colors } from "../../../../colors";
 import {
   IntroWrap,
@@ -9,6 +9,29 @@ import {
 } from "../../../../components";
 import { HowItWorks } from "../howitworks";
 const FutureOfCardanoIntroSection = () => {
+  const data = [
+    {
+      src: star,
+      headingtext: "Vetted Projects",
+      paragraph: "Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
+    },
+    {
+      src: people,
+      headingtext: "Community",
+      paragraph: "Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
+    },
+    {
+      src: rocket,
+      headingtext: "Launch Pad",
+      paragraph: "Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
+    },
+    {
+      src: speaker,
+      headingtext: "Marketing",
+      paragraph: "Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
+    },
+  ];
+
   return (
     <SecContainer>
       <span>
@@ -21,13 +44,11 @@ const FutureOfCardanoIntroSection = () => {
             desc="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Odio imperdiet nibh at et neque. Sed adipiscing risus aenean neque imperdiet amet fermentum."
           />
           <span>
-            {[...Array(4)].map((item) => (
+            {data.map(({ src, headingtext, paragraph }) => (
               <MiniFutureCard
-                src={star}
-                headingtext={"Vetted Projects"}
-                paragraph={
-                  "Lorem ipsum dolor sit amet, consectetur adipiscing elit."
-                }
+                src={src}
+                headingtext={headingtext}
+                paragraph={paragraph}
               />
             ))}
           </span>
