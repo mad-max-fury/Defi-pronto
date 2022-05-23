@@ -37,8 +37,7 @@ export const BgWrap = styled.div`
   top: 0;
   left: 5%;
   right: 0;
-  width: 50%;
-  border: 1px solid red;
+  width: 45%;
   height: 70%;
   z-index: -1;
   & > img {
@@ -50,7 +49,7 @@ export const BgWrap = styled.div`
 
 export const HeroInner = styled.div`
   font-family: "DM Sans", sans-serif;
-  width: 60%;
+  width: 55%;
   margin-left: 9px;
   height: fit-content;
   margin-top: 30px;
