@@ -52,6 +52,9 @@ export const Head = styled.div`
 export const Heading = styled.h4`
   text-align: start;
   font-weight: 600;
+  font-size: 25px;
+  width: 70%;
+  line-height: 30px;
 `;
 export const Paragraph = styled.p`
   text-align: start;
