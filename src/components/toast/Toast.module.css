@@ -1,39 +1,33 @@
 .toast {
     position: fixed;
-    top: 5rem;
-    left: 50%;
-    transform: translateX(-50%);
-    z-index: 999;
-    width: 450px;
-    border-radius: .8rem;
-    height: 100px;
-    box-shadow: 0 0 10px rgba(0, 0, 0, .2);
-    display: flex;
-    justify-content:space-between;
-    align-items: center;
-    font-size: 1.6rem;
-    font-style: italic;
-    transition: all .5s;
-    /* margin: 0 auto; */
-    padding: 0 20px;
-   background-color: rgba(36, 27, 35, 1);
-    animation: showToast 1s ease-in;
-    border:1px solid red;
+        top: 6rem;
+        right: 0%;
+        transform: translateX(-30%);
+        z-index: 999;
+        width: 450px;
+        border-radius: .8rem;
+        height: 80px;
+        box-shadow: 0 0 10px rgba(0, 0, 0, .2);
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        font-size: 1.6rem;
+        font-style: italic;
+        transition: all .5s;
+        /* margin: 0 auto; */
+        padding: 0 20px;
+        background-color: rgba(36, 27, 35, 1);
+        animation: showToast .5s ease-in;
 }
 
 @keyframes showToast {
-    0% {
-        transform: translateY(-100rem) translateX(-50%);
+    from {
+        transform: translateX(100%);
     }
 
-    50% {
-        transform: translateY(2rem) translateX(-50%);
-        
-    }
+    to {
 
-    100% {
-
-        transform: translateY(0) translateX(-50%);
+        transform:  translateX(-30%);
 
     }
 }

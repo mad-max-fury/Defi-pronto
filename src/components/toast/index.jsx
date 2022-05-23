@@ -7,13 +7,13 @@ const Toast = ({success, info, danger, message, connected, icon}) => {
     const [showToast, setShowToast] = useState(true)
     let stroke, toastType;
 
-    useEffect(() => {
-        if(!danger) {
-            setTimeout(() => {
-                setShowToast(false);
-            }, 3000)
-        }
-    }, [])
+    // useEffect(() => {
+    //     if(!danger) {
+    //         setTimeout(() => {
+    //             setShowToast(false);
+    //         }, 3000)
+    //     }
+    // }, [])
 
     const handleCtaClick = () => {
         setShowToast(false);
