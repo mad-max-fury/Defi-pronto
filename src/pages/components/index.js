@@ -1,3 +1,4 @@
+import { icons } from "react-icons";
 import { BrowserRouter as Router } from "react-router-dom";
 import { imageColors, imageGalaxy, imageWater, star } from "../../assets";
 import {
@@ -12,6 +13,13 @@ import {
   Allocation,
   SuccessCard
 } from "../../components";
+
+import { 
+  RiRocketLine, 
+
+} from 'react-icons/ri'
+
+
 import { HowItWorks, OurSupporter } from "../landingpage/components";
 
 function Components() {
@@ -73,7 +81,7 @@ function Components() {
       <IntroWrap title={"The Future of Cardano Projects"} desc={"Lorem ipsum dolor sit amet, consectetur adipiscing elit. Odio imperdiet nibh at et neque. Sed adipiscing risus aenean neque imperdiet amet fermentum."} /> 
       <Tokenomics token={"Token Name"} pronto={"Defipronto"} marketcap={"Market Cap"} figure1={"$1,000,000"} initial={"Initial Supply"} figure2={"400,000"} current={"Current Total Supply"} figure3={"200,000"} burned={"Defipronto Burned"} figure4={"30,000"} circulation={"Defipronto in Circulation"} figure5={"100,000"} />
       <Allocation />
-      <SuccessCard />
+      <SuccessCard title={"Project Endorsement"} icon={<RiRocketLine size={"42px"}/>} caption={"Lorem ipsum dolor sit amet, consectetur adipiscing elit. Odio imperdiet nibh at et neque."  } />
     </div>
   );
 }

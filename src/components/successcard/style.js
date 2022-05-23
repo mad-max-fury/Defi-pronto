@@ -1,14 +1,14 @@
 import styled from "styled-components";
 import { colors } from "../../colors";
 
-export const SectionWrap = styled.section`
-  width: 100%;
-  max-width: 26.75rem;
-  display: flex;
-  flex-direction: column;
-  gap: 1.5rem;
-  text-align: start;
-`;
+// export const SectionWrap = styled.section`
+//   width: 100%;
+//   max-width: 26.75rem;
+//   display: flex;
+//   flex-direction: column;
+//   gap: 1.5rem;
+//   text-align: start;
+// `;
 
 export const TheCard = styled.div`
     display: flex;
@@ -20,10 +20,11 @@ export const TheCard = styled.div`
     border: 1px solid red;
     border-radius: 10px;
     background-color: ${colors.primary};
+    transition: all 0.5s ease-out;
 
     &:hover{
         background-color: ${colors.secondary};
-        transition: all 0.5s ease-in;
+        transition: all 0.4s ease-in;
     }
 `;
 
@@ -37,6 +38,23 @@ export const IconContainer = styled.div`
     width: 80px;
     text-align: center;
     /* margin: 0 auto; */
+`;
+
+export const SuccessTitle =  styled.h4`
+    text-align: center;
+    padding-top: 32px;
+    font-family: 'Monument Extended', DM Sans;
+    /* line-height: 50.48px; */
+`;
+
+
+export const SuccessCaption =  styled.span`
+    font-size: 12px;
+    text-align: center;
+    line-height: 19.42px;
+    padding: 8px 12px 0 12px;
+    color: ${colors.light_grey};
+    font-family: 'DM Sans';
 `;
 
 

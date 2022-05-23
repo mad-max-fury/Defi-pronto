@@ -33,6 +33,7 @@ import {
   FooterCreditCont,
   FooterCredit,
   FooterSocial,
+  FooterSocialLink,
   
 } from "./style";
 
@@ -120,18 +121,18 @@ const Footer = () => {
                 
                 <FooterSocial>
 
-                    <FooterLink to="/">
-                        <ImTelegram size="30px" color= "#E74141"/>
-                    </FooterLink>
+                    <FooterSocialLink to="/">
+                        <ImTelegram size="30px" />
+                    </FooterSocialLink>
 
-                    <FooterLink to="/">
-                        <RiDiscordLine size="30px" color= "#E74141"/>
+                    <FooterSocialLink to="/">
+                        <RiDiscordLine size="30px"/>
                         
-                    </FooterLink>
+                    </FooterSocialLink>
 
-                    <FooterLink to="/">
-                        <ImTwitter size="30px" color= "#E74141"/>
-                    </FooterLink>
+                    <FooterSocialLink to="/">
+                        <ImTwitter size="30px"/>
+                    </FooterSocialLink>
 
                 </FooterSocial>
             </FooterCreditCont>

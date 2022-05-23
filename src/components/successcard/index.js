@@ -3,7 +3,8 @@ import {
     SectionWrap,
     TheCard,
     IconContainer,
-
+    SuccessTitle,
+    SuccessCaption,
  } from './style'
 
 import { 
@@ -11,16 +12,17 @@ import {
 
 } from 'react-icons/ri'
 
-const SuccessCard = () => {
+const SuccessCard = ({bgColor, title, caption, icon}) => {
   return (
-    <SectionWrap>
-        <TheCard>
+    
+        <TheCard >
             <IconContainer>
-                <RiRocketLine size={"42px"}/>
+                {icon}
             </IconContainer>
+            <SuccessTitle>{title}</SuccessTitle>
+            <SuccessCaption>{caption}</SuccessCaption>
             
         </TheCard>
-    </SectionWrap>
   )
 }
 
