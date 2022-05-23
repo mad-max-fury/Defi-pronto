@@ -20,7 +20,6 @@ const Navbar = ({ connectWalletModal, setConnectWalletModal }) => {
 
   const scrollWithOffset = (el, offset) => {
     const elementPosition = el.offsetTop - offset;
-    alert(elementPosition);
     window.scroll({
       top: elementPosition,
       left: 0,
