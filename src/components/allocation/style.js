@@ -1,13 +1,29 @@
 import styled from "styled-components";
+
+import {defiPronto } from "../../assets";
 import { colors } from "../../colors";
 
 export const Container = styled.div`
   width: 100%;
-  padding: 0.5rem calc((100vw - 1300px) / 2);
+  /* padding: 0.5rem calc((100vw - 1300px) / 2); */
+  padding-top: 15rem;
   margin: 0 auto;
   display: flex;
   flex-direction: column;
   justify-content: center;
+  position: relative;
+  &:before {
+    content: "";
+    width: 100%;
+    height: 10rem;
+    top: 0%;
+    left: 0;
+    position: absolute;
+    background-image: url(${defiPronto});
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center;
+  }
 
   &>aside{
 
