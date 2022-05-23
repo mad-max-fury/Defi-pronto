@@ -88,7 +88,7 @@ const SecContainer = styled.section`
     display: flex;
     flex-direction: column;
     gap: 7rem;
-    padding-bottom: 10rem;
+    padding-bottom: 5rem;
     & > div.divider {
       height: 1.1px;
       width: 40%;
@@ -128,9 +128,7 @@ const Intro = styled.div`
   gap: 2rem;
 
   & > aside {
-    border: 1px solid red;
     & > h2 {
-      border: 1px solid red;
       font-size: 42px;
       font-weight: 500;
       line-height: 52px;
