@@ -200,5 +200,20 @@ export const FooterSocial = styled.div`
   }
 `;
 
+export const FooterSocialLink = styled(Link)`
+  color: ${colors.secondary};
+  display: flex;
+  align-items: center;
+  text-decoration: none;
+  padding: 0 0 11px 0;
+  width: max-content;
+  cursor: pointer;
+  transition: all 0.3s ease-in-out;
+
+  &:hover {
+    color: ${colors.light_grey};
+    transition: all 0.3s ease-in-out;
+  }
+`;
 
 
