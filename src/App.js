@@ -4,12 +4,19 @@ import { Toast } from "./components";
 import { WalletConnectModal } from "./container";
 
 function App() {
-  const [showModal, setShowModal] = useState(true);
-  const [isWalletOpen, setIsWalletOpen] = useState(true);
+  const [showModal, setShowModal] = useState(false);
+  const [isWalletOpen, setIsWalletOpen] = useState(false);
+  const [showToast, setShowToast] = useState(false);
 
   return (
     <div className="App">
-      <Toast success={true} message="Stake Successful" icon />
+      <Toast
+        success={false}
+        showToast={showToast}
+        setShowToast={setShowToast}
+        message="Stake Successful"
+        icon
+      />
       <WalletConnectModal isOpen={isWalletOpen} setIsOpen={setIsWalletOpen} />
       <AppRouter
         showModal={showModal}

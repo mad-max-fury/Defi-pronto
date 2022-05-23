@@ -3,8 +3,8 @@ import { checkbox, infoIcon, loginIcon, logoutIcon } from '../../assets';
 
 import classes from './Toast.module.css';
 
-const Toast = ({success, info, danger, message, connected, icon}) => {
-    const [showToast, setShowToast] = useState(true)
+const Toast = ({success, info, danger, message, connected, icon, showToast, setShowToast}) => {
+ 
     let stroke, toastType;
 
     // useEffect(() => {

@@ -4,6 +4,7 @@ import { etherni, nami, typhoon } from "../../assets";
 import { colors } from "../../colors";
 const WalletConnectModal = ({ isOpen, setIsOpen }) => {
   const modalRef = useRef(null);
+  let stroke;
 
   const handleClose = (e) => {
     if (modalRef.current.contains(e.target)) {
@@ -11,10 +12,34 @@ const WalletConnectModal = ({ isOpen, setIsOpen }) => {
     }
     setIsOpen(false);
   };
+  const handleCtaClick = () => {
+    setIsOpen(!isOpen);
+  };
+  const cta = (
+    <svg
+      width="30"
+      height="30"
+      viewBox="0 0 20 20"
+      fill="none"
+      xmlns="http://www.w3.org/2000/svg"
+    >
+      <path
+        d="M5 5L15 15M5 15L15 5L5 15Z"
+        stroke={(stroke = "#fff")}
+        strokeWidth="2"
+        strokeLinecap="round"
+        strokeLinejoin="round"
+      />
+    </svg>
+  );
 
   return (
     <WalletContainer onClick={handleClose} isOpen={isOpen}>
       <WalletConnectWrap isOpen={isOpen} ref={modalRef}>
+        <div onClick={handleCtaClick} className="cta">
+          {" "}
+          {cta}{" "}
+        </div>
         <Text>
           <h4>Connect Wallet</h4>
           <div>
@@ -85,6 +110,23 @@ const WalletConnectWrap = styled.div`
   top: ${(props) => (props.isOpen ? "50%" : "-100%")};
   transform: ${(props) =>
     props.isOpen ? "translate(-50%, -50%)" : "translate(-50%, -100%)"};
+  & > div.cta {
+    position: absolute;
+    right: 5%;
+    top: 2%;
+    height: 50px;
+    width: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: all 0.3s ease-in-out;
+    &:hover {
+      border-radius: 50%;
+      cursor: pointer;
+      transition: all 0.3s ease-in-out;
+      background-color: ${colors.secondary};
+    }
+  }
 `;
 
 const Text = styled.div`
