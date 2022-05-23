@@ -38,6 +38,7 @@ const LaunchBannerHeading = styled.h2`
   max-width: 50.875rem;
   text-align: center;
   font-weight: 500;
+  font-size: 3rem;
 `;
 const LaunchBannerContainer = styled.div`
   background-image: url(${defiProntoWhite});
