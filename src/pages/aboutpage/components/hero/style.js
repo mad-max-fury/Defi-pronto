@@ -9,22 +9,13 @@ export const HeroSectionWrap = styled.section`
   padding: 0.5rem calc((100vw - 1300px) / 2);
   position: relative;
   max-height: 62rem;
-  & > .image-wrap {
-    position: absolute;
-    top: -100px;
-    left: 0;
-    right: 0;
-    width: 100%;
-    max-width: 1550px;
-    margin: 0 auto;
-    height: calc(100vh + 100px);
-    z-index: -1;
-    /* background-image: url(${heroSectionBg}); */
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position: bottom;
-    max-height: 62rem;
+  
+
+  @media screen and (max-width: 450px) {
+    flex-direction: column;
+    padding: 10px;
   }
+
   @media screen and (max-width: 900px) {
     width: 100%;
     padding-left: 2rem;
@@ -84,6 +75,10 @@ export const TextUp = styled.div`
   p {
     width: 68%;
     line-height: 1.8;
+  }
+
+  @media screen and (max-width: 450px) {
+    
   }
 `;
 export const BtnWrap = styled.div`

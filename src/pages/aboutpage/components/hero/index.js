@@ -31,7 +31,7 @@ const HeroSection = () => {
         </TextUp>
         <BtnWrap>
           <Button text={"Buy DFP"} Icon={RiMoneyDollarCircleLine} size={20} reverse />
-          <Button text={"White Paper"} Icon={RiFileList2Line} reverse />
+          <Button text={"White Paper"} Icon={RiFileList2Line} size={20} reverse />
           
         </BtnWrap>
       </HeroInner>
