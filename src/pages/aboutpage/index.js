@@ -15,10 +15,10 @@ const AboutPage = () => {
   return (
     <Container>
         <HeroSection/>
-        <Tokenomics />
+        <Tokenomics token={"Token Name"} pronto={"Defipronto"} marketcap={"Market Cap"} figure1={"$1,000,000"} initial={"Initial Supply"} figure2={"400,000"} current={"Current Total Supply"} figure3={"200,000"} burned={"Defipronto Burned"} figure4={"30,000"} circulation={"Defipronto in Circulation"} figure5={"100,000"} />
         
         <Allocation/>
-        
+
         <AccordionContainer>
             <Divider/>
             <Accordion heading={"Governance"} />

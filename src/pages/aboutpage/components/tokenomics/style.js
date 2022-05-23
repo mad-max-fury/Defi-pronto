@@ -37,12 +37,12 @@ export const TokenomicsBox = styled.div`
 export const TokenBoxTitle = styled.h6`
     font-size: 12px;
     font-weight: 400;
-    font-family: Monument Extended, DM Sans;
+    font-family: Orbitron, DM Sans;
     color: ${colors.secondary};
 
 `;
 
 export const TokenBoxDetail = styled.h3`
-    font-family: Monument Extended, DM Sans;
+    font-family: Orbitron, DM Sans;
     
 `;
