@@ -128,9 +128,7 @@ const Intro = styled.div`
   gap: 2rem;
 
   & > aside {
-    border: 1px solid red;
     & > h2{
-      border: 1px solid red;
       font-size: 42px;
       font-weight: 500;
       line-height: 52px;
