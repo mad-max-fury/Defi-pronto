@@ -45,14 +45,16 @@ export const BottomCol = styled.div`
 export const Head = styled.div`
   display: flex;
   flex-direction: column;
-  gap: 1rem;
+  gap: 0.5rem;
 `;
 
-export const Heading = styled.h5`
+export const Heading = styled.h4`
   text-align: start;
+  font-weight: 600;
 `;
 export const Paragraph = styled.p`
   text-align: start;
+  line-height: 1.5;
 `;
 
 export const ProgressBar = styled.div`
@@ -73,6 +75,7 @@ export const TextRow = styled.div`
   display: flex;
   flex-direction: row;
   justify-content: space-between;
+  padding-bottom: 0.5rem;
 `;
 export const InnerTextCol = styled.div`
   display: flex;
@@ -97,6 +100,7 @@ export const FooterSocial = styled.div`
   width: 100%;
   align-items: center;
   padding: 0.5rem 0;
+  padding-top: 1rem;
   border-top: 2px solid rgba(82, 82, 82, 1);
   gap: 1rem;
 `;

@@ -23,7 +23,6 @@ const Wrapper = styled.div`
 `;
 const Heading = styled.h2`
   text-align: start;
-  font-family: "DM Sans";
 `;
 const Paragraph = styled.p`
   text-align: start;

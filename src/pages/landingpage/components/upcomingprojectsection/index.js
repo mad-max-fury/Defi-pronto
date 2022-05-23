@@ -114,10 +114,13 @@ const Headingwrap = styled.div`
     background-color: ${colors.secondary};
   }
   span.circle {
-    height: 20px;
-    width: 20px;
+    height: 10px;
+    width: 10px;
     background-color: ${colors.secondary};
     border-radius: 50%;
+  }
+  & > h4 {
+    font-weight: 600;
   }
 `;
 const ProjectWraps = styled.div`

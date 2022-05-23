@@ -6,7 +6,7 @@ export const HeroSectionWrap = styled.section`
   height: calc(100vh);
   display: flex;
   justify-content: space-between;
-  padding: 0.5rem calc((100vw - 1200px) / 2);
+  padding: 0.5rem calc((100vw - 1300px) / 2);
   position: relative;
   max-height: 62rem;
   & > .image-wrap {
@@ -67,7 +67,7 @@ export const TextUp = styled.div`
     }
   }
   p {
-    width: 80%;
+    width: 68%;
     line-height: 1.8;
   }
 `;
