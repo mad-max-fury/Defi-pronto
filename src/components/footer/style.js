@@ -114,7 +114,7 @@ export const FooterLink = styled(Link)`
   width: max-content;
   cursor: pointer;
   transition: all 0.3s ease-in-out;
-  font-family: "DM Sans", sans-serif;
+  font-family: "DM Sans", sans-serif !important;
 
   &:hover {
     color: ${colors.secondary};
@@ -123,6 +123,10 @@ export const FooterLink = styled(Link)`
   &.active {
     color: ${colors.secondary};
     transition: all 0.3s ease-in-out;
+  }
+
+  &:span{
+    font-family: "DM Sans", sans-serif !important;
   }
 `;
 
@@ -153,8 +157,8 @@ export const FooterMenu = styled.div`
 export const MenuHeader = styled.p`
   padding-bottom: 1rem;
   font-size: 1rem;
-  font-weight: 400;
-  font-family: 'Monument Extended' montserrat;
+  font-weight: 500;
+  font-family: 'Orbitron', montserrat;
   color: ${colors.white};
   width: max-content;
 `;
