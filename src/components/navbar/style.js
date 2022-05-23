@@ -2,6 +2,7 @@ import styled from "styled-components";
 import { NavLink as Link } from "react-router-dom";
 import { FaBars } from "react-icons/fa";
 import { colors } from "../../colors";
+// import { Link as HashLink } from "react-scroll";
 import { HashLink } from "react-router-hash-link";
 
 export const Nav = styled.nav`

@@ -33,12 +33,12 @@ const FutureOfCardanoIntroSection = () => {
   ];
 
   return (
-    <SecContainer>
+    <SecContainer id="features">
       <span>
         <LoadMoreBtn>Load More</LoadMoreBtn>
       </span>
       <div>
-        <Intro id="features">
+        <Intro>
           <SectionIntroCards
             title={"The Future of Cardano Projects"}
             desc="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Odio imperdiet nibh at et neque. Sed adipiscing risus aenean neque imperdiet amet fermentum."
@@ -53,7 +53,7 @@ const FutureOfCardanoIntroSection = () => {
             ))}
           </span>
         </Intro>
-        <div className="divider"></div>
+        <div className="divider" id={"how-it-work"}></div>
         <Intro>
           <HowItWorks />
         </Intro>

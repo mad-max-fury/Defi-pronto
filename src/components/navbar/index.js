@@ -19,22 +19,13 @@ const Navbar = ({ connectWalletModal, setConnectWalletModal }) => {
   });
 
   const scrollWithOffset = (el, offset) => {
-    const elementPos = el.offsetTop + offset + 200;
-
+    const elementPosition = el.offsetTop - offset;
     window.scroll({
-      top: elementPos,
+      top: elementPosition,
       left: 0,
       behavior: "smooth",
     });
   };
-
-  // useEffect(() => {
-  //   first;
-
-  //   return () => {
-  //     second;
-  //   };
-  // }, []);
 
   return (
     <>
@@ -57,21 +48,20 @@ const Navbar = ({ connectWalletModal, setConnectWalletModal }) => {
           </NavLink>
           <NavHashLink
             to="/#features"
-            // scroll={(el) => scrollWithOffset(el, 900)}
             activeStyle
+            scroll={(el) => scrollWithOffset(el, -90)}
           >
             <span>Features</span>
           </NavHashLink>
           <NavHashLink
-            to="/#how-it-works"
-            // scroll={(el) => scrollWithOffset(el, 120)}
+            to="/#how-it-work"
             activeStyle
+            scroll={(el) => scrollWithOffset(el, -2850)}
           >
             <span>How it works</span>
           </NavHashLink>
           <NavLink
             to="#"
-            activeStyle
             onClick={(e) => {
               e.preventDefault();
               setWarning(true);
@@ -82,7 +72,6 @@ const Navbar = ({ connectWalletModal, setConnectWalletModal }) => {
           </NavLink>
           <NavLink
             to="#"
-            activeStyle
             onClick={(e) => {
               e.preventDefault();
 
@@ -95,7 +84,6 @@ const Navbar = ({ connectWalletModal, setConnectWalletModal }) => {
           <NavBtnLink
             id="connect-wallet"
             to="#"
-            activeStyle
             onClick={(e) => {
               setConnectWalletModal(!connectWalletModal);
             }}
