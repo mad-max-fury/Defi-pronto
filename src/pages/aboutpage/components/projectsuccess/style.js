@@ -35,23 +35,53 @@ export const TextContainer = styled.div`
     /* max-width: 400px; */
     width: 35%;
     gap: 2rem;
+
+    @media screen and (max-width: 450px) {
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+        border: 1px solid red;
+        
+    }
 `;
 
 export const SuccessBox = styled.div`
     display: flex;
     justify-content: space-between;
     flex-direction: row;
-    
     width: 58%;
     /* border: 1px solid red; */
+
+    @media screen and (max-width: 450px) {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        margin: 0 auto;
+        padding-top: 45px;
+        gap: 1.5rem;
+        /* width: 90%;
+        font-size: 25px;
+        margin: 0 auto; */
+    }
 `;
 
 export const SuccessTitle = styled.h3`
     width: 80%;
     font-size: 40px;
+
+    @media screen and (max-width: 450px) {
+        width: 90%;
+        font-size: 25px;
+        margin: 0 auto;
+    }
 `;
 
 export const SuccessText = styled.p`
     width: 90%;
     line-height: 1.8rem;
+
+    @media screen and (max-width: 450px) {
+        font-size: 12.8px;
+        line-height: 21px;
+    }
 `;

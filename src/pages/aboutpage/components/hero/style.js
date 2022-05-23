@@ -13,10 +13,12 @@ export const HeroSectionWrap = styled.section`
 
   @media screen and (max-width: 450px) {
     flex-direction: column;
-    padding: 10px;
+    padding-top: 0px;
+    padding-left: 0rem;
+    width: 90%;
   }
 
-  @media screen and (max-width: 900px) {
+  @media (min-width: 451px;) and (max-width: 900px) {
     width: 100%;
     padding-left: 2rem;
     height: calc(100vh - 100px);
@@ -47,13 +49,22 @@ export const HeroInner = styled.div`
   display: flex;
   flex-direction: column;
   gap: 2rem;
-  @media screen and (max-width: 900px) {
+
+  @media (max-width: 450px) {
+    width: 80%;
+    margin-left: 0;
+    padding-left: 0rem;
+    margin-top: 0;
+    border: 1px solid red;
+  }
+
+  @media (min-width: 451px;) and (max-width: 900px) {
     width: 80%;
     padding-left: 2rem;
   }
-  @media screen and (max-width: 600px) {
+  /* @media screen and (max-width: 600px) {
     width: 100%;
-  }
+  } */
 `;
 
 export const TextUp = styled.div`
@@ -78,7 +89,23 @@ export const TextUp = styled.div`
   }
 
   @media screen and (max-width: 450px) {
-    
+    h1 {
+    width: 90%;
+    font-size: 31.3px;
+    font-family: Orbitron, sans-serif;
+
+    & > span {
+      font-size: 1.8rem;
+      font-weight: 400;
+      font-family: Orbitron, sans-serif;
+      color: ${colors.secondary};
+    }
+  }
+  p {
+    width: 90%;
+    font-size: 12.8px;
+    line-height: 21px;
+  }
   }
 `;
 export const BtnWrap = styled.div`
