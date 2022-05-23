@@ -17,10 +17,17 @@ export const GlobalStyles = createGlobalStyle`
     }
     body{
         background-color: ${colors.primary};
-          /* background-image: linear-gradient(#241b23, #362831); */
-   
     }
-    
+     &::-webkit-scrollbar {
+        background-color: #333;
+        
+    }  
+    &::-webkit-scrollbar-thumb {
+        background-color: ${colors.secondary};
+        border-radius: 15px;
+        box-shadow:  0 15px 6px ${colors.primary};
+        cursor: pointer;
+    }
     h1, h2, h3, h4, h5, h6 {
 
     }

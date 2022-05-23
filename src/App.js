@@ -10,13 +10,13 @@ function App() {
 
   return (
     <div className="App">
-      <Toast
+      {/* <Toast
         success={false}
         showToast={showToast}
         setShowToast={setShowToast}
         message="Stake Successful"
         icon
-      />
+      /> */}
       <WalletConnectModal isOpen={isWalletOpen} setIsOpen={setIsWalletOpen} />
       <AppRouter
         showModal={showModal}
