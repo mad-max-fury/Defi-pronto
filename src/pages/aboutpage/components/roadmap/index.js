@@ -68,16 +68,19 @@ const RoadMapContainer = styled.section`
   align-items: center;
   width: 90%;
   position: relative;
-  padding: 8rem calc((100vw - 1300px) / 2);
+  padding: 1rem calc((100vw - 1300px) / 2);
   height: fit-content;
   position: relative;
-  margin-top: 8rem;
+  margin-top: 4rem;
   & > div {
     position: absolute;
     height: calc(100% + 100px);
     width: 100%;
     top: 0;
     background: url(${looperGroup});
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
     z-index: -1;
   }
 `;
