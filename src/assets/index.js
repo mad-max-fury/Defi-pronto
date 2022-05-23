@@ -33,7 +33,10 @@ import topology from "./Topology-2.svg";
 import heroSection2 from "./heroSection2.svg";
 import looperGroup from "./looper-group.svg";
 import HeroPageBg from "./Hero page.png";
-// import defiBgTest from "./defiBgTest.svg";
+import logoutIcon from "./logoutboxline.png";
+import checkbox from "./checkbox-circle-line.png";
+import infoIcon from "./error-warning-line.png";
+import loginIcon from "./Group.png";
 import bg1 from "./BG1.png";
 
 export {
@@ -41,6 +44,10 @@ export {
   a02,
   a03,
   a04,
+  loginIcon,
+  infoIcon,
+  logoutIcon,
+  checkbox,
   allocationChart,
   heroSection2,
   bg1,

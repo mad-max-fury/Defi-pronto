@@ -3,7 +3,7 @@
     top: 5rem;
     left: 50%;
     transform: translateX(-50%);
-    z-index: 5;
+    z-index: 999;
     width: 508px;
     border-radius: .8rem;
     height: 100px;
@@ -62,7 +62,10 @@
 .toast__emoji {
     margin-right: 1rem;
 }
-
+.toast__emoji img{
+    width: 2rem;
+    height: 2rem;
+}
 .hide__toast {
     transform: translateY(-100rem);
 }

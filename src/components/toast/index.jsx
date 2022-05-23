@@ -1,20 +1,21 @@
 import React, { useEffect, useState } from 'react'
+import { checkbox, infoIcon, loginIcon, logoutIcon } from '../../assets';
 
 import classes from './Toast.module.css';
 
-const Toast = ({success, info, danger, message, emoji}) => {
+const Toast = ({success, info, danger, message, connected}) => {
     const [showToast, setShowToast] = useState(true)
     let stroke, toastType;
-    // if(success) {
-    //     stroke = "#10B981";
-    //     toastType = 'toast__success';
-    // } else if(info) {
-    //     stroke = "#3B82F6";
-    //     toastType = 'toast__info';
-    // } else if(danger) {
-    //     stroke = "#EF4444";
-    //     toastType = 'toast__danger';
-    // }
+    if(success) {
+        stroke = "#10B981";
+        toastType = 'toast__success';
+    } else if(info) {
+        stroke = "#3B82F6";
+        toastType = 'toast__info';
+    } else if(danger) {
+        stroke = "#EF4444";
+        toastType = 'toast__danger';
+    }
 
     // useEffect(() => {
     //     if(!danger) {
@@ -34,7 +35,7 @@ const Toast = ({success, info, danger, message, emoji}) => {
 
   return (
     <div className={`${classes.toast} ${classes[toastType]} ${showToast ? '' : classes.hide__toast}`}>
-        <div className={classes.toast__emoji}><span >{emoji}</span></div>
+        <div className={classes.toast__emoji}><span ><img src={success ? checkbox : info ? infoIcon : connected ? loginIcon : logoutIcon}/></span></div>
         <div className={classes.toast__message}>  {message}</div>
         <div onClick={handleCtaClick} className={classes.toast_action}> {cta} </div>
     </div>
