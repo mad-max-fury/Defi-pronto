@@ -3,7 +3,7 @@ import { heroSection2, heroSectionBg } from "../../../../assets";
 import { colors } from "../../../../colors";
 import { Link } from "react-router-dom";
 export const HeroSectionWrap = styled.section`
-  height: calc(100vh);
+  height: calc(100vh - 100px);
   display: flex;
   justify-content: space-between;
   padding: 0.5rem calc((100vw - 1300px) / 2);
@@ -38,7 +38,7 @@ export const BgWrap = styled.div`
   left: 5%;
   right: 0;
   width: 45%;
-  height: 70%;
+  height: 90%;
   z-index: -1;
   & > img {
     width: 100%;

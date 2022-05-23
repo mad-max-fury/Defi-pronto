@@ -3,6 +3,7 @@ import styled from 'styled-components'
 
 import { 
     HeroSection,
+    ProjectSuccess,
     Tokenomics, 
 
 } from './components'
@@ -15,6 +16,7 @@ const AboutPage = () => {
   return (
     <Container>
         <HeroSection/>
+        <ProjectSuccess/>
         <Tokenomics token={"Token Name"} pronto={"Defipronto"} marketcap={"Market Cap"} figure1={"$1,000,000"} initial={"Initial Supply"} figure2={"400,000"} current={"Current Total Supply"} figure3={"200,000"} burned={"Defipronto Burned"} figure4={"30,000"} circulation={"Defipronto in Circulation"} figure5={"100,000"} />
         
         <Allocation/>
@@ -34,7 +36,9 @@ const AboutPage = () => {
 
 export {AboutPage}
 
-const Container = styled.main``;
+const Container = styled.main`
+    padding-top: 50px;
+`;
 const Ceneter = styled.div`
   width: 100%;
   /* background-color: #000; */

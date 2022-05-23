@@ -17,9 +17,9 @@ export const TheCard = styled.div`
     align-items: center;
     height: 426px;
     width: 233px;
-    border: 1px solid red;
+    /* border: 1px solid red; */
     border-radius: 10px;
-    background-color: ${colors.primary};
+    background-color: #2F282E;
     transition: all 0.5s ease-out;
 
     &:hover{
@@ -43,7 +43,8 @@ export const IconContainer = styled.div`
 export const SuccessTitle =  styled.h4`
     text-align: center;
     padding-top: 32px;
-    font-family: 'Monument Extended', DM Sans;
+    font-family: 'Orbitron', DM Sans;
+    font-size: 25px;
     /* line-height: 50.48px; */
 `;
 
