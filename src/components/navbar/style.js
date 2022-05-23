@@ -2,6 +2,7 @@ import styled from "styled-components";
 import { NavLink as Link } from "react-router-dom";
 import { FaBars } from "react-icons/fa";
 import { colors } from "../../colors";
+import { HashLink } from "react-router-hash-link";
 
 export const Nav = styled.nav`
   height: 100px;
@@ -19,6 +20,25 @@ export const Nav = styled.nav`
     scrolled ? "0px 2px 4px rgba(0, 0, 0, 0.25)" : "none"};
 `;
 export const NavLink = styled(Link)`
+  color: ${colors.white};
+  display: flex;
+  align-items: center;
+  text-decoration: none;
+  padding: 0 1rem;
+  cursor: pointer;
+  transition: all 0.3s ease-in-out;
+  font-family: "DM Sans", sans-serif;
+
+  &:hover {
+    color: ${colors.secondary};
+    transition: all 0.3s ease-in-out;
+  }
+  &.active {
+    color: ${colors.secondary};
+    transition: all 0.3s ease-in-out;
+  }
+`;
+export const NavHashLink = styled(HashLink)`
   color: ${colors.white};
   display: flex;
   align-items: center;
