@@ -6,7 +6,7 @@ function App() {
   const [showModal, setShowModal] = useState(true);
   return (
     <div className="App">
-      <Toast success={true} message="Stake Successful" />
+      <Toast success={true} message="Stake Successful" icon />
       <AppRouter showModal={showModal} SetShowModal={setShowModal} />
     </div>
   );

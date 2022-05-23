@@ -4,7 +4,7 @@
     left: 50%;
     transform: translateX(-50%);
     z-index: 999;
-    width: 508px;
+    width: 450px;
     border-radius: .8rem;
     height: 100px;
     box-shadow: 0 0 10px rgba(0, 0, 0, .2);
