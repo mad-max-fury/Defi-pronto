@@ -55,6 +55,7 @@ const OurSupportWrap = styled.section`
 `;
 const Heading = styled.h3`
   margin: 0 auto;
+  font-weight: 600;
   span {
     font-size: inherit;
     font-weight: inherit;

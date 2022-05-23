@@ -12,8 +12,8 @@ const IntroWrap = ({ title, desc }) => {
 export { IntroWrap };
 
 const Wrapper = styled.div`
-  max-width: 614px;
-  width: 100%;
+  max-width: 600px;
+  width: 90%;
   display: flex;
   flex-direction: column;
   align-items: center;

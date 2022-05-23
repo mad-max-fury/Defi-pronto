@@ -10,6 +10,7 @@ export const HowItWorksWraps = styled.section`
 `;
 export const Heading = styled.h3`
   margin: 0 auto;
+  font-weight: 500;
 `;
 
 export const ItemsRow = styled.div`
@@ -77,7 +78,9 @@ export const SpanNum = styled.span`
   align-items: center;
   justify-content: center;
 `;
-export const ItemHeading = styled.h6``;
+export const ItemHeading = styled.h6`
+  font-weight: 500;
+`;
 export const ItemParagraph = styled.p`
   text-align: center;
 `;

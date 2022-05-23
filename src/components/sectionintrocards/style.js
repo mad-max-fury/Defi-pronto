@@ -12,6 +12,7 @@ export const SectionWrap = styled.aside`
 `;
 export const SecHeading = styled.h2`
   text-align: center;
+  font-weight: 500;
 `;
 export const SecParagraph = styled.p`
   text-align: center;

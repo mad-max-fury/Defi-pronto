@@ -9,6 +9,7 @@ export const Container = styled.div`
   transition: all 0.3s ease-in-out;
   display: flex;
   flex-direction: column;
+  margin: 0 auto;
   &:hover {
     transition: all 0.3s ease-in-out;
     cursor: pointer;
