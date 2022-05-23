@@ -42,6 +42,13 @@
 
 .toast__message {
     flex: 1;
+    display: flex;
+}
+.toast__message h6{
+    font-family: "DM Sans";
+    font-weight: bold;
+    margin: 0 auto;
+    font-style: normal;
 }
 
 .toast__success {
