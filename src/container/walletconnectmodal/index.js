@@ -1,5 +1,6 @@
 import React from "react";
 import styled from "styled-components";
+import { etherni, nami, typhoon } from "../../assets";
 import { colors } from "../../colors";
 const WalletConnectModal = () => {
   return (
@@ -13,7 +14,27 @@ const WalletConnectModal = () => {
           </p>
         </div>
       </Text>
-      <Connectorswrap></Connectorswrap>
+      <Connectorswrap>
+        <Connector>
+          <img src={nami} />
+          <h6>Nami Wallet</h6>
+          <input type="checkbox" />
+        </Connector>
+      </Connectorswrap>
+      <Connectorswrap>
+        <Connector>
+          <img src={etherni} />
+          <h6>Eternl Wallet</h6>
+          <input type="checkbox" />
+        </Connector>
+      </Connectorswrap>
+      <Connectorswrap>
+        <Connector>
+          <img src={typhoon} />
+          <h6>Typhoon Wallet</h6>
+          <input type="checkbox" />
+        </Connector>
+      </Connectorswrap>
     </WalletConnectWrap>
   );
 };
@@ -83,6 +104,37 @@ const Text = styled.div`
 
 const Connectorswrap = styled.div`
   height: 70%;
-  border: 1px solid red;
   width: 100%;
+`;
+
+const Connector = styled.div`
+  width: 100%;
+  height: 100px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 2rem;
+  background-color: rgba(47, 40, 46, 1);
+  border-radius: 10px;
+  & > img {
+    width: 70px;
+    height: 70px;
+    object-fit: contain;
+  }
+  & > h6 {
+    font-family: DM Sans;
+    font-size: 20px;
+    font-weight: 400;
+    color: ${colors.white};
+  }
+  & > input {
+    width: 15px;
+    height: 15px;
+    margin-right: 1rem;
+    &:checked {
+      background-color: ${colors.secondary} !important;
+      color: ${colors.secondary} !important;
+    }
+  }
 `;
