@@ -7,14 +7,15 @@ import {
   TextUp,
   FooterSocial,
   FooterLink,
+  BgWrap,
 } from "./style";
 import { ImTelegram, ImTwitter } from "react-icons/im";
 import { RiDiscordFill } from "react-icons/ri";
+import { HeroPageBg, bg1 } from "../../../../assets";
 
 const HeroSection = () => {
   return (
     <HeroSectionWrap>
-      <div className="image-wrap"></div>
       <HeroInner>
         <TextUp>
           <h1>
@@ -45,6 +46,9 @@ const HeroSection = () => {
           </FooterSocial>
         </BtnWrap>
       </HeroInner>
+      <BgWrap>
+        <img src={bg1} />
+      </BgWrap>
     </HeroSectionWrap>
   );
 };

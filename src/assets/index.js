@@ -32,6 +32,9 @@ import swirl from "./swirl-1.svg";
 import topology from "./Topology-2.svg";
 import heroSection2 from "./heroSection2.svg";
 import looperGroup from "./looper-group.svg";
+import HeroPageBg from "./Hero page.png";
+// import defiBgTest from "./defiBgTest.svg";
+import bg1 from "./BG1.png";
 
 export {
   a01,
@@ -40,7 +43,10 @@ export {
   a04,
   allocationChart,
   heroSection2,
+  bg1,
   looperGroup,
+  HeroPageBg,
+  // defiBgTest,
   // the above four are the icons labeled 1 through to four
   aboutLooper,
   // about screen hero section bg
