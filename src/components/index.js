@@ -9,5 +9,6 @@ export * from "./launchbanner";
 export * from "./accordion";
 export * from "./projectcard";
 export * from "./tokenomics";
-export * from "./allocation"
-export * from "./successcard"
+export * from "./allocation";
+export * from "./successcard";
+export * from "./toast";

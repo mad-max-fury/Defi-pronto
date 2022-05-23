@@ -3,17 +3,14 @@ import { colors } from "./colors";
 
 export const GlobalStyles = createGlobalStyle`
 @import url('https://fonts.googleapis.com/css2?family=DM+Sans:ital,wght@0,400;0,500;0,700;1,400;1,500;1,700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Orbitron:wght@400;500;600;700;800;900&display=swap');
 
-    @font-face {
-      font-family: Monument Extended;
-      src: url('./fonts/MonumentExtended-Regular.otf');
-    } 
 
     * {
         margin: 0;
         font-size: 16px;
         box-sizing: border-box;
-        font-family: 'Monument Extended', DM Sans;
+        font-family: 'Orbitron', DM Sans;
         scroll-behavior: smooth;
         
 
@@ -35,8 +32,8 @@ export const GlobalStyles = createGlobalStyle`
     h1 {
     font-size: 3.9rem;
         color: ${colors.white};
-        font-weight: 400;
-        font-family: Monument Extended, sans-serif;
+        font-weight: 600;
+        font-family: Orbitron, sans-serif;
         @media screen and (max-width: 600px) {
           font-size: 1.6rem;
         }
@@ -46,7 +43,7 @@ export const GlobalStyles = createGlobalStyle`
         font-size: 3.9rem;
         color: ${colors.white};
         font-weight: 400;
-        font-family: Monument Extended, sans-serif;
+        font-family: Orbitron, sans-serif;
         @media screen and (max-width: 600px) {
           font-size: 1.6rem;
         }
@@ -56,7 +53,7 @@ export const GlobalStyles = createGlobalStyle`
         font-size: 2.44125rem;
         color: ${colors.white};
         font-weight: 400;
-        font-family: Monument Extended, sans-serif;
+        font-family: Orbitron, sans-serif;
         @media screen and (max-width: 600px) {
           font-size: 1.6rem;
         }
@@ -67,7 +64,7 @@ export const GlobalStyles = createGlobalStyle`
         font-size: 1.95rem;
         color: ${colors.white};
         font-weight: 400;
-        font-family: Monument Extended, sans-serif;
+        font-family: Orbitron, sans-serif;
         @media screen and (max-width: 600px) {
           font-size: 1.6rem;
         }
@@ -78,7 +75,7 @@ export const GlobalStyles = createGlobalStyle`
         font-style: normal;
         color: ${colors.white};
         font-weight: 400;
-        font-family: Monument Extended, sans-serif;
+        font-family: Orbitron, sans-serif;
         @media screen and (max-width: 600px) {
           font-size: 1.6rem;
         }
@@ -87,7 +84,7 @@ export const GlobalStyles = createGlobalStyle`
     h6 {
         font-size: 1.25rem;
         font-weight: 400;
-        font-family: Monument Extended, sans-serif;
+        font-family: Orbitron, sans-serif;
         color: ${colors.white};
 
     }
@@ -97,7 +94,7 @@ export const GlobalStyles = createGlobalStyle`
         font-weight: 400;
         font-family: DM Sans, sans-serif;
         color: ${colors.grey_text};
-        line-height: 1 * 1.618;
+        line-height: 2;
     }
 
 `;

@@ -37,7 +37,7 @@ export const HeroInner = styled.div`
   width: 60%;
   margin-left: 9px;
   height: fit-content;
-  margin-top: 60px;
+  margin-top: 30px;
   display: flex;
   flex-direction: column;
   gap: 2rem;
@@ -56,24 +56,26 @@ export const TextUp = styled.div`
   gap: 2rem;
   h1 {
     width: 90%;
-    font-size: 4.2rem;
+    font-size: 3.8rem;
+    font-family: Orbitron, sans-serif;
 
     & > span {
-      font-size: 4.9rem;
+      font-size: 3.8rem;
       font-weight: 400;
-      font-family: Monument Extended, sans-serif;
+      font-family: Orbitron, sans-serif;
       color: ${colors.secondary};
     }
   }
   p {
-    width: 80%;
+    width: 68%;
+    line-height: 1.8;
   }
 `;
 export const BtnWrap = styled.div`
   width: fit-content !important;
   display: flex;
   align-self: start;
-  gap: 1rem;
+  gap: 2rem;
   & > button {
     margin: 0;
   }
@@ -82,16 +84,15 @@ export const FooterSocial = styled.div`
   display: flex;
   width: fit-content;
   align-items: center;
-  padding: 0.5rem 0;
-  gap: 1rem;
+  justify-content: center;
+  gap: 1.5rem;
 `;
 export const FooterLink = styled(Link)`
   color: ${colors.white};
   display: flex;
   justify-content: center;
-  align-items: center;
+  align-self: center;
   text-decoration: none;
-  padding: 0 0 11px 0;
   cursor: pointer;
   transition: all 0.3s ease-in-out;
   font-family: "DM Sans", sans-serif;
