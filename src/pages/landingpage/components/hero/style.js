@@ -6,7 +6,7 @@ export const HeroSectionWrap = styled.section`
   height: calc(100vh);
   display: flex;
   justify-content: space-between;
-  padding: 0.5rem calc((100vw - 1300px) / 2);
+  padding: 0.5rem calc((100vw - 1200px) / 2);
   position: relative;
   max-height: 62rem;
   & > .image-wrap {
@@ -37,7 +37,7 @@ export const HeroInner = styled.div`
   width: 60%;
   margin-left: 9px;
   height: fit-content;
-  margin-top: 60px;
+  margin-top: 30px;
   display: flex;
   flex-direction: column;
   gap: 2rem;
@@ -56,17 +56,19 @@ export const TextUp = styled.div`
   gap: 2rem;
   h1 {
     width: 90%;
-    font-size: 4.2rem;
+    font-size: 3.8rem;
+    font-family: Orbitron, sans-serif;
 
     & > span {
-      font-size: 4.9rem;
+      font-size: 3.8rem;
       font-weight: 400;
-      font-family: Monument Extended, sans-serif;
+      font-family: Orbitron, sans-serif;
       color: ${colors.secondary};
     }
   }
   p {
     width: 80%;
+    line-height: 1.8;
   }
 `;
 export const BtnWrap = styled.div`

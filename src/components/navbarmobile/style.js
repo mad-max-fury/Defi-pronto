@@ -9,7 +9,7 @@ export const NavBarMobileContainer = styled.div`
   left: 0;
   width: 100%;
   height: 70%;
-  font-family: "DM Sans", sans-serif;
+  font-family: orbitron, sans-serif;
 
   background-color: ${colors.primary};
   display: grid;
