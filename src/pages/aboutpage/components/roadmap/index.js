@@ -22,7 +22,7 @@ const RoadMap = () => {
         <div>
           <div>
             <MiniCardWrap>
-              <ItemHeading>Q1 - Launch Platform</ItemHeading>
+              <ItemHeading>Q2 - Launch Token</ItemHeading>
               <ItemParagraph>
                 Lorem ipsum dolor sit amet, consectetur adipiscing elit. Odio
                 imperdiet nibh at et neque.
@@ -33,7 +33,7 @@ const RoadMap = () => {
         <div>
           <div>
             <MiniCardWrap>
-              <ItemHeading>Q1 - Launch Platform</ItemHeading>
+              <ItemHeading>Q3 - Staking Begins</ItemHeading>
               <ItemParagraph>
                 Lorem ipsum dolor sit amet, consectetur adipiscing elit. Odio
                 imperdiet nibh at et neque.
@@ -44,7 +44,7 @@ const RoadMap = () => {
         <div>
           <div>
             <MiniCardWrap>
-              <ItemHeading>Q1 - Launch Platform</ItemHeading>
+              <ItemHeading>Q4 - Onboard Projects</ItemHeading>
               <ItemParagraph>
                 Lorem ipsum dolor sit amet, consectetur adipiscing elit. Odio
                 imperdiet nibh at et neque.
@@ -126,8 +126,14 @@ const MapContainer = styled.section`
         border-top: unset;
         display: flex;
         & > div {
-          right: 7%;
+          right: 9%;
           left: unset;
+          & > h6 {
+            text-align: end !important;
+          }
+          & > p {
+            text-align: end !important;
+          }
         }
       }
     }
@@ -145,7 +151,7 @@ const MiniCardWrap = styled.div`
   margin-top: 1.5rem;
   position: absolute;
   top: -25%;
-  left: 7%;
+  left: 9%;
   /* padding: 0 1.5rem; */
 `;
 
