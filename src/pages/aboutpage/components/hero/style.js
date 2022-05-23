@@ -19,7 +19,7 @@ export const HeroSectionWrap = styled.section`
     margin: 0 auto;
     height: calc(100vh + 100px);
     z-index: -1;
-    background-image: url(${heroSectionBg});
+    /* background-image: url(${heroSectionBg}); */
     background-repeat: no-repeat;
     background-size: cover;
     background-position: bottom;
@@ -32,9 +32,24 @@ export const HeroSectionWrap = styled.section`
   }
 `;
 
+export const BgWrap = styled.div`
+  /* position: absolute; */
+  top: 0;
+  left: 5%;
+  right: 0;
+  width: 45%;
+  height: 70%;
+  z-index: -1;
+  & > img {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+  }
+`;
+
 export const HeroInner = styled.div`
   font-family: "DM Sans", sans-serif;
-  width: 60%;
+  width: 55%;
   margin-left: 9px;
   height: fit-content;
   margin-top: 30px;
