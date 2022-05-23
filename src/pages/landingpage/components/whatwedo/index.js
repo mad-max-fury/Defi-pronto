@@ -50,6 +50,15 @@ const InnerWrap = styled.div`
   width: 100%;
   display: flex;
   justify-content: space-between !important;
+
+  & > div{
+    & > h2{
+      font-size: 42px;
+      font-weight: 500;
+      line-height: 52px;
+    }
+  }
+
   & > div {
     & > img {
       width: 100%;

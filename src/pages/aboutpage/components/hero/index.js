@@ -10,9 +10,9 @@ import {
   FooterLink,
 } from "./style";
 
-import { aboutLooper, bg1, swirl, topology, whitePaper } from "../../../../assets"
-import { ImTelegram, ImTwitter } from "react-icons/im";
-import { RiMoneyDollarCircleLine } from "react-icons/ri";
+import { aboutLooper } from "../../../../assets"
+// import { IoNewspaperOutline } from "react-icons/io";
+import { RiMoneyDollarCircleLine, RiFileList2Line } from "react-icons/ri";
 
 const HeroSection = () => {
   return (
@@ -30,8 +30,8 @@ const HeroSection = () => {
             </p>
         </TextUp>
         <BtnWrap>
-          <Button text={"Buy DFP"} Icon={RiMoneyDollarCircleLine} reverse />
-          <Button text={"White Paper"} image={whitePaper} reverse />
+          <Button text={"Buy DFP"} Icon={RiMoneyDollarCircleLine} size={20} reverse />
+          <Button text={"White Paper"} Icon={RiFileList2Line} reverse />
           
         </BtnWrap>
       </HeroInner>

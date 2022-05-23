@@ -41,7 +41,7 @@ export const FooterWrapper = styled.div`
 export const IntroContainer = styled.div`
   display: flex;
   flex-direction: column;
-  justify-content: flex-start;
+  justify-content: flex-end;
   align-items: start;
 
   @media (max-width: 550px){
@@ -193,6 +193,7 @@ export const FooterSocial = styled.div`
   justify-content: space-between;
   max-width: 10%;
   width: 100%;
+  margin-right: 100px;
 
   @media (max-width: 550px){
     padding-top: 40px;

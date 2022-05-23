@@ -1,5 +1,6 @@
 import styled from "styled-components";
 import {
+  backG,
   bg1,
   defiBgTest,
   heroSection2,
@@ -8,31 +9,31 @@ import {
 import { colors } from "../../../../colors";
 import { Link } from "react-router-dom";
 export const HeroSectionWrap = styled.section`
-  height: calc(100vh - 100px);
+  height: calc(100vh );
   display: flex;
   justify-content: space-between;
   padding: 0.5rem calc((100vw - 1300px) / 2);
   position: relative;
   max-height: 62rem;
   display: flex;
-  background-color: ${colors.primary};
-  mix-blend-mode: lighten;
+  /* background-color: ${colors.primary}; */
+  /* mix-blend-mode: lighten; */
   & > .image-wrap {
     position: absolute;
-    /* top: -100px; */
+    top: -100px;
     left: 0;
     right: 0;
     width: 100%;
     max-width: 1550px;
     margin: 0 auto;
-    height: calc(100%);
+    height: calc(100% + 100px);
     z-index: -1;
-    background-image: url(${bg1});
+    background-image: url(${heroSectionBg});
     /* border: 2px solid red; */
     background-repeat: no-repeat;
     background-size: cover;
-    /* background-position: bottom; */
-    max-height: 62rem;
+    background-position: bottom;
+    max-height: 69rem;
   }
   @media screen and (max-width: 900px) {
     width: 100%;
@@ -42,17 +43,17 @@ export const HeroSectionWrap = styled.section`
 `;
 export const BgWrap = styled.div`
   position: absolute;
-  top: 0;
-  left: 5%;
+  top: -100px;
+  left: 0%;
   right: 0;
-  width: 90%;
-  /* border: 1px solid red; */
+  width: 100%;
+  border: 1px solid red;
   height: 100%;
   z-index: -1;
   & > img {
     width: 100%;
     height: 100%;
-    object-fit: cover;
+    object-fit: contain;
   }
 `;
 

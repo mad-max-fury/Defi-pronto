@@ -38,6 +38,7 @@ import checkbox from "./checkbox-circle-line.png";
 import infoIcon from "./error-warning-line.png";
 import loginIcon from "./Group.png";
 import bg1 from "./BG1.png";
+import backG from "./BG1.svg"
 import typhoon from "./typhoon.svg";
 import whitePaper from "./white-paper.svg";
 
@@ -46,6 +47,7 @@ export {
   a02,
   a03,
   a04,
+  backG,
   loginIcon,
   typhoon,
   infoIcon,
