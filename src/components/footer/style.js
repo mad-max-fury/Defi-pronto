@@ -209,7 +209,7 @@ export const FooterSocialLink = styled(Link)`
   display: flex;
   align-items: center;
   text-decoration: none;
-  padding: 0 0 11px 0;
+  padding: 0 0px 11px 0;
   width: max-content;
   cursor: pointer;
   transition: all 0.3s ease-in-out;

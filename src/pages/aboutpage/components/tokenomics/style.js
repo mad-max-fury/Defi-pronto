@@ -1,11 +1,18 @@
 import styled from "styled-components";
-import { colors } from "../../colors";
+import { colors } from "../../../../colors";
 
 export const Container = styled.div`
   width: 100%;
   padding: 0.5rem calc((100vw - 1300px) / 2);
   margin: 0 auto;
-  border: 2px solid red;
+
+  &>div{
+      
+    &>h2{
+      font-size: 45px;
+      font-weight: 500;
+    }
+  }
 `;
 
 export const TokenomicsContainer = styled.div`
@@ -37,12 +44,12 @@ export const TokenomicsBox = styled.div`
 export const TokenBoxTitle = styled.h6`
     font-size: 12px;
     font-weight: 400;
-    font-family: Monument Extended, DM Sans;
+    font-family: Orbitron, DM Sans;
     color: ${colors.secondary};
 
 `;
 
 export const TokenBoxDetail = styled.h3`
-    font-family: Monument Extended, DM Sans;
+    font-family: Orbitron, DM Sans;
     
 `;

@@ -1,4 +1,4 @@
-import { Components, LandingPage } from "../../pages";
+import { AboutPage, Components, LandingPage } from "../../pages";
 import { RequireAuth } from "./RequireAuth";
 
 const authRoutes = [
@@ -11,7 +11,7 @@ const authRoutes = [
     element: <div>how it works</div>,
   },
   { name: "features", path: "/features", element: <div>features</div> },
-  { name: "About", path: "/about", element: <div>About</div> },
+  { name: "About", path: "/about", element: <AboutPage /> },
   { name: "components", path: "/components", element: <Components /> },
   { name: "home", path: "/", element: <LandingPage /> },
 ];
