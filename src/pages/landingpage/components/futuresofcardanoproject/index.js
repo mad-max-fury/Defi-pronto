@@ -126,6 +126,18 @@ const Intro = styled.div`
   flex-direction: column;
   width: 100%;
   gap: 2rem;
+
+  & > aside {
+    border: 1px solid red;
+    & > h2{
+      border: 1px solid red;
+      font-size: 42px;
+      font-weight: 500;
+      line-height: 52px;
+
+    }
+  }
+
   & > span {
     width: 90%;
     display: flex;
