@@ -193,6 +193,7 @@ export const FooterSocial = styled.div`
   justify-content: space-between;
   max-width: 10%;
   width: 100%;
+  margin-right: 100px;
 
   @media (max-width: 550px){
     padding-top: 40px;
