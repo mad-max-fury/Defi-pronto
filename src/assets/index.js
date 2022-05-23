@@ -35,6 +35,7 @@ import looperGroup from "./looper-group.svg";
 import HeroPageBg from "./Hero page.png";
 // import defiBgTest from "./defiBgTest.svg";
 import bg1 from "./BG1.png";
+import whitePaper from "./white-paper.svg"
 
 export {
   a01,
@@ -93,4 +94,5 @@ export {
   swirl,
   // landing page swirl background
   topology,
+  whitePaper
 };

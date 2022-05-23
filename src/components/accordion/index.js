@@ -38,7 +38,7 @@ const AccordionWrapper = styled.div`
   background: ${colors.general_bg};
   max-width: 41.81rem;
   margin: 0 auto;
-  border-top: 1px solid ${colors.grey_text};
+  border-bottom: 1px solid ${colors.grey_text};
 `;
 const AccordionHeader = styled.div`
   display: flex;
