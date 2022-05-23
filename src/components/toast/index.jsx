@@ -3,17 +3,17 @@ import { checkbox, infoIcon, loginIcon, logoutIcon } from '../../assets';
 
 import classes from './Toast.module.css';
 
-const Toast = ({success, info, danger, message, connected}) => {
-    const [showToast, setShowToast] = useState(true)
+const Toast = ({success, info, danger, message, connected, icon, showToast, setShowToast}) => {
+ 
     let stroke, toastType;
 
-    useEffect(() => {
-        if(!danger) {
-            setTimeout(() => {
-                setShowToast(false);
-            }, 3000)
-        }
-    }, [])
+    // useEffect(() => {
+    //     if(!danger) {
+    //         setTimeout(() => {
+    //             setShowToast(false);
+    //         }, 3000)
+    //     }
+    // }, [])
 
     const handleCtaClick = () => {
         setShowToast(false);
@@ -25,7 +25,7 @@ const Toast = ({success, info, danger, message, connected}) => {
 
   return (
     <div className={`${classes.toast} ${classes[toastType]} ${showToast ? '' : classes.hide__toast}`}>
-        <div className={classes.toast__emoji}><span ><img src={success ? checkbox : info ? infoIcon : connected ? loginIcon : logoutIcon}/></span></div>
+        {icon &&   <div className={classes.toast__emoji}><span ><img src={success ? checkbox : info ? infoIcon : connected ? loginIcon : logoutIcon}/></span></div>}
         <div className={classes.toast__message}>  <h6>{message}</h6></div>
         <div onClick={handleCtaClick} className={classes.toast_action}> {cta} </div>
     </div>

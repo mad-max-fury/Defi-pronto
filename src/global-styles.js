@@ -17,6 +17,8 @@ export const GlobalStyles = createGlobalStyle`
     }
     body{
         background-color: ${colors.primary};
+          /* background-image: linear-gradient(#241b23, #362831); */
+   
     }
     
     h1, h2, h3, h4, h5, h6 {

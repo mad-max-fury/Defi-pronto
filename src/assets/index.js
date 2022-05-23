@@ -38,7 +38,8 @@ import checkbox from "./checkbox-circle-line.png";
 import infoIcon from "./error-warning-line.png";
 import loginIcon from "./Group.png";
 import bg1 from "./BG1.png";
-import whitePaper from "./white-paper.svg"
+import typhoon from "./typhoon.svg";
+import whitePaper from "./white-paper.svg";
 
 export {
   a01,
@@ -46,6 +47,7 @@ export {
   a03,
   a04,
   loginIcon,
+  typhoon,
   infoIcon,
   logoutIcon,
   checkbox,
@@ -101,5 +103,5 @@ export {
   swirl,
   // landing page swirl background
   topology,
-  whitePaper
+  whitePaper,
 };
