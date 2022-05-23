@@ -174,6 +174,8 @@ const Connector = styled.div`
   padding: 0 2rem;
   background-color: rgba(47, 40, 46, 1);
   border-radius: 10px;
+  transition: all 0.3 ease-in-out;
+  transform: scale(1);
   & > img {
     width: 70px;
     height: 70px;
@@ -193,5 +195,15 @@ const Connector = styled.div`
       background-color: ${colors.secondary} !important;
       color: ${colors.secondary} !important;
     }
+  }
+  &:hover {
+    transition: all 0.3s ease-in-out;
+    transform: scale(0.95);
+    cursor: pointer;
+  }
+  &:active {
+    transition: all 0.3s ease-in-out;
+    transform: scale(0.95);
+    cursor: pointer;
   }
 `;

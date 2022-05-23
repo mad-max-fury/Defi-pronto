@@ -14,7 +14,6 @@ const LandingPage = () => {
       <Whatwedo />
       <UpcomingProject />
       <FutureOfCardanoIntroSection />
-      <Ceneter></Ceneter>
       <OurSupporter />
     </Container>
   );
@@ -23,7 +22,3 @@ const LandingPage = () => {
 export { LandingPage };
 //
 const Container = styled.main``;
-const Ceneter = styled.div`
-  width: 100%;
-  /* background-color: #000; */
-`;
