@@ -55,7 +55,8 @@ const OurSupportWrap = styled.section`
 `;
 const Heading = styled.h3`
   margin: 0 auto;
-  font-weight: 600;
+  font-size: 42px;
+  font-weight: 500;
   span {
     font-size: inherit;
     font-weight: inherit;
@@ -67,6 +68,7 @@ const InnerImageWrap = styled.div`
   width: 85%;
   display: flex;
   margin: 0 auto;
+  padding-top: 25px;
   height: fit-content;
   flex-wrap: wrap;
   align-items: center;

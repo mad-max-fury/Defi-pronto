@@ -88,7 +88,7 @@ const SecContainer = styled.section`
     display: flex;
     flex-direction: column;
     gap: 7rem;
-    padding-bottom: 10rem;
+    padding-bottom: 5rem;
     & > div.divider {
       height: 1.1px;
       width: 40%;
