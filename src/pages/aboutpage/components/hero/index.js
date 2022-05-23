@@ -3,13 +3,14 @@ import { Button } from "../../../../components";
 import {
   HeroSectionWrap,
   HeroInner,
+  BgWrap,
   BtnWrap,
   TextUp,
   FooterSocial,
   FooterLink,
 } from "./style";
 
-import { whitePaper } from "../../../../assets"
+import { aboutLooper, bg1, swirl, topology, whitePaper } from "../../../../assets"
 import { ImTelegram, ImTwitter } from "react-icons/im";
 import { RiMoneyDollarCircleLine } from "react-icons/ri";
 
@@ -34,6 +35,10 @@ const HeroSection = () => {
           
         </BtnWrap>
       </HeroInner>
+
+      <BgWrap>
+        <img src={aboutLooper} />
+      </BgWrap>
     </HeroSectionWrap>
   );
 };

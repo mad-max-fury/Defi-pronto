@@ -19,7 +19,7 @@ export const HeroSectionWrap = styled.section`
     margin: 0 auto;
     height: calc(100vh + 100px);
     z-index: -1;
-    background-image: url(${heroSectionBg});
+    /* background-image: url(${heroSectionBg}); */
     background-repeat: no-repeat;
     background-size: cover;
     background-position: bottom;
@@ -29,6 +29,22 @@ export const HeroSectionWrap = styled.section`
     width: 100%;
     padding-left: 2rem;
     height: calc(100vh - 100px);
+  }
+`;
+
+export const BgWrap = styled.div`
+  /* position: absolute; */
+  top: 0;
+  left: 5%;
+  right: 0;
+  width: 50%;
+  border: 1px solid red;
+  height: 70%;
+  z-index: -1;
+  & > img {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
   }
 `;
 
