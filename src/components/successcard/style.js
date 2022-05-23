@@ -19,7 +19,7 @@ export const TheCard = styled.div`
     width: 233px;
     /* border: 1px solid red; */
     border-radius: 10px;
-    background-color: #2F282E;
+    background-color: ${({bgColor}) => bgColor ? bgColor : "#2F282E" };
     transition: all 0.5s ease-out;
 
     &:hover{

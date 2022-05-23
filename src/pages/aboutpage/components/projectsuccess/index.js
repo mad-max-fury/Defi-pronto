@@ -23,6 +23,7 @@ import{
 import{
     RiBitCoinLine,
 } from "react-icons/ri"
+import { colors } from '../../../../colors'
 
 
 const ProjectSuccess = () => {
@@ -39,7 +40,7 @@ const ProjectSuccess = () => {
         </TextContainer>
 
         <SuccessBox>
-            <SuccessCard title={"Cardano IDO Launchpad"} icon={ <RiRocketLine size={'40px'}/> } caption={"Lorem ipsum dolor sit amet, consectetur adipiscing elit. Odio imperdiet nibh at et neque."} />
+            <SuccessCard title={"Cardano IDO Launchpad"} bgColor={colors.secondary} icon={ <RiRocketLine size={'40px'}/> } caption={"Lorem ipsum dolor sit amet, consectetur adipiscing elit. Odio imperdiet nibh at et neque."} />
             <SuccessCard title={"Project Endorsement"} icon={ <AiOutlineHeart size={'40px'}/> } caption={"Lorem ipsum dolor sit amet, consectetur adipiscing elit. Odio imperdiet nibh at et neque."} />
             <SuccessCard title={"Private/Public Sale Options"} icon={ <RiBitCoinLine size={'40px'}/> } caption={"Lorem ipsum dolor sit amet, consectetur adipiscing elit. Odio imperdiet nibh at et neque."} />
         </SuccessBox>

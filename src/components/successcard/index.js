@@ -15,12 +15,12 @@ import {
 const SuccessCard = ({bgColor, title, caption, icon}) => {
   return (
     
-        <TheCard >
+        <TheCard bgColor={bgColor} >
             <IconContainer>
                 {icon}
             </IconContainer>
             <SuccessTitle>{title}</SuccessTitle>
-            <SuccessCaption>{caption}</SuccessCaption>
+            <SuccessCaption bgColor={bgColor} >{caption}</SuccessCaption>
             
         </TheCard>
   )

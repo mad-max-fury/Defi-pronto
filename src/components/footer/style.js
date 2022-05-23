@@ -41,7 +41,7 @@ export const FooterWrapper = styled.div`
 export const IntroContainer = styled.div`
   display: flex;
   flex-direction: column;
-  justify-content: flex-start;
+  justify-content: flex-end;
   align-items: start;
 
   @media (max-width: 550px){
