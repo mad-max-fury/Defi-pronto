@@ -10,7 +10,7 @@ import {
 } from "./style";
 const HowItWorks = () => {
   return (
-    <HowItWorksWraps>
+    <HowItWorksWraps id={"how-it-works"}>
       <Heading>How It Works</Heading>
       <ItemsRow>
         <Item>

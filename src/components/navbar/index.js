@@ -1,12 +1,15 @@
 import React, { useState } from "react";
 import { NavBarMobile } from "../navbarmobile";
 import { defiProntoLogo } from "../../assets";
-import { Nav, NavLink, Bars, NavMenu, NavBtnLink } from "./style";
+import { Nav, NavLink, Bars, NavMenu, NavBtnLink, NavHashLink } from "./style";
 import { Button } from "../button";
+import { Toast } from "../toast";
 const Navbar = ({ connectWalletModal, setConnectWalletModal }) => {
   const [isOpen, setIsOpen] = useState(false);
   const toggle = () => setIsOpen(!isOpen);
   const [scrolled, setScrolled] = useState(false);
+  const [Warning, setWarning] = useState(false);
+  const [showToast, setShowToast] = useState(false);
   window.addEventListener("scroll", () => {
     if (window.scrollY > 1) {
       setScrolled(true);
@@ -14,9 +17,36 @@ const Navbar = ({ connectWalletModal, setConnectWalletModal }) => {
       setScrolled(false);
     }
   });
+
+  const scrollWithOffset = (el, offset) => {
+    const elementPos = el.offsetTop + offset + 200;
+
+    window.scroll({
+      top: elementPos,
+      left: 0,
+      behavior: "smooth",
+    });
+  };
+
+  // useEffect(() => {
+  //   first;
+
+  //   return () => {
+  //     second;
+  //   };
+  // }, []);
+
   return (
     <>
       <Nav scrolled={scrolled}>
+        <Toast
+          icon
+          info
+          showToast={showToast}
+          setShowToast={setShowToast}
+          message="Page  is  Coming  soon"
+        />
+
         <NavLink to="/">
           <img src={defiProntoLogo} alt="logo" />
         </NavLink>
@@ -25,16 +55,41 @@ const Navbar = ({ connectWalletModal, setConnectWalletModal }) => {
           <NavLink to="/about" activeStyle>
             <span>About</span>
           </NavLink>
-          <NavLink to="/features" activeStyle>
+          <NavHashLink
+            to="/#features"
+            // scroll={(el) => scrollWithOffset(el, 900)}
+            activeStyle
+          >
             <span>Features</span>
-          </NavLink>
-          <NavLink to="/how-it-works" activeStyle>
+          </NavHashLink>
+          <NavHashLink
+            to="/#how-it-works"
+            // scroll={(el) => scrollWithOffset(el, 120)}
+            activeStyle
+          >
             <span>How it works</span>
-          </NavLink>
-          <NavLink to="/projects" activeStyle>
+          </NavHashLink>
+          <NavLink
+            to="#"
+            activeStyle
+            onClick={(e) => {
+              e.preventDefault();
+              setWarning(true);
+              setShowToast(true);
+            }}
+          >
             <span>Projects</span>
           </NavLink>
-          <NavLink to="/staking" activeStyle>
+          <NavLink
+            to="#"
+            activeStyle
+            onClick={(e) => {
+              e.preventDefault();
+
+              setWarning(!Warning);
+              setShowToast(!showToast);
+            }}
+          >
             <span>Staking</span>
           </NavLink>
           <NavBtnLink

@@ -4,16 +4,16 @@ import { checkbox, infoIcon, loginIcon, logoutIcon } from '../../assets';
 import classes from './Toast.module.css';
 
 const Toast = ({success, info, danger, message, connected, icon, showToast, setShowToast}) => {
- 
+     
     let stroke, toastType;
 
-    // useEffect(() => {
-    //     if(!danger) {
-    //         setTimeout(() => {
-    //             setShowToast(false);
-    //         }, 3000)
-    //     }
-    // }, [])
+  
+        if(!danger) {
+            setTimeout(() => {
+                setShowToast(false);
+            }, 5000)
+        }
+   
 
     const handleCtaClick = () => {
         setShowToast(false);

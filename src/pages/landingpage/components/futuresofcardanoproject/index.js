@@ -38,7 +38,7 @@ const FutureOfCardanoIntroSection = () => {
         <LoadMoreBtn>Load More</LoadMoreBtn>
       </span>
       <div>
-        <Intro>
+        <Intro id="features">
           <SectionIntroCards
             title={"The Future of Cardano Projects"}
             desc="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Odio imperdiet nibh at et neque. Sed adipiscing risus aenean neque imperdiet amet fermentum."
@@ -128,11 +128,10 @@ const Intro = styled.div`
   gap: 2rem;
 
   & > aside {
-    & > h2{
+    & > h2 {
       font-size: 42px;
       font-weight: 500;
       line-height: 52px;
-
     }
   }
 
