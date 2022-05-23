@@ -3,7 +3,12 @@ import { AuthLayout, DashBoardLayout } from "../layout";
 import { authRoutes, dashBoardRoutes, RequireAuth } from "./routes";
 import { AnimatePresence } from "framer-motion";
 
-export const AppRouter = ({ showModal, setShowModal }) => {
+export const AppRouter = ({
+  showModal,
+  setShowModal,
+  connectWalletModal,
+  setConnectWalletModal,
+}) => {
   return (
     <Router>
       {/* UnAuthenticated Routes */}
@@ -15,7 +20,12 @@ export const AppRouter = ({ showModal, setShowModal }) => {
               key={route.name}
               {...route}
               element={
-                <AuthLayout showModal={showModal} SetShowModal={setShowModal}>
+                <AuthLayout
+                  showModal={showModal}
+                  SetShowModal={setShowModal}
+                  connectWalletModal={connectWalletModal}
+                  setConnectWalletModal={setConnectWalletModal}
+                >
                   {route.element}
                 </AuthLayout>
               }

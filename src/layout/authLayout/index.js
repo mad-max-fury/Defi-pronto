@@ -1,9 +1,18 @@
 import { Navbar, Footer, LaunchBanner } from "../../components";
 
-const AuthLayout = ({ children, showModal, setShowModal }) => {
+const AuthLayout = ({
+  children,
+  showModal,
+  setShowModal,
+  connectWalletModal,
+  setConnectWalletModal,
+}) => {
   return (
     <>
-      <Navbar />
+      <Navbar
+        connectWalletModal={connectWalletModal}
+        setConnectWalletModal={setConnectWalletModal}
+      />
       {children}
       <LaunchBanner />
       <Footer />

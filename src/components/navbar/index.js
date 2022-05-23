@@ -3,7 +3,7 @@ import { NavBarMobile } from "../navbarmobile";
 import { defiProntoLogo } from "../../assets";
 import { Nav, NavLink, Bars, NavMenu, NavBtnLink } from "./style";
 import { Button } from "../button";
-const Navbar = () => {
+const Navbar = ({ connectWalletModal, setConnectWalletModal }) => {
   const [isOpen, setIsOpen] = useState(false);
   const toggle = () => setIsOpen(!isOpen);
   const [scrolled, setScrolled] = useState(false);
@@ -37,7 +37,14 @@ const Navbar = () => {
           <NavLink to="/staking" activeStyle>
             <span>Staking</span>
           </NavLink>
-          <NavBtnLink to="/connect" activeStyle>
+          <NavBtnLink
+            id="connect-wallet"
+            to="#"
+            activeStyle
+            onClick={(e) => {
+              setConnectWalletModal(!connectWalletModal);
+            }}
+          >
             <Button filled={true} text={"Connect Wallet"} />
           </NavBtnLink>
         </NavMenu>

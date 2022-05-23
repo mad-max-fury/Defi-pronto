@@ -1,46 +1,71 @@
-import React from "react";
+import React, { useRef, useState } from "react";
 import styled from "styled-components";
 import { etherni, nami, typhoon } from "../../assets";
 import { colors } from "../../colors";
-const WalletConnectModal = () => {
+const WalletConnectModal = ({ isOpen, setIsOpen }) => {
+  const modalRef = useRef(null);
+
+  const handleClose = (e) => {
+    if (modalRef.current.contains(e.target)) {
+      return;
+    }
+    setIsOpen(false);
+  };
+
   return (
-    <WalletConnectWrap>
-      <Text>
-        <h4>Connect Wallet</h4>
-        <div>
-          <input type={"checkbox"} />
-          <p>
-            I have read and accept the <a href="#">Terms and Conditions</a>.
-          </p>
-        </div>
-      </Text>
-      <Connectorswrap>
-        <Connector>
-          <img src={nami} />
-          <h6>Nami Wallet</h6>
-          <input type="checkbox" />
-        </Connector>
-      </Connectorswrap>
-      <Connectorswrap>
-        <Connector>
-          <img src={etherni} />
-          <h6>Eternl Wallet</h6>
-          <input type="checkbox" />
-        </Connector>
-      </Connectorswrap>
-      <Connectorswrap>
-        <Connector>
-          <img src={typhoon} />
-          <h6>Typhoon Wallet</h6>
-          <input type="checkbox" />
-        </Connector>
-      </Connectorswrap>
-    </WalletConnectWrap>
+    <WalletContainer onClick={handleClose} isOpen={isOpen}>
+      <WalletConnectWrap isOpen={isOpen} ref={modalRef}>
+        <Text>
+          <h4>Connect Wallet</h4>
+          <div>
+            <input type={"checkbox"} />
+            <p>
+              I have read and accept the <a href="#">Terms and Conditions</a>.
+            </p>
+          </div>
+        </Text>
+        <Connectorswrap>
+          <Connector>
+            <img src={nami} />
+            <h6>Nami Wallet</h6>
+            <input type="checkbox" />
+          </Connector>
+        </Connectorswrap>
+        <Connectorswrap>
+          <Connector>
+            <img src={etherni} />
+            <h6>Eternl Wallet</h6>
+            <input type="checkbox" />
+          </Connector>
+        </Connectorswrap>
+        <Connectorswrap>
+          <Connector>
+            <img src={typhoon} />
+            <h6>Typhoon Wallet</h6>
+            <input type="checkbox" />
+          </Connector>
+        </Connectorswrap>
+      </WalletConnectWrap>
+    </WalletContainer>
   );
 };
 
 export { WalletConnectModal };
 
+const WalletContainer = styled.div`
+  height: 100vh;
+  width: 100vw;
+  position: fixed;
+  top: 0;
+  left: 0;
+  background: rgba(0, 0, 0, 0.5);
+  z-index: ${(props) => (props.isOpen ? "9999" : "-4")};
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  opacity: ${({ isOpen }) => (isOpen ? 1 : 0)};
+  pointer-events: ${({ isOpen }) => (isOpen ? "all" : "none")};
+`;
 const WalletConnectWrap = styled.div`
   position: absolute;
   width: 458px;
@@ -56,20 +81,10 @@ const WalletConnectWrap = styled.div`
   transition: all 0.5s;
   padding: 2.5rem 20px;
   background-color: rgba(36, 27, 35, 1);
-  animation: showToast 0.5s ease-in;
-  left: 50%;
-  top: 80%;
-  transform: translate(-50%, -80%);
-  @keyframes showToast {
-    0% {
-      opacity: 0;
-      transform: translate(-50%, 0%);
-    }
-    100% {
-      opacity: 1;
-      transform: translate(-50%, -80%);
-    }
-  }
+  left: ${(props) => (props.isOpen ? "50%" : "50%")};
+  top: ${(props) => (props.isOpen ? "50%" : "-100%")};
+  transform: ${(props) =>
+    props.isOpen ? "translate(-50%, -50%)" : "translate(-50%, -100%)"};
 `;
 
 const Text = styled.div`
