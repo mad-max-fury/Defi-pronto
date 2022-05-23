@@ -14,19 +14,16 @@ import {
     ChartText,
 } from './style';
 
-import { 
-    IntroWrap,
-} from '../intro';
-
 import{
   allocationChart
 } from '../../assets'
+import { SectionIntroCards } from '../sectionintrocards';
 
 
 const Allocation = () => {
   return (
     <Container>
-        <IntroWrap title={'Allocation & Utility'} desc={'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Odio imperdiet nibh at et neque. Sed adipiscing risus aenean neque imperdiet amet fermentum.'} /> 
+        <SectionIntroCards  title={'Allocation & Utility'} desc={'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Odio imperdiet nibh at et neque. Sed adipiscing risus aenean neque imperdiet amet fermentum.'} /> 
         <AllocationChartImg src={ allocationChart } />
         
         <ChartInfoContainer>

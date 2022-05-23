@@ -5,7 +5,14 @@ export const Container = styled.div`
   width: 100%;
   padding: 0.5rem calc((100vw - 1300px) / 2);
   margin: 0 auto;
-  border: 2px solid red;
+
+  &>div{
+      
+    &>h2{
+      font-size: 45px;
+      font-weight: 500;
+    }
+  }
 `;
 
 export const TokenomicsContainer = styled.div`

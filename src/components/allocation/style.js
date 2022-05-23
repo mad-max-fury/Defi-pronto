@@ -8,7 +8,14 @@ export const Container = styled.div`
   display: flex;
   flex-direction: column;
   justify-content: center;
-  border: 2px solid red;
+
+  &>aside{
+
+    &>h2{
+      font-size: 45px;
+      
+    }
+  }
 `;
 
 export const AllocationChartImg = styled.img`
