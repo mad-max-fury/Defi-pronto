@@ -59,16 +59,16 @@ const Footer = () => {
                     <FooterMenu>
                         <MenuHeader> Company </MenuHeader>
                             <FooterLink to='/'>
-                                <span>About</span>
+                                About
                             </FooterLink>
                             <FooterLink to='/'>
-                                <span>How it works</span>
+                                How it works
                             </FooterLink>
                             <FooterLink to='/'>
-                                <span>Projects</span>
+                                Projects
                             </FooterLink>
                             <FooterLink to='/'>
-                                <span>Staging</span>
+                                Staging
                             </FooterLink>
                         
                     </FooterMenu>
@@ -76,16 +76,16 @@ const Footer = () => {
                     <FooterMenu>
                         <MenuHeader> Support </MenuHeader>
                             <FooterLink to='/'>
-                                <span>Documentation</span>
+                                Documentation
                             </FooterLink>
                             <FooterLink to='/'>
-                                <span>Tutorials & Guide</span>
+                                Tutorials & Guide
                             </FooterLink>
                             <FooterLink to='/'>
-                                <span>FAQs</span>
+                                FAQs
                             </FooterLink>
                             <FooterLink to='/'>
-                                <span>Apply</span>
+                                Apply
                             </FooterLink>
                         
                     </FooterMenu>
@@ -93,16 +93,16 @@ const Footer = () => {
                     <FooterMenu>
                         <MenuHeader> Social Media </MenuHeader>
                             <FooterLink to='/'>
-                                <span>Telegram</span>
+                                Telegram
                             </FooterLink>
                             <FooterLink to='/'>
-                                <span>Discord</span>
+                                Discord
                             </FooterLink>
                             <FooterLink to='/'>
-                                <span>Twitter</span>
+                                Twitter
                             </FooterLink>
                             <FooterLink to='/'>
-                                <span>Github</span>
+                                Github
                             </FooterLink>
                         
                     </FooterMenu>
