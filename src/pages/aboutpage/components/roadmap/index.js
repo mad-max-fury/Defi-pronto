@@ -72,7 +72,6 @@ const RoadMapContainer = styled.section`
   height: fit-content;
   position: relative;
   margin-top: 4rem;
-  border: 1px solid red;
   & > div {
     position: absolute;
     height: calc(100% + 100px);
@@ -103,7 +102,7 @@ const MapContainer = styled.section`
   display: flex;
   flex-direction: column;
   height: 60rem;
-  padding: 6rem;
+  padding: 6rem 0;
   gap: 2rem;
   & > div {
     width: 5px;
@@ -127,6 +126,9 @@ const MapContainer = styled.section`
       border-right: unset;
       border-bottom: unset;
       border-top: unset;
+      @media (max-width: 650px) {
+        width: 140px;
+      }
     }
     &:nth-of-type(even) {
       & > div {
@@ -137,6 +139,9 @@ const MapContainer = styled.section`
         border-bottom: unset;
         border-top: unset;
         display: flex;
+        @media screen and (max-width: 650px) {
+          left: -135px;
+        }
         & > div {
           right: 9%;
           left: unset;
@@ -168,6 +173,9 @@ const MiniCardWrap = styled.div`
 
   @media (max-width: 650px) {
     max-width: 159px;
+  }
+  @media (max-width: 570px) {
+    max-width: 100px;
   }
 `;
 
