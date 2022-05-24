@@ -51,6 +51,13 @@ const OurSupportWrap = styled.section`
     background-repeat: no-repeat;
     background-size: contain;
     background-position: center;
+    @media screen and (max-width: 600px) {
+      height: 2rem;
+      width: 100%;
+    }
+  }
+  @media screen and (max-width: 600px) {
+    padding-bottom: 4rem;
   }
 `;
 const Heading = styled.h3`
@@ -62,6 +69,14 @@ const Heading = styled.h3`
     font-weight: inherit;
     font-family: inherit;
     color: ${colors.secondary};
+  }
+  @media (max-width: 600px) {
+    font-size: 36px;
+    font-weight: 400;
+  }
+  @media (max-width: 350px) {
+    font-size: 27px;
+    font-weight: 350;
   }
 `;
 const InnerImageWrap = styled.div`
@@ -78,5 +93,14 @@ const InnerImageWrap = styled.div`
   & > img {
     width: 12.5rem;
     object-fit: contain;
+    @media (max-width: 520px) {
+      width: 10rem;
+    }
+    @media (max-width: 416px) {
+      width: 8rem;
+    }
+    @media (max-width: 350px) {
+      width: 6rem;
+    }
   }
 `;
