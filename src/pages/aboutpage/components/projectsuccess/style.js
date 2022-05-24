@@ -31,6 +31,10 @@ export const SuccesWrapper = styled.section`
       left: 5%;
       }
   }
+
+  @media screen and (max-width: 850px) {
+      flex-direction: column;
+      }
 `;
 
 export const TextContainer = styled.div`
@@ -46,6 +50,12 @@ export const TextContainer = styled.div`
     width: 100%;
     /* border: 1px solid red; */
   }
+
+  @media screen and (max-width: 1250px) {
+      padding-left: 20px;
+      padding-right: 20px;
+      width: 95%;
+      }
 `;
 
 export const SuccessBox = styled.div`
@@ -72,13 +82,19 @@ export const SuccessBox = styled.div`
     align-items: center;
     grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
   }
+
+  @media screen and (max-width: 1250px) {
+      padding-top: 45px;
+      flex-wrap: wrap;
+      width: 95%;
+      }
 `;
 
 export const SuccessTitle = styled.h3`
   width: 80%;
   font-size: 40px;
 
-  @media screen and (max-width: 650px) {
+  @media screen and (max-width: 840px) {
     width: 90%;
     font-size: 25px;
     margin: 0 auto;

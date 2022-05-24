@@ -128,7 +128,7 @@ export const TextUp = styled.div`
   @media (min-width: 851) and (max-width: 950px) {
     h1 {
       width: 100%;
-      font-size: 31.3px;
+      font-size: 31.3px ;
       font-family: Orbitron, sans-serif;
 
       & > span {
