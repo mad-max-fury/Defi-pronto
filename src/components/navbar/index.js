@@ -83,6 +83,19 @@ const Navbar = ({ connectWalletModal, setConnectWalletModal }) => {
           >
             <span>Staking</span>
           </NavLink>
+
+          <NavLink
+            style={{ color: "#fff" }}
+            to="#"
+            onClick={(e) => {
+              e.preventDefault();
+
+              setWarning(!Warning);
+              setShowToast(!showToast);
+            }}
+          >
+            <span>Resources</span>
+          </NavLink>
           <NavBtnLink
             id="connect-wallet"
             to="#"

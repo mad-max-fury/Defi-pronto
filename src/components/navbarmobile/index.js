@@ -37,10 +37,10 @@ const NavBarMobile = ({
     <>
       <NavBarMobileContainer isOpen={isOpen}>
       <NavLogoContainer>
-      <LogoContainer src={dropLogo} />
-        <Icon>
-          <CloseIcon onClick={toggle} />
-        </Icon>
+        <LogoContainer src={dropLogo} />
+          <Icon>
+            <CloseIcon onClick={toggle} />
+          </Icon>
       </NavLogoContainer>
         
         
@@ -89,6 +89,20 @@ const NavBarMobile = ({
             >
               <span>Staking</span>
             </NavLink>
+
+            <NavLink
+              to="#"
+              onClick={(e) => {
+                e.preventDefault();
+                toggle();
+                setWarning(!Warning);
+                setShowToast(!showToast);
+              }}
+              activeStyle
+            >
+              <span>Resources</span>
+            </NavLink>
+
           </NavLinks>
           <NavBtnLinkWrap>
             <NavBtnLink

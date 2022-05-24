@@ -68,7 +68,7 @@ const Footer = () => {
                                 Projects
                             </FooterLink>
                             <FooterLink to='/'>
-                                Staging
+                                Staking
                             </FooterLink>
                         
                     </FooterMenu>
