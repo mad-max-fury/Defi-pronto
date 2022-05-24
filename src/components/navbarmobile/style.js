@@ -1,5 +1,5 @@
 import styled from "styled-components";
-import { FaTimes } from "react-icons/fa";
+import { VscClose } from "react-icons/vsc";
 import { Link } from "react-router-dom";
 import { colors } from "../../colors";
 import { HashLink } from "react-router-hash-link";
@@ -24,9 +24,12 @@ export const NavBarMobileContainer = styled.div`
   }
 `;
 
-export const CloseIcon = styled(FaTimes)`
+export const CloseIcon = styled(VscClose)`
   color: #fff;
   font-size: 2rem;
+  position: relative;
+  bottom: -60%;
+  right: 25%;
 `;
 
 export const Icon = styled.div`
