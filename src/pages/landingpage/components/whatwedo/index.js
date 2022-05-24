@@ -29,7 +29,7 @@ const Container = styled.section`
   padding: 0.5rem calc((100vw - 1300px) / 2);
   gap: 2rem;
   flex-direction: column;
-  padding-top: 14rem;
+  padding-top: 11rem;
   position: relative;
   padding-bottom: 3rem;
 
@@ -37,24 +37,27 @@ const Container = styled.section`
     content: "";
     width: 100%;
     height: 10rem;
-    top: 12.5%;
+    top: 6.5%;
     left: 0;
     position: absolute;
     background-image: url(${defiPronto});
     background-repeat: no-repeat;
     background-size: contain;
     background-position: center;
-    @media screen and (max-width: 1000px) {
+    @media screen and (max-width: 1200px) {
       top: 2%;
       height: 5rem;
     }
   }
-  @media screen and (max-width: 1000px) {
+  @media screen and (max-width: 1200px) {
     padding: unset;
     width: 90%;
     margin: 0 auto;
     padding-top: 5rem;
-    border: 1px solid red;
+  }
+  @media screen and (min-width: 1001px) and (max-width: 1300px) {
+    width: calc(100% - 4rem);
+    margin: 0 auto;
   }
 `;
 
@@ -80,14 +83,14 @@ const InnerWrap = styled.div`
       width: 45%;
       justify-self: flex-end;
       margin: unset;
-      border: 1px solid red;
-      @media screen and (max-width: 1000px) {
+
+      @media screen and (max-width: 1200px) {
         max-width: 100%;
         width: 100%;
       }
     }
   }
-  @media screen and (max-width: 1168px) {
+  @media screen and (max-width: 1200px) {
     width: 100%;
     margin: 0 auto;
     flex-direction: column-reverse;

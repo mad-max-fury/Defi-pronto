@@ -27,21 +27,27 @@ const Wrapper = styled.div`
 const Heading = styled.h2`
   text-align: start;
   @media (max-width: 500px) and (min-width: 351px) {
-    font-size: 20px;
-    border: 1px solid red;
+    font-size: 32px !important;
     font-weight: 400;
   }
   @media (max-width: 350px) {
     font-size: 32px !important;
-    border: 1px solid green;
     font-weight: 400;
-  } ;
+  }
+  @media screen and (min-width: 700px) {
+    font-weight: 400;
+    display: flex;
+    align-self: flex-start;
+  }
 `;
 const Paragraph = styled.p`
   text-align: start;
   @media (max-width: 500px) {
-    font-size: 13px;
-    border: 1px solid red;
+    font-size: 16px;
+    font-weight: 400;
+  }
+  @media (max-width: 390px) {
+    font-size: 14px;
     font-weight: 400;
   } ;
 `;
