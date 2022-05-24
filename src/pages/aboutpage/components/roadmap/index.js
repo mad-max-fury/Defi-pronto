@@ -90,7 +90,7 @@ const Heading = styled.h2`
   font-weight: 500;
   margin: 0 auto;
 
-  @media (max-width: 450) {
+  @media (max-width: 450px) {
     font-size: 25px;
   }
 `;
@@ -160,12 +160,24 @@ const MiniCardWrap = styled.div`
   top: -25%;
   left: 9%;
   /* padding: 0 1.5rem; */
+
+  @media (max-width: 450px) {
+    max-width: 159px;
+  }
 `;
 
 export const ItemHeading = styled.h6`
   text-align: start !important;
+
+  @media (max-width: 450px) {
+    font-size: 15px;
+  }
 `;
 export const ItemParagraph = styled.p`
   text-align: start;
   line-height: unset;
+
+  @media (max-width: 450px) {
+    font-size: 12.8px;
+  }
 `;
