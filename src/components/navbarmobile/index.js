@@ -39,7 +39,7 @@ const NavBarMobile = ({
         <NavBarLinksWrapper>
           <NavLinks>
             <NavLink to="/about" onClick={toggle} activeStyle>
-              <span>about</span>
+              <span>About</span>
             </NavLink>
             <NavHashLink
               to="/#features"

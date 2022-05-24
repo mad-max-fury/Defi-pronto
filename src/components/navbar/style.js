@@ -38,6 +38,17 @@ export const NavLink = styled(Link)`
     color: ${colors.secondary};
     transition: all 0.3s ease-in-out;
   }
+
+  & > img{
+      width: 60px;
+      height: 60px;
+
+    @media screen and (max-width: 650px) {
+      width: 45px;
+      height: 45px;
+      padding-left: 0px;
+    }
+  }
 `;
 export const NavHashLink = styled(HashLink)`
   color: ${colors.white};
@@ -69,6 +80,14 @@ export const Bars = styled(FaBars)`
     transform: translate(-100%, 75%);
     cursor: pointer;
     font-size: 1.8rem;
+  }
+
+  & > span{
+    border: 3px solid red;
+    @media (max-width: 950px) {
+      display: block;
+      position: absolute;
+    }
   }
 `;
 export const NavMenu = styled.div`
