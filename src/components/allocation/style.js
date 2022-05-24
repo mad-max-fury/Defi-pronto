@@ -23,7 +23,15 @@ export const Container = styled.div`
     background-repeat: no-repeat;
     background-size: contain;
     background-position: center;
+
+    @media screen and (max-width: 450px) {
+      
+    }
   }
+
+  @media screen and (max-width: 450px) {
+    padding-top: 6.5rem;
+    }
 
   &>aside{
 

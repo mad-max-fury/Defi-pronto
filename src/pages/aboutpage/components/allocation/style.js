@@ -9,11 +9,22 @@ export const Container = styled.div`
   flex-direction: column;
   justify-content: center;
 
-  &>aside{
+  & > aside{
 
-    &>h2{
+    & > h2{
       font-size: 45px;
       
+      @media screen and (max-width: 450px) {
+        font-size: 25px;
+        border: 1px solid red;
+      }
+    }
+
+    & > p{
+      @media screen and (max-width: 450px) {
+        font-size: 12.8px;
+        border: 1px solid red;
+      }
     }
   }
 `;
