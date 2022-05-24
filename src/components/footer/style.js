@@ -66,6 +66,9 @@ export const FooterLogoLink = styled(Link)`
     transition: all 0.3s ease-in-out;
   }
 
+  @media (min-width: 550px) and (max-width: 899px){
+    padding-left: 20px;
+  }
 `;
 
 export const FooterIntroWrap = styled.div`

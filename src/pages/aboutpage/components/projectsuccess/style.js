@@ -26,7 +26,7 @@ export const SuccesWrapper = styled.section`
     background-size: contain;
     background-position: center;
 
-    @media screen and (max-width: 450px) {
+    @media screen and (max-width: 650px) {
       width: 90%;
       left: 5%;
       }
@@ -44,7 +44,7 @@ export const TextContainer = styled.div`
     justify-content: center;
     align-items: center;
     width: 100%;
-    border: 1px solid red;
+    /* border: 1px solid red; */
   }
 `;
 
@@ -65,7 +65,7 @@ export const SuccessBox = styled.div`
     width: 90%;
     font-size: 25px;
     margin: 0 auto;
-    border: 1px solid red;
+    /* border: 1px solid red; */
     gap: 1.5rem;
     display: grid;
     justify-content: center;
@@ -78,7 +78,7 @@ export const SuccessTitle = styled.h3`
   width: 80%;
   font-size: 40px;
 
-  @media screen and (max-width: 450px) {
+  @media screen and (max-width: 650px) {
     width: 90%;
     font-size: 25px;
     margin: 0 auto;
@@ -89,7 +89,7 @@ export const SuccessText = styled.p`
   width: 90%;
   line-height: 1.8rem;
 
-  @media screen and (max-width: 450px) {
+  @media screen and (max-width: 650px) {
     font-size: 12.8px;
     line-height: 21px;
   }

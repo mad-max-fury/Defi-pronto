@@ -14,16 +14,16 @@ export const Container = styled.div`
     & > h2{
       font-size: 45px;
       
-      @media screen and (max-width: 450px) {
-        font-size: 25px;
-        border: 1px solid red;
+      @media screen and (max-width: 650px) {
+        font-size: 25px !important;
+        /* border: 1px solid red; */
       }
     }
 
     & > p{
-      @media screen and (max-width: 450px) {
+      @media screen and (max-width: 650px) {
         font-size: 12.8px;
-        border: 1px solid red;
+        /* border: 1px solid red; */
       }
     }
   }
@@ -49,7 +49,7 @@ export const ChartInfoContainer = styled.div`
   width: 50%;
   column-gap: 2rem;
 
-  @media (max-width: 450px) {
+  @media (max-width: 650px) {
     width: 80%;
   };
   
@@ -63,7 +63,7 @@ export const ChartInfo = styled.div`
   padding-top: 20px;
   width: fit-content;
 
-  @media (max-width: 450px) {
+  @media (max-width: 650px) {
     
   };
   

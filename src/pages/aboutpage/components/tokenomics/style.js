@@ -11,13 +11,13 @@ export const Container = styled.div`
     &>h2{
       font-size: 45px;
       font-weight: 500;
-      @media screen and (max-width: 450px) {
+      @media screen and (max-width: 650px) {
         font-size: 25px;
       };
     };
 
     &>p{
-      @media screen and (max-width: 450px) {
+      @media screen and (max-width: 650px) {
         font-size: 12.8px;
         line-height: 21px;
         text-align: center;
