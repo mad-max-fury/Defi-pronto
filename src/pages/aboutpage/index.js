@@ -46,7 +46,7 @@ export { AboutPage };
 const Container = styled.main`
   padding-top: 50px;
 
-  @media screen and (max-width: 450px) {
+  @media screen and (max-width: 650px) {
     padding-top: 0;
   }
 `;
@@ -56,6 +56,13 @@ const Ceneter = styled.div`
 `;
 const AccordionContainer = styled.section`
   padding: 50px 0;
+
+  @media screen and (max-width: 650px) {
+    width: 90%;
+    margin: 0 auto;
+    padding-left: 20px;
+    padding-right: 20px;
+  }
 `;
 
 const Divider = styled.div`

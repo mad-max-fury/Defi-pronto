@@ -9,9 +9,9 @@ export const HeroSectionWrap = styled.section`
   padding: 0.5rem calc((100vw - 1300px) / 2);
   position: relative;
   max-height: 62rem;
-  border: 1px solid red;
+  /* border: 1px solid red; */
 
-  @media screen and (max-width: 450px) {
+  @media screen and (max-width: 650px) {
     margin: 0 auto;
     flex-direction: column;
     align-items: center;
@@ -21,9 +21,8 @@ export const HeroSectionWrap = styled.section`
     height: fit-content;
   }
 
-  @media (min-width: 451px) and (max-width: 1250px) {
+  @media (min-width: 651px) and (max-width: 1250px) {
     width: 100%;
-
     height: fit-content;
   }
 `;
@@ -41,14 +40,14 @@ export const BgWrap = styled.div`
     height: 100%;
     object-fit: contain;
   }
-  @media screen and (max-width: 450px) {
+  @media screen and (max-width: 650px) {
     margin: 0 auto;
     padding-top: 20px;
     left: 0%;
     width: 100%;
     height: 500px;
     z-index: -1;
-    border: 1px solid red;
+    /* border: 1px solid red; */
 
     & > img {
       width: 100% !important;
@@ -68,15 +67,15 @@ export const HeroInner = styled.div`
   flex-direction: column;
   gap: 2rem;
 
-  @media (max-width: 450px) {
+  @media (max-width: 650px) {
     width: 100%;
     margin-left: 0;
     padding-left: 0rem;
     margin-top: 0;
-    border: 1px solid red;
+    /* border: 1px solid red; */
   }
 
-  @media (min-width: 451px) and (max-width: 900px) {
+  @media (min-width: 651px) and (max-width: 900px) {
     width: 90%;
     padding-left: 2rem;
   }
@@ -106,7 +105,7 @@ export const TextUp = styled.div`
     line-height: 1.8;
   }
 
-  @media screen and (max-width: 450px) {
+  @media screen and (max-width: 650px) {
     h1 {
       width: 100%;
       font-size: 31.3px;
@@ -134,13 +133,13 @@ export const BtnWrap = styled.div`
   & > button {
     margin: 0;
   }
-  @media screen and (max-width: 550px) {
+  @media screen and (max-width: 650px) {
     width: 100%;
-    border: 1px solid green;
+    /* border: 1px solid green; */
   }
-  @media screen and (max-width: 406px) {
+  @media screen and (max-width: 650px) {
     width: 100%;
-    border: 1px solid green;
+    /* border: 1px solid green; */
   }
 `;
 export const FooterSocial = styled.div`

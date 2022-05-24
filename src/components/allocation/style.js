@@ -24,12 +24,12 @@ export const Container = styled.div`
     background-size: contain;
     background-position: center;
 
-    @media screen and (max-width: 450px) {
+    @media screen and (max-width: 650px) {
       
     }
   }
 
-  @media screen and (max-width: 450px) {
+  @media screen and (max-width: 650px) {
     padding-top: 6.5rem;
     }
 
@@ -62,7 +62,7 @@ export const ChartInfoContainer = styled.div`
   width: 50%;
   column-gap: 2rem;
 
-  @media (max-width: 450px) {
+  @media (max-width: 650px) {
     width: 80%;
   };
   
@@ -76,7 +76,7 @@ export const ChartInfo = styled.div`
   padding-top: 20px;
   width: fit-content;
 
-  @media (max-width: 450px) {
+  @media (max-width: 650px) {
     
   };
   

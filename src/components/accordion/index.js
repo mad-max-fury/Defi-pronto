@@ -53,15 +53,29 @@ const AccordionHeader = styled.div`
     background: ${colors.secondary};
     transition: all 0.4s ease;
   }
+
 `;
 const TextHeading = styled.div`
   color: ${colors.white};
   font-size: 24px;
   font-weight: semi-bold;
+
+  @media screen and (max-width: 650px) {
+    font-size: 19.08px;
+    font-weight: 500;
+  }
 `;
 const HeadingIcon = styled.h3``;
 const AccordionContent = styled.div`
   display: flex;
+
+  & > p{
+    @media screen and (max-width: 650px) {
+    font-size: 12.08px;
+    line-height: 21px;
+  }
+  }
+  
 
   transition: all 0.4s ease;
   ${({ active }) =>
@@ -79,7 +93,6 @@ const AccordionContent = styled.div`
         color:#BDC2D4;
         text-align:start;
       }
-
 `
       : `
     transition:all 0.4s cube-bezier(0,1,0,1);

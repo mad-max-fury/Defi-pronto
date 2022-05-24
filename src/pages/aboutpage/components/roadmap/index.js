@@ -72,6 +72,7 @@ const RoadMapContainer = styled.section`
   height: fit-content;
   position: relative;
   margin-top: 4rem;
+  /* border: 1px solid red; */
   & > div {
     position: absolute;
     height: calc(100% + 100px);
@@ -83,6 +84,10 @@ const RoadMapContainer = styled.section`
     background-position: center;
     z-index: -1;
   }
+
+  @media screen and (max-width: 650px) {
+    width: 90%;
+  }
 `;
 
 const Heading = styled.h2`
@@ -90,7 +95,7 @@ const Heading = styled.h2`
   font-weight: 500;
   margin: 0 auto;
 
-  @media (max-width: 450px) {
+  @media (max-width: 650px) {
     font-size: 25px;
   }
 `;
@@ -161,7 +166,7 @@ const MiniCardWrap = styled.div`
   left: 9%;
   /* padding: 0 1.5rem; */
 
-  @media (max-width: 450px) {
+  @media (max-width: 650px) {
     max-width: 159px;
   }
 `;
@@ -169,7 +174,7 @@ const MiniCardWrap = styled.div`
 export const ItemHeading = styled.h6`
   text-align: start !important;
 
-  @media (max-width: 450px) {
+  @media (max-width: 650px) {
     font-size: 15px;
   }
 `;
@@ -177,7 +182,7 @@ export const ItemParagraph = styled.p`
   text-align: start;
   line-height: unset;
 
-  @media (max-width: 450px) {
+  @media (max-width: 650px) {
     font-size: 12.8px;
   }
 `;
