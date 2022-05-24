@@ -106,6 +106,9 @@ export const TextUp = styled.div`
   }
 
   @media screen and (max-width: 850px) {
+    
+    /* height: 218px; */
+    
     h1 {
       width: 100%;
       font-size: 31.3px;

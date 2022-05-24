@@ -29,12 +29,13 @@ export const SuccesWrapper = styled.section`
     @media screen and (max-width: 650px) {
       width: 90%;
       left: 5%;
-      top: 2%;
+      top: -3.2%;
       }
   }
 
-  @media screen and (max-width: 850px) {
+  @media screen and (max-width: 650px) {
       flex-direction: column;
+      padding-top: 4.7rem;
       }
 `;
 

@@ -44,9 +44,9 @@ export const NavLink = styled(Link)`
       height: 60px;
 
     @media screen and (max-width: 650px) {
-      width: 45px;
-      height: 45px;
-      padding-left: 0px;
+      width: 50px;
+      height: 50px;
+      padding-left: 8px;
     }
   }
 `;
@@ -76,7 +76,7 @@ export const Bars = styled(RiMenu3Line)`
     display: block;
     position: absolute;
     top: 7%;
-    right: 3%;
+    right: -1%;
     transform: translate(-100%, 75%);
     cursor: pointer;
     font-size: 1.8rem;
