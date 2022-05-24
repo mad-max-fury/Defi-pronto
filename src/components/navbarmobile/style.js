@@ -32,6 +32,8 @@ export const LogoContainer = styled.img`
   padding-left: 35px;
   width: 70px;
   height: 70px;
+  position: relative;
+  margin-top: -18px;
 `;
 
 export const CloseIcon = styled(VscClose)`
