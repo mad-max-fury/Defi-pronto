@@ -112,18 +112,6 @@ export const TextUp = styled.div`
         color: ${colors.secondary};
       }
     }
-    /* @media screen and (max-width: 415px) {
-      width: 100%;
-      font-size: 1.8rem;
-      font-family: Orbitron, sans-serif;
-
-      & > span {
-        font-size: 1.8rem;
-        font-weight: 400;
-        font-family: Orbitron, sans-serif;
-        color: ${colors.secondary};
-      }
-    } */
   }
   p {
     width: 68%;
@@ -134,10 +122,6 @@ export const TextUp = styled.div`
     @media screen and (max-width: 600px) {
       width: 100%;
     }
-    /* @media screen and (max-width: 415px) {
-      width: 100%;
-      font-size: 0.8rem;
-    } */
   }
 
   @media screen and (max-width: 450px) {
@@ -147,7 +131,7 @@ export const TextUp = styled.div`
       font-family: Orbitron, sans-serif;
 
       & > span {
-        font-size: 1.8rem;
+        font-size: 31.3px;
         font-weight: 400;
         font-family: Orbitron, sans-serif;
         color: ${colors.secondary};
@@ -175,6 +159,9 @@ export const FooterSocial = styled.div`
   align-items: center;
   justify-content: center;
   gap: 1.5rem;
+  @media (max-width: 320px) {
+    gap: 0.5rem;
+  }
 `;
 export const FooterLink = styled(Link)`
   color: ${colors.white};
