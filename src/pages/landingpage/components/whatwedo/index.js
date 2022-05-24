@@ -51,8 +51,8 @@ const InnerWrap = styled.div`
   display: flex;
   justify-content: space-between !important;
 
-  & > div{
-    & > h2{
+  & > div {
+    & > h2 {
       font-size: 42px;
       font-weight: 500;
       line-height: 52px;
@@ -69,6 +69,11 @@ const InnerWrap = styled.div`
       justify-self: flex-end;
       margin: unset;
     }
+  }
+  @media screen and (max-width: 1168px) {
+    width: 80%;
+    margin: 0 auto;
+    flex-direction: column-reverse;
   }
 `;
 const ImgWrap = styled.div``;

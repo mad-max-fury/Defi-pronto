@@ -126,14 +126,8 @@ const Headingwrap = styled.div`
 const ProjectWraps = styled.div`
   width: 100%;
   height: fit-content;
-  /* display: flex;
-  flex-flow: row wrap;
-  column-gap: 2rem;
-  row-gap: 2rem;
-  align-items: flex-start;
-  justify-content: space-between; */
   display: grid;
-  grid-template-columns: repeat(3, auto);
+  grid-template-columns: repeat(auto-fit, minmax(24.69rem, 1fr));
   gap: 1rem;
   row-gap: 2rem;
 `;

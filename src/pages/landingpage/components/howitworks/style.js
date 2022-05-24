@@ -12,9 +12,7 @@ export const HowItWorksWraps = styled.section`
     font-size: 42px;
     font-weight: 500;
     line-height: 52px;
-
   }
-
 `;
 export const Heading = styled.h3`
   margin: 0 auto;

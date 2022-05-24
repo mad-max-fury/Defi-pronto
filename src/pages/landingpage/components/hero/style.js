@@ -9,15 +9,14 @@ import {
 import { colors } from "../../../../colors";
 import { Link } from "react-router-dom";
 export const HeroSectionWrap = styled.section`
-  height: calc(100vh );
+  height: calc(100vh);
   display: flex;
   justify-content: space-between;
   padding: 0.5rem calc((100vw - 1300px) / 2);
   position: relative;
   max-height: 62rem;
   display: flex;
-  /* background-color: ${colors.primary}; */
-  /* mix-blend-mode: lighten; */
+
   & > .image-wrap {
     position: absolute;
     top: -100px;
@@ -34,11 +33,21 @@ export const HeroSectionWrap = styled.section`
     background-size: cover;
     background-position: bottom;
     max-height: 69rem;
+    @media screen and (max-width: 600px) {
+      display: none;
+    }
   }
-  @media screen and (max-width: 900px) {
+  @media screen and (max-width: 900px) and (min-width: 798px) {
     width: 100%;
-    padding-left: 2rem;
-    height: calc(100vh - 100px);
+    padding: 1rem 1.5rem;
+    height: fit-content;
+  }
+  @media screen and (max-width: 798px) {
+    padding: 1rem 1.5rem;
+    height: fit-content;
+    & > .image-wrap {
+      height: calc(100% + 100px);
+    }
   }
 `;
 export const BgWrap = styled.div`
@@ -67,11 +76,12 @@ export const HeroInner = styled.div`
   flex-direction: column;
   gap: 2rem;
   @media screen and (max-width: 900px) {
-    width: 80%;
+    width: 100%;
     padding-left: 2rem;
   }
   @media screen and (max-width: 600px) {
     width: 100%;
+    padding-left: unset;
   }
 `;
 
@@ -90,10 +100,44 @@ export const TextUp = styled.div`
       font-family: Orbitron, sans-serif;
       color: ${colors.secondary};
     }
+    @media screen and (max-width: 640px) {
+      width: 100%;
+      font-size: 2.8rem;
+      font-family: Orbitron, sans-serif;
+
+      & > span {
+        font-size: 2.8rem;
+        font-weight: 400;
+        font-family: Orbitron, sans-serif;
+        color: ${colors.secondary};
+      }
+    }
+    @media screen and (max-width: 415px) {
+      width: 100%;
+      font-size: 1.8rem;
+      font-family: Orbitron, sans-serif;
+
+      & > span {
+        font-size: 1.8rem;
+        font-weight: 400;
+        font-family: Orbitron, sans-serif;
+        color: ${colors.secondary};
+      }
+    }
   }
   p {
     width: 68%;
     line-height: 1.8;
+    @media screen and (max-width: 900px) {
+      width: 100%;
+    }
+    @media screen and (max-width: 600px) {
+      width: 100%;
+    }
+    @media screen and (max-width: 415px) {
+      width: 100%;
+      font-size: 0.8rem;
+    }
   }
 `;
 export const BtnWrap = styled.div`

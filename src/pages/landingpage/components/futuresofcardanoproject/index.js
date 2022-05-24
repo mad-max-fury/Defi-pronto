@@ -136,8 +136,16 @@ const Intro = styled.div`
   }
 
   & > span {
-    width: 90%;
+    width: 100%;
     display: flex;
+    flex-flow: row wrap;
+    height: fit-content;
+    align-items: start;
+
     margin: 0 auto;
+    @media screen and (max-width: 700px) {
+      width: 90%;
+      margin: 0 auto;
+    }
   }
 `;

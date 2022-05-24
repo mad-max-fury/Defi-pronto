@@ -16,10 +16,7 @@ import { HeroPageBg, bg1, heroSection2, backG } from "../../../../assets";
 const HeroSection = () => {
   return (
     <HeroSectionWrap>
-      <div className="image-wrap" >
-        
-
-      </div>
+      <div className="image-wrap"></div>
       <HeroInner>
         <TextUp>
           <h1>
