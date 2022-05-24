@@ -133,7 +133,7 @@ const Headingwrap = styled.div`
     }
   }
   @media (max-width: 800px) {
-    padding-bottom: 4rem;
+    padding-bottom: 1rem;
   }
   @media (max-width: 400px) {
     width: 90%;
