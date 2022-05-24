@@ -75,7 +75,7 @@ export const Bars = styled(RiMenu3Line)`
   @media (max-width: 950px) {
     display: block;
     position: absolute;
-    top: 7%;
+    top: 14%;
     right: -1%;
     transform: translate(-100%, 75%);
     cursor: pointer;
