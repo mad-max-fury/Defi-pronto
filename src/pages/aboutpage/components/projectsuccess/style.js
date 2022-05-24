@@ -25,6 +25,11 @@ export const SuccesWrapper = styled.section`
     background-repeat: no-repeat;
     background-size: contain;
     background-position: center;
+
+    @media screen and (max-width: 450px) {
+      width: 90%;
+      left: 5%;
+      }
   }
 `;
 
