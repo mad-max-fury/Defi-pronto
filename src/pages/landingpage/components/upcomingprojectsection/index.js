@@ -14,24 +14,6 @@ import { ProjectCard } from "../../../../components";
 const UpcomingProject = () => {
   const data = [
     {
-      src: imageWater,
-      heading: "Hyper Drive Metaverse",
-      paragraph:
-        "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Odio imperdiet nibh at et neque.",
-      progress: null,
-      targetAmount: "20,000",
-      targetRaised: "0.00",
-    },
-    {
-      src: imagePaint,
-      heading: "Hyper Drive Metaverse",
-      paragraph:
-        "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Odio imperdiet nibh at et neque.",
-      progress: null,
-      targetAmount: "20,000",
-      targetRaised: "0.00",
-    },
-    {
       src: imageColors,
       heading: "Hyper Drive Metaverse",
       paragraph:
