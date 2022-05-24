@@ -49,6 +49,12 @@ export const HeroSectionWrap = styled.section`
       height: calc(100% + 100px);
     }
   }
+  @media screen and (max-width: 600px) {
+    padding: unset;
+    max-width: 90%;
+    margin: 0 auto;
+    width: 100%;
+  }
 `;
 export const BgWrap = styled.div`
   position: absolute;
