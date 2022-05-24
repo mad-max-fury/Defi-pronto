@@ -81,7 +81,7 @@ const InnerWrap = styled.div`
       justify-self: flex-end;
       margin: unset;
       border: 1px solid red;
-      @media screen and (max-width: 908px) {
+      @media screen and (max-width: 1000px) {
         max-width: 100%;
         width: 100%;
       }
