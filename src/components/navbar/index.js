@@ -62,6 +62,7 @@ const Navbar = ({ connectWalletModal, setConnectWalletModal }) => {
           </NavHashLink>
           <NavLink
             to="#"
+            style={{ color: "#fff" }}
             onClick={(e) => {
               e.preventDefault();
               setWarning(true);
@@ -71,6 +72,7 @@ const Navbar = ({ connectWalletModal, setConnectWalletModal }) => {
             <span>Projects</span>
           </NavLink>
           <NavLink
+            style={{ color: "#fff" }}
             to="#"
             onClick={(e) => {
               e.preventDefault();

@@ -44,13 +44,17 @@ const Container = styled.section`
     background-repeat: no-repeat;
     background-size: contain;
     background-position: center;
-    @media screen and (max-width: 800px) {
+    @media screen and (max-width: 1000px) {
       top: 2%;
       height: 5rem;
     }
   }
-  @media screen and (max-width: 800px) {
+  @media screen and (max-width: 1000px) {
+    padding: unset;
+    width: 90%;
+    margin: 0 auto;
     padding-top: 5rem;
+    border: 1px solid red;
   }
 `;
 
@@ -84,9 +88,10 @@ const InnerWrap = styled.div`
     }
   }
   @media screen and (max-width: 1168px) {
-    width: 80%;
+    width: 100%;
     margin: 0 auto;
     flex-direction: column-reverse;
+    gap: 2rem;
   }
 `;
 const ImgWrap = styled.div``;
