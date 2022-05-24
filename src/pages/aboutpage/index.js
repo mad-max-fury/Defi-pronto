@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useState } from "react";
 import styled from "styled-components";
 
 import { HeroSection, ProjectSuccess, RoadMap, Tokenomics } from "./components";
@@ -8,6 +8,10 @@ import { colors } from "../../colors";
 import { Accordion, Allocation } from "../../components";
 
 const AboutPage = () => {
+  const [active, setActive] = useState(0);
+  const handleClick = (index) => {
+    active === index ? setActive(null) : setActive(index);
+  };
   return (
     <Container>
       <HeroSection />
@@ -32,10 +36,20 @@ const AboutPage = () => {
 
       <AccordionContainer>
         <Divider />
-        <Accordion heading={"Governance"} />
-        <Accordion heading={"Staking"} />
-        <Accordion heading={"Deflationary Mechanics"} />
-        <Accordion heading={"Liquidity Farming"} />
+        {[
+          "Governance",
+          "Staking",
+          "Deflationary Mechanics",
+          "Liquidity Farming",
+        ].map((item, index) => {
+          return (
+            <Accordion
+              heading={item}
+              active={index === active && true}
+              func={() => handleClick(index)}
+            />
+          );
+        })}
       </AccordionContainer>
     </Container>
   );

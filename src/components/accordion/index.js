@@ -1,19 +1,23 @@
-import React from "react";
+import React, { useEffect } from "react";
 import styled from "styled-components";
 import { useState } from "react";
 import { colors } from "../../colors";
 import { FaAngleDown } from "react-icons/fa";
-const Accordion = ({ heading, accordingContentFor }) => {
-  const [Open, setOpen] = useState(false);
+const Accordion = ({ heading, accordingContentFor, func, active }) => {
+  // const [Open, setOpen] = useState(false);
+  // useEffect(() => {
+  //   setOpen(!Open);
+  // }, [active]);
+
   return (
     <AccordionWrapper>
-      <AccordionHeader onClick={() => setOpen(!Open)}>
+      <AccordionHeader onClick={func}>
         <TextHeading>{heading}</TextHeading>
         <HeadingIcon>
           <FaAngleDown />
         </HeadingIcon>
       </AccordionHeader>
-      <AccordionContent active={Open}>
+      <AccordionContent active={active}>
         <>
           <p>
             Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pretium
@@ -53,7 +57,6 @@ const AccordionHeader = styled.div`
     background: ${colors.secondary};
     transition: all 0.4s ease;
   }
-
 `;
 const TextHeading = styled.div`
   color: ${colors.white};
@@ -69,13 +72,12 @@ const HeadingIcon = styled.h3``;
 const AccordionContent = styled.div`
   display: flex;
 
-  & > p{
+  & > p {
     @media screen and (max-width: 650px) {
-    font-size: 12.08px;
-    line-height: 21px;
+      font-size: 12.08px;
+      line-height: 21px;
+    }
   }
-  }
-  
 
   transition: all 0.4s ease;
   ${({ active }) =>
