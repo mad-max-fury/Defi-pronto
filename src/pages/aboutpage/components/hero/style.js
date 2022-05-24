@@ -15,6 +15,7 @@ export const HeroSectionWrap = styled.section`
   @media screen and (max-width: 450px) {
     margin: 0 auto;
     flex-direction: column;
+    align-items: center;
     padding-top: 0px;
     padding-left: 0rem;
     width: 90%;
@@ -39,6 +40,21 @@ export const BgWrap = styled.div`
     width: 100%;
     height: 100%;
     object-fit: contain;
+
+    @media screen and (max-width: 450px) {
+    margin: 0 auto;
+    padding-top: 20px;
+    left: 0%;
+    width: ;
+    height: 100%;
+    z-index: -1;
+
+    & > img {
+    width: fit-content;
+    height: 304px;
+    object-fit: contain;
+
+  }
   }
 `;
 
