@@ -1,8 +1,11 @@
 import React from "react";
 import { FiArrowUpRight } from "react-icons/fi";
+import { defiProntoLogo, dropLogo } from "../../assets";
 import { Button } from "../button";
 import {
   NavBarMobileContainer,
+  NavLogoContainer,
+  LogoContainer,
   CloseIcon,
   Icon,
   NavBarLinksWrapper,
@@ -33,9 +36,14 @@ const NavBarMobile = ({
   return (
     <>
       <NavBarMobileContainer isOpen={isOpen}>
+      <NavLogoContainer>
+      <LogoContainer src={dropLogo} />
         <Icon>
           <CloseIcon onClick={toggle} />
         </Icon>
+      </NavLogoContainer>
+        
+        
         <NavBarLinksWrapper>
           <NavLinks>
             <NavLink to="/about" onClick={toggle} activeStyle>

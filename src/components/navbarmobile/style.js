@@ -8,7 +8,7 @@ export const NavBarMobileContainer = styled.div`
   top: 0;
   left: 0;
   width: 100%;
-  height: 70%;
+  height: 85%;
   font-family: orbitron, sans-serif;
 
   background-color: ${colors.primary};
@@ -24,12 +24,23 @@ export const NavBarMobileContainer = styled.div`
   }
 `;
 
+export const NavLogoContainer = styled.div`
+
+`;
+
+export const LogoContainer = styled.img`
+  padding-left: 35px;
+  width: 70px;
+  height: 70px;
+`;
+
 export const CloseIcon = styled(VscClose)`
   color: #fff;
   font-size: 2rem;
-  position: relative;
-  bottom: -60%;
+  position: absolute;
+  top: 100%;
   right: 25%;
+  margin-top: 18px;
 `;
 
 export const Icon = styled.div`

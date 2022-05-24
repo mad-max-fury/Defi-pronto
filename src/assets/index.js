@@ -41,6 +41,7 @@ import bg1 from "./BG1.png";
 import backG from "./BG1.svg"
 import typhoon from "./typhoon.svg";
 import whitePaper from "./white-paper.svg";
+import dropLogo from "./dropdown-logo.svg"
 
 export {
   a01,
@@ -48,6 +49,7 @@ export {
   a03,
   a04,
   backG,
+  dropLogo,
   loginIcon,
   typhoon,
   infoIcon,
