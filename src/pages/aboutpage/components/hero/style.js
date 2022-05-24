@@ -18,9 +18,10 @@ export const HeroSectionWrap = styled.section`
     padding-top: 0px;
     padding-left: 0rem;
     width: 90%;
+    height: fit-content;
   }
 
-  @media (min-width: 451px) and (max-width: 900px) {
+  @media (min-width: 451px) and (max-width: 1250px) {
     width: 100%;
 
     height: fit-content;
@@ -39,20 +40,20 @@ export const BgWrap = styled.div`
     width: 100%;
     height: 100%;
     object-fit: contain;
+  }
+  @media screen and (max-width: 450px) {
+    margin: 0 auto;
+    padding-top: 20px;
+    left: 0%;
+    width: 100%;
+    height: 500px;
+    z-index: -1;
+    border: 1px solid red;
 
-    @media screen and (max-width: 450px) {
-      margin: 0 auto;
-      padding-top: 20px;
-      left: 0%;
-      /* width: ; */
-      height: 100%;
-      z-index: -1;
-
-      & > img {
-        width: fit-content;
-        height: 304px;
-        object-fit: contain;
-      }
+    & > img {
+      width: 100% !important;
+      height: 100% !important;
+      object-fit: contain;
     }
   }
 `;
@@ -76,7 +77,7 @@ export const HeroInner = styled.div`
   }
 
   @media (min-width: 451px) and (max-width: 900px) {
-    width: 80%;
+    width: 90%;
     padding-left: 2rem;
   }
   /* @media screen and (max-width: 600px) {
@@ -107,7 +108,7 @@ export const TextUp = styled.div`
 
   @media screen and (max-width: 450px) {
     h1 {
-      width: 90%;
+      width: 100%;
       font-size: 31.3px;
       font-family: Orbitron, sans-serif;
 
@@ -132,6 +133,14 @@ export const BtnWrap = styled.div`
   gap: 2rem;
   & > button {
     margin: 0;
+  }
+  @media screen and (max-width: 550px) {
+    width: 100%;
+    border: 1px solid green;
+  }
+  @media screen and (max-width: 406px) {
+    width: 100%;
+    border: 1px solid green;
   }
 `;
 export const FooterSocial = styled.div`
