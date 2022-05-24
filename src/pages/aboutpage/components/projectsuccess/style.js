@@ -29,6 +29,7 @@ export const SuccesWrapper = styled.section`
     @media screen and (max-width: 650px) {
       width: 90%;
       left: 5%;
+      top: 2%;
       }
   }
 
@@ -46,7 +47,7 @@ export const TextContainer = styled.div`
 
   @media screen and (max-width: 700px) {
     justify-content: center;
-    align-items: center;
+    align-items: flex-start;
     width: 100%;
     /* border: 1px solid red; */
   }
@@ -95,14 +96,14 @@ export const SuccessTitle = styled.h3`
   font-size: 40px;
 
   @media screen and (max-width: 840px) {
-    width: 90%;
+    width: 100%;
     font-size: 25px;
     margin: 0 auto;
   }
 `;
 
 export const SuccessText = styled.p`
-  width: 90%;
+  width: 100%;
   line-height: 1.8rem;
 
   @media screen and (max-width: 650px) {

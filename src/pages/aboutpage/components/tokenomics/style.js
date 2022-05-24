@@ -11,6 +11,8 @@ export const Container = styled.div`
     &>h2{
       font-size: 45px;
       font-weight: 500;
+      
+      text-align: center !important;
       @media screen and (max-width: 650px) {
         font-size: 25px;
       };
