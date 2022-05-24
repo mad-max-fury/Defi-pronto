@@ -12,6 +12,11 @@ export const HowItWorksWraps = styled.section`
     font-size: 42px;
     font-weight: 500;
     line-height: 52px;
+    @media (max-width: 600px) {
+      font-size: 34px;
+      line-height: 32px;
+      font-weight: 350;
+    }
   }
 `;
 export const Heading = styled.h3`
@@ -86,6 +91,9 @@ export const SpanNum = styled.span`
 `;
 export const ItemHeading = styled.h6`
   font-weight: 500;
+  @media screen and (max-width: 600px) {
+    font-weight: 300;
+  }
 `;
 export const ItemParagraph = styled.p`
   text-align: center;

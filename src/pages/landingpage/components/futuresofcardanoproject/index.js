@@ -35,7 +35,9 @@ const FutureOfCardanoIntroSection = () => {
   return (
     <SecContainer id="features">
       <span>
-        <LoadMoreBtn>Load More</LoadMoreBtn>
+        <LoadMoreBtn>
+          <span>Load More</span>
+        </LoadMoreBtn>
       </span>
       <div>
         <Intro>
@@ -105,7 +107,7 @@ const LoadMoreBtn = styled.button`
   font-family: "DM Sans", sans-serif;
   border: none;
   outline: none;
-  margin-left: 30px;
+  /* margin-left: 30px; */
   cursor: pointer;
   text-decoration: none;
   display: flex;
@@ -113,12 +115,23 @@ const LoadMoreBtn = styled.button`
   transition: all 0.2s ease-in-out;
   border: 2px solid ${colors.secondary};
   color: ${colors.white};
-
+  span {
+    font-family: inherit;
+  }
   &:hover {
     background-color: unset;
     border: 2px solid ${colors.white};
     color: ${colors.white};
     transition: all 0.2s ease-in-out;
+  }
+  @media (max-width: 400px) {
+    width: 90%;
+    display: flex;
+    margin: 0;
+    padding: 15px unset;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
   }
 `;
 const Intro = styled.div`

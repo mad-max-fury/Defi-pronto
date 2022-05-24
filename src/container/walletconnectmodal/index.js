@@ -127,6 +127,11 @@ const WalletConnectWrap = styled.div`
       background-color: ${colors.secondary};
     }
   }
+  @media screen and (max-width: 500px) {
+    width: 90%;
+    height: calc(588px * 0.8);
+    padding: 1.5rem 1rem;
+  }
 `;
 
 const Text = styled.div`
@@ -155,6 +160,10 @@ const Text = styled.div`
         font-weight: inherit;
         color: ${colors.secondary};
       }
+      @media screen and (max-width: 500px) {
+        font-weight: 300;
+        font-size: 12px;
+      }
     }
   }
 `;
@@ -180,12 +189,19 @@ const Connector = styled.div`
     width: 70px;
     height: 70px;
     object-fit: contain;
+    @media screen and (max-width: 500px) {
+      width: 50px;
+      height: 50px;
+    }
   }
   & > h6 {
     font-family: DM Sans;
     font-size: 20px;
     font-weight: 400;
     color: ${colors.white};
+    @media screen and (max-width: 500px) {
+      font-size: 16px;
+    }
   }
   & > input {
     width: 15px;
@@ -205,5 +221,9 @@ const Connector = styled.div`
     transition: all 0.3s ease-in-out;
     transform: scale(0.95);
     cursor: pointer;
+  }
+  @media screen and (max-width: 500px) {
+    height: 80px;
+    padding: 0 1rem;
   }
 `;

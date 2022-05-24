@@ -15,10 +15,12 @@ export const Container = styled.div`
     cursor: pointer;
     box-shadow: -10px 14px 34px 0px rgba(231, 65, 65, 0.2);
   }
+  @media screen and (max-width: 500px) {
+    width: 90% !important;
+  }
   @media screen and (max-width: 400px) {
     width: 90% !important;
-    height: 34rem;
-    border: 1px solid red;
+    height: 30rem;
   }
   /* @media screen and (max-width: 600px) { */
 `;
@@ -57,10 +59,17 @@ export const Heading = styled.h4`
   font-size: 25px;
   width: 70%;
   line-height: 30px;
+  @media screen and (max-width: 400px) {
+    font-size: 20px;
+  }
 `;
 export const Paragraph = styled.p`
   text-align: start;
   line-height: 1.5;
+  @media screen and (max-width: 400px) {
+    font-size: 13px;
+    font-size: 400;
+  }
 `;
 
 export const ProgressBar = styled.div`
@@ -91,12 +100,20 @@ export const InnerTextCol = styled.div`
     font-size: 1rem;
     color: ${colors.secondary};
     font-weight: 500;
+    @media screen and (max-width: 400px) {
+      font-size: 12px;
+      font-weight: 400;
+    }
   }
   & > h4 {
     font-size: 1.5rem;
     color: ${colors.white};
     font-weight: 500;
     text-align: start;
+    @media screen and (max-width: 400px) {
+      font-size: 14px;
+      font-weight: 400;
+    }
   }
 `;
 
@@ -127,5 +144,9 @@ export const FooterLink = styled(Link)`
   &.active {
     color: ${colors.secondary};
     transition: all 0.3s ease-in-out;
+  }
+  @media screen and (max-width: 400px) {
+    font-size: 20px !important;
+    font-weight: 400;
   }
 `;

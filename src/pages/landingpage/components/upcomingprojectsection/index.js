@@ -102,9 +102,12 @@ const Container = styled.section`
   background-image: url(${looperGroup});
   background-image: contain;
   gap: 2rem;
+  @media screen and (max-width: 800px) {
+    padding-top: 4rem;
+  }
 `;
 const Headingwrap = styled.div`
-  width: 100%;
+  width: fit-content;
   display: flex;
   align-items: center;
   gap: 1rem;
@@ -121,13 +124,27 @@ const Headingwrap = styled.div`
   }
   & > h4 {
     font-weight: 600;
+    @media (max-width: 600px) {
+      font-size: 25px !important;
+      font-weight: 400 !important;
+    }
+    @media (max-width: 400px) {
+      font-size: 20px !important;
+    }
+  }
+  @media (max-width: 800px) {
+    padding-bottom: 4rem;
+  }
+  @media (max-width: 400px) {
+    width: 90%;
+    margin: 0 auto;
   }
 `;
 const ProjectWraps = styled.div`
   width: 100%;
   height: fit-content;
   display: grid;
-  border: 1px solid red;
+
   grid-template-columns: repeat(auto-fit, minmax(24.69rem, 1fr));
   gap: 1rem;
   row-gap: 2rem;

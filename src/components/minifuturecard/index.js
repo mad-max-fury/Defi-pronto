@@ -39,6 +39,10 @@ export const SpanNum = styled.span`
     width: 100%;
     object-fit: cover;
   }
+  @media screen and (max-width: 600px) {
+    height: 7rem;
+    width: 7rem;
+  }
 `;
 export const ItemHeading = styled.h6`
   text-align: center;
