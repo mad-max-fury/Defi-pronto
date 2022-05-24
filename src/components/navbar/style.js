@@ -1,6 +1,6 @@
 import styled from "styled-components";
 import { NavLink as Link } from "react-router-dom";
-import { FaBars } from "react-icons/fa";
+import { RiMenu3Line } from "react-icons/ri";
 import { colors } from "../../colors";
 // import { Link as HashLink } from "react-scroll";
 import { HashLink } from "react-router-hash-link";
@@ -69,13 +69,13 @@ export const NavHashLink = styled(HashLink)`
     transition: all 0.3s ease-in-out;
   }
 `;
-export const Bars = styled(FaBars)`
+export const Bars = styled(RiMenu3Line)`
   display: none;
   color: ${colors.white};
   @media (max-width: 950px) {
     display: block;
     position: absolute;
-    top: 0;
+    top: 12%;
     right: 0;
     transform: translate(-100%, 75%);
     cursor: pointer;
