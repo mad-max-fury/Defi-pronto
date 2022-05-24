@@ -2,7 +2,7 @@ import styled from "styled-components";
 import { FaTimes } from "react-icons/fa";
 import { Link } from "react-router-dom";
 import { colors } from "../../colors";
-
+import { HashLink } from "react-router-hash-link";
 export const NavBarMobileContainer = styled.div`
   position: fixed;
   top: 0;
@@ -57,6 +57,26 @@ export const NavLinks = styled.ul`
   }
 `;
 export const NavLink = styled(Link)`
+  color: #fff;
+  list-style: none;
+  text-decoration: none;
+  display: flex;
+  align-items: flex-start;
+  font-size: 1.5rem;
+  justify-content: start;
+  cursor: pointer;
+  font-family: "DM Sans", sans-serif;
+
+  transition: all 0.3s ease-in-out;
+  &:hover {
+    color: ${colors.secondary};
+    transition: all 0.3s ease-in-out;
+  }
+  &.active {
+    color: ${colors.secondary};
+  }
+`;
+export const NavHashLink = styled(HashLink)`
   color: #fff;
   list-style: none;
   text-decoration: none;

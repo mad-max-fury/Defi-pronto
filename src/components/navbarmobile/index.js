@@ -8,10 +8,28 @@ import {
   NavBarLinksWrapper,
   NavLinks,
   NavLink,
+  NavHashLink,
   NavBtnLinkWrap,
   NavBtnLink,
 } from "./style";
-const NavBarMobile = ({ toggle, isOpen }) => {
+const NavBarMobile = ({
+  toggle,
+  isOpen,
+  setWarning,
+  Warning,
+  setShowToast,
+  showToast,
+  setConnectWalletModal,
+  connectWalletModal,
+}) => {
+  const scrollWithOffset = (el, offset) => {
+    const elementPosition = el.offsetTop - offset;
+    window.scroll({
+      top: elementPosition,
+      left: 0,
+      behavior: "smooth",
+    });
+  };
   return (
     <>
       <NavBarMobileContainer isOpen={isOpen}>
@@ -20,24 +38,60 @@ const NavBarMobile = ({ toggle, isOpen }) => {
         </Icon>
         <NavBarLinksWrapper>
           <NavLinks>
-            <NavLink to="/about" activeStyle>
+            <NavLink to="/about" onClick={toggle} activeStyle>
               <span>about</span>
             </NavLink>
-            <NavLink to="/features" activeStyle>
+            <NavHashLink
+              to="/#features"
+              activeStyle
+              scroll={(el) => scrollWithOffset(el, -90)}
+              onClick={toggle}
+            >
               <span>Features</span>
-            </NavLink>
-            <NavLink to="/how-it-works" activeStyle>
+            </NavHashLink>
+            <NavHashLink
+              to="/#how-it-work"
+              activeStyle
+              scroll={(el) => scrollWithOffset(el, -2850)}
+              onClick={toggle}
+            >
               <span>How it works</span>
-            </NavLink>
-            <NavLink to="/projects" activeStyle>
+            </NavHashLink>
+            <NavLink
+              to="#"
+              onClick={(e) => {
+                e.preventDefault();
+                toggle();
+                setWarning(!Warning);
+                setShowToast(!showToast);
+              }}
+              activeStyle
+            >
               <span>Projects</span>
             </NavLink>
-            <NavLink to="/staking" activeStyle>
+            <NavLink
+              to="#"
+              onClick={(e) => {
+                e.preventDefault();
+                toggle();
+                setWarning(!Warning);
+                setShowToast(!showToast);
+              }}
+              activeStyle
+            >
               <span>Staking</span>
             </NavLink>
           </NavLinks>
           <NavBtnLinkWrap>
-            <NavBtnLink to="/connect" activeStyle>
+            <NavBtnLink
+              to="#"
+              activeStyle
+              onClick={(e) => {
+                e.preventDefault();
+                toggle();
+                setConnectWalletModal(!connectWalletModal);
+              }}
+            >
               <Button filled={true} text={"Connect Wallet"} />
             </NavBtnLink>
           </NavBtnLinkWrap>

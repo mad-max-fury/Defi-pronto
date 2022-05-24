@@ -93,7 +93,16 @@ const Navbar = ({ connectWalletModal, setConnectWalletModal }) => {
             <Button filled={true} text={"Connect Wallet"} />
           </NavBtnLink>
         </NavMenu>
-        <NavBarMobile toggle={toggle} isOpen={isOpen} />
+        <NavBarMobile
+          toggle={toggle}
+          isOpen={isOpen}
+          setShowToast={setShowToast}
+          showToast={showToast}
+          setWarning={setWarning}
+          Warning={Warning}
+          setConnectWalletModal={setConnectWalletModal}
+          connectWalletModal={connectWalletModal}
+        />
       </Nav>
     </>
   );
