@@ -50,13 +50,11 @@ export const ButtonWrapper = styled.button`
     transition: all 0.2s ease-in-out;
   }
   @media (max-width: 768px) {
-    border: 1px solid green;
     padding: 10px 15px;
     /* margin-left: 15px; */
     font-size: 13px !important;
     & > span {
       font-size: 10px !important;
-      border: 1px solid red;
     }
   }
 `;
