@@ -17,7 +17,7 @@ import { RiMoneyDollarCircleLine, RiFileList2Line } from "react-icons/ri";
 const HeroSection = () => {
   return (
     <HeroSectionWrap>
-      <div className="image-wrap"></div>
+      {/* <div className="image-wrap"></div> */}
       <HeroInner>
         <TextUp>
           <h1>

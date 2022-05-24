@@ -9,16 +9,18 @@ export const HeroSectionWrap = styled.section`
   padding: 0.5rem calc((100vw - 1300px) / 2);
   position: relative;
   max-height: 62rem;
+  border: 1px solid red;
   
 
   @media screen and (max-width: 450px) {
+    margin: 0 auto;
     flex-direction: column;
     padding-top: 0px;
     padding-left: 0rem;
     width: 90%;
   }
 
-  @media (min-width: 451px;) and (max-width: 900px) {
+  @media (min-width: 451px) and (max-width: 900px) {
     width: 100%;
     padding-left: 2rem;
     height: calc(100vh - 100px);
@@ -51,14 +53,14 @@ export const HeroInner = styled.div`
   gap: 2rem;
 
   @media (max-width: 450px) {
-    width: 80%;
+    width: 100%;
     margin-left: 0;
     padding-left: 0rem;
     margin-top: 0;
     border: 1px solid red;
   }
 
-  @media (min-width: 451px;) and (max-width: 900px) {
+  @media (min-width: 451px) and (max-width: 900px) {
     width: 80%;
     padding-left: 2rem;
   }
