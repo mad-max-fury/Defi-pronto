@@ -60,7 +60,11 @@ export const SuccessBox = styled.div`
     width: 90%;
     font-size: 25px;
     margin: 0 auto;
+    border: 1px solid red;
+    gap: 1.5rem;
     display: grid;
+    justify-content: center;
+    align-items: center;
     grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
   }
 `;

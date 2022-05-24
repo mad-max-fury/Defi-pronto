@@ -17,6 +17,7 @@ export const TheCard = styled.div`
     align-items: center;
     height: 426px;
     width: 233px;
+    margin: 0 auto;
     /* border: 1px solid red; */
     border-radius: 10px;
     background-color: ${({bgColor}) => bgColor ? bgColor : "#2F282E" };
