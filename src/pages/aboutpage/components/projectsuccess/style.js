@@ -3,18 +3,18 @@ import { defiPronto } from "../../../../assets";
 import { colors } from "../../../../colors";
 
 export const SuccesWrapper = styled.section`
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    flex-wrap: wrap;
-    margin: 0 auto;
-    align-items: center;
-    max-width: 1250px;
-    width: 100%;
-    position: relative;
-    padding-top: 9rem;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  margin: 0 auto;
+  align-items: center;
+  max-width: 1250px;
+  width: 100%;
+  position: relative;
+  padding-top: 9rem;
 
-    &:before {
+  &:before {
     content: "";
     width: 100%;
     height: 10rem;
@@ -26,62 +26,62 @@ export const SuccesWrapper = styled.section`
     background-size: contain;
     background-position: center;
   }
-
 `;
 
 export const TextContainer = styled.div`
-    display: flex;
-    flex-direction: column;
-    /* max-width: 400px; */
-    width: 35%;
-    gap: 2rem;
+  display: flex;
+  flex-direction: column;
+  /* max-width: 400px; */
+  width: 35%;
+  gap: 2rem;
 
-    @media screen and (max-width: 450px) {
-        justify-content: center;
-        align-items: center;
-        width: 100%;
-        border: 1px solid red;
-        
-    }
+  @media screen and (max-width: 700px) {
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    border: 1px solid red;
+  }
 `;
 
 export const SuccessBox = styled.div`
-    display: flex;
-    justify-content: space-between;
-    flex-direction: row;
-    width: 58%;
-    /* border: 1px solid red; */
+  display: flex;
+  justify-content: space-between;
+  flex-direction: row;
+  width: 58%;
+  /* border: 1px solid red; */
 
-    @media screen and (max-width: 450px) {
-        display: flex;
-        flex-direction: column;
-        justify-content: space-between;
-        margin: 0 auto;
-        padding-top: 45px;
-        gap: 1.5rem;
-        /* width: 90%;
-        font-size: 25px;
-        margin: 0 auto; */
-    }
+  @media screen and (max-width: 700px) {
+    /* display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    margin: 0 auto;
+    gap: 1.5rem; */
+    padding-top: 45px;
+    width: 90%;
+    font-size: 25px;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  }
 `;
 
 export const SuccessTitle = styled.h3`
-    width: 80%;
-    font-size: 40px;
+  width: 80%;
+  font-size: 40px;
 
-    @media screen and (max-width: 450px) {
-        width: 90%;
-        font-size: 25px;
-        margin: 0 auto;
-    }
+  @media screen and (max-width: 450px) {
+    width: 90%;
+    font-size: 25px;
+    margin: 0 auto;
+  }
 `;
 
 export const SuccessText = styled.p`
-    width: 90%;
-    line-height: 1.8rem;
+  width: 90%;
+  line-height: 1.8rem;
 
-    @media screen and (max-width: 450px) {
-        font-size: 12.8px;
-        line-height: 21px;
-    }
+  @media screen and (max-width: 450px) {
+    font-size: 12.8px;
+    line-height: 21px;
+  }
 `;

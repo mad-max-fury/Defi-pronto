@@ -10,7 +10,6 @@ export const HeroSectionWrap = styled.section`
   position: relative;
   max-height: 62rem;
   border: 1px solid red;
-  
 
   @media screen and (max-width: 450px) {
     margin: 0 auto;
@@ -23,8 +22,8 @@ export const HeroSectionWrap = styled.section`
 
   @media (min-width: 451px) and (max-width: 900px) {
     width: 100%;
-    padding-left: 2rem;
-    height: calc(100vh - 100px);
+
+    height: fit-content;
   }
 `;
 
@@ -42,19 +41,19 @@ export const BgWrap = styled.div`
     object-fit: contain;
 
     @media screen and (max-width: 450px) {
-    margin: 0 auto;
-    padding-top: 20px;
-    left: 0%;
-    width: ;
-    height: 100%;
-    z-index: -1;
+      margin: 0 auto;
+      padding-top: 20px;
+      left: 0%;
+      /* width: ; */
+      height: 100%;
+      z-index: -1;
 
-    & > img {
-    width: fit-content;
-    height: 304px;
-    object-fit: contain;
-
-  }
+      & > img {
+        width: fit-content;
+        height: 304px;
+        object-fit: contain;
+      }
+    }
   }
 `;
 
@@ -108,22 +107,22 @@ export const TextUp = styled.div`
 
   @media screen and (max-width: 450px) {
     h1 {
-    width: 90%;
-    font-size: 31.3px;
-    font-family: Orbitron, sans-serif;
-
-    & > span {
-      font-size: 1.8rem;
-      font-weight: 400;
+      width: 90%;
+      font-size: 31.3px;
       font-family: Orbitron, sans-serif;
-      color: ${colors.secondary};
+
+      & > span {
+        font-size: 1.8rem;
+        font-weight: 400;
+        font-family: Orbitron, sans-serif;
+        color: ${colors.secondary};
+      }
     }
-  }
-  p {
-    width: 90%;
-    font-size: 12.8px;
-    line-height: 21px;
-  }
+    p {
+      width: 90%;
+      font-size: 12.8px;
+      line-height: 21px;
+    }
   }
 `;
 export const BtnWrap = styled.div`
