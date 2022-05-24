@@ -19,7 +19,7 @@ export const NavBarMobileContainer = styled.div`
   opacity: ${({ isOpen }) => (isOpen ? "100%" : "0")};
   top: ${({ isOpen }) => (isOpen ? "0" : "-100%")};
   box-shadow: -1px 0px 10px 0px rgba(0, 0, 0, 0.2);
-  @media (min-width: 840px) {
+  @media (min-width: 950px) {
     display: none;
   }
 `;

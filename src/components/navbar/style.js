@@ -61,7 +61,7 @@ export const NavHashLink = styled(HashLink)`
 export const Bars = styled(FaBars)`
   display: none;
   color: ${colors.white};
-  @media (max-width: 840px) {
+  @media (max-width: 950px) {
     display: block;
     position: absolute;
     top: 0;
@@ -75,7 +75,7 @@ export const NavMenu = styled.div`
   display: flex;
   align-items: center;
   margin-right: 30px;
-  @media (max-width: 840px) {
+  @media (max-width: 950px) {
     display: none;
   }
 `;
