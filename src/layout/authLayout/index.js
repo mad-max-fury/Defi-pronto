@@ -1,4 +1,4 @@
-import { Navbar, Footer, LaunchBanner } from "../../components";
+import { Navbar, Footer, LaunchBanner, GoToTop } from "../../components";
 
 const AuthLayout = ({
   children,
@@ -14,6 +14,7 @@ const AuthLayout = ({
         setConnectWalletModal={setConnectWalletModal}
       />
       {children}
+      <GoToTop />
       <LaunchBanner />
       <Footer />
     </>
