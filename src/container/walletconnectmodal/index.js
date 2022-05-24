@@ -1,11 +1,11 @@
-import React, { useRef, useState } from "react";
+import React, { useEffect, useRef, useState } from "react";
 import styled from "styled-components";
 import { etherni, nami, typhoon } from "../../assets";
 import { colors } from "../../colors";
-const WalletConnectModal = ({ isOpen, setIsOpen }) => {
+import { Toast } from "../../components";
+const WalletConnectModal = ({ isOpen, setIsOpen, showToast, setShowToast }) => {
   const modalRef = useRef(null);
   let stroke;
-
   const handleClose = (e) => {
     if (modalRef.current.contains(e.target)) {
       return;
@@ -32,7 +32,10 @@ const WalletConnectModal = ({ isOpen, setIsOpen }) => {
       />
     </svg>
   );
-
+  const handleClick = (e) => {
+    setIsOpen(!isOpen);
+    setShowToast(true);
+  };
   return (
     <WalletContainer onClick={handleClose} isOpen={isOpen}>
       <WalletConnectWrap isOpen={isOpen} ref={modalRef}>
@@ -50,21 +53,21 @@ const WalletConnectModal = ({ isOpen, setIsOpen }) => {
           </div>
         </Text>
         <Connectorswrap>
-          <Connector>
+          <Connector onClick={handleClick}>
             <img src={nami} />
             <h6>Nami Wallet</h6>
             <input type="checkbox" />
           </Connector>
         </Connectorswrap>
         <Connectorswrap>
-          <Connector>
+          <Connector onClick={handleClick}>
             <img src={etherni} />
             <h6>Eternl Wallet</h6>
             <input type="checkbox" />
           </Connector>
         </Connectorswrap>
         <Connectorswrap>
-          <Connector>
+          <Connector onClick={handleClick}>
             <img src={typhoon} />
             <h6>Typhoon Wallet</h6>
             <input type="checkbox" />

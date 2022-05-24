@@ -10,14 +10,19 @@ function App() {
 
   return (
     <div className="App">
-      {/* <Toast
-        success={false}
+      <Toast
+        info={true}
+        icon
         showToast={showToast}
         setShowToast={setShowToast}
-        message="Stake Successful"
-        icon
-      /> */}
-      <WalletConnectModal isOpen={isWalletOpen} setIsOpen={setIsWalletOpen} />
+        message="Wallet Connect coming soon"
+      />
+      <WalletConnectModal
+        isOpen={isWalletOpen}
+        showToast={showToast}
+        setShowToast={setShowToast}
+        setIsOpen={setIsWalletOpen}
+      />
       <AppRouter
         showModal={showModal}
         SetShowModal={setShowModal}
