@@ -32,6 +32,7 @@ const Container = styled.section`
   padding-top: 14rem;
   position: relative;
   padding-bottom: 3rem;
+
   &:before {
     content: "";
     width: 100%;
@@ -43,6 +44,13 @@ const Container = styled.section`
     background-repeat: no-repeat;
     background-size: contain;
     background-position: center;
+    @media screen and (max-width: 800px) {
+      top: 2%;
+      height: 5rem;
+    }
+  }
+  @media screen and (max-width: 800px) {
+    padding-top: 5rem;
   }
 `;
 
@@ -68,6 +76,11 @@ const InnerWrap = styled.div`
       width: 45%;
       justify-self: flex-end;
       margin: unset;
+      border: 1px solid red;
+      @media screen and (max-width: 908px) {
+        max-width: 100%;
+        width: 100%;
+      }
     }
   }
   @media screen and (max-width: 1168px) {
