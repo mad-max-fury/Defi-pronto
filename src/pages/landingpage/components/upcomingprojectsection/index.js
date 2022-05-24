@@ -127,7 +127,11 @@ const ProjectWraps = styled.div`
   width: 100%;
   height: fit-content;
   display: grid;
+  border: 1px solid red;
   grid-template-columns: repeat(auto-fit, minmax(24.69rem, 1fr));
   gap: 1rem;
   row-gap: 2rem;
+  @media screen and (max-width: 400px) {
+    grid-template-columns: repeat(auto-fit, minmax(100%, 1fr));
+  }
 `;

@@ -16,9 +16,11 @@ export const Container = styled.div`
     box-shadow: -10px 14px 34px 0px rgba(231, 65, 65, 0.2);
   }
   @media screen and (max-width: 400px) {
-    width: 20rem;
+    width: 90% !important;
     height: 34rem;
+    border: 1px solid red;
   }
+  /* @media screen and (max-width: 600px) { */
 `;
 export const Image = styled.img`
   width: 100%;
