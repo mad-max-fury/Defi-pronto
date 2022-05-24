@@ -45,6 +45,10 @@ export { AboutPage };
 
 const Container = styled.main`
   padding-top: 50px;
+
+  @media screen and (max-width: 450px) {
+    padding-top: 0;
+  }
 `;
 const Ceneter = styled.div`
   width: 100%;

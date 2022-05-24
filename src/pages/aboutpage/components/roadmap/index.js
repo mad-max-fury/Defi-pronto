@@ -89,6 +89,10 @@ const Heading = styled.h2`
   font-size: 42px;
   font-weight: 500;
   margin: 0 auto;
+
+  @media (max-width: 450) {
+    font-size: 25px;
+  }
 `;
 const MapContainer = styled.section`
   display: flex;
