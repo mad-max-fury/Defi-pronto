@@ -72,7 +72,7 @@ const RoadMapContainer = styled.section`
   height: fit-content;
   position: relative;
   margin-top: 4rem;
-  /* border: 1px solid red; */
+  border: 1px solid red;
   & > div {
     position: absolute;
     height: calc(100% + 100px);

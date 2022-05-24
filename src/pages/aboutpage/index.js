@@ -46,7 +46,11 @@ export { AboutPage };
 const Container = styled.main`
   padding-top: 50px;
 
-  @media screen and (max-width: 650px) {
+  @media screen and (max-width: 850px) {
+    padding-top: 0;
+  }
+
+  @media (min-width: 851) and (max-width: 950px) {
     padding-top: 0;
   }
 `;

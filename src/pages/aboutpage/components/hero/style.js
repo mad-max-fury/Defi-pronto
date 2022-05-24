@@ -105,7 +105,7 @@ export const TextUp = styled.div`
     line-height: 1.8;
   }
 
-  @media screen and (max-width: 650px) {
+  @media screen and (max-width: 850px) {
     h1 {
       width: 100%;
       font-size: 31.3px;
@@ -124,6 +124,27 @@ export const TextUp = styled.div`
       line-height: 21px;
     }
   }
+
+  @media (min-width: 851) and (max-width: 950px) {
+    h1 {
+      width: 100%;
+      font-size: 31.3px;
+      font-family: Orbitron, sans-serif;
+
+      & > span {
+        font-size: 1.8rem;
+        font-weight: 400;
+        font-family: Orbitron, sans-serif;
+        color: ${colors.secondary};
+      }
+    }
+    p {
+      width: 90%;
+      font-size: 12.8px;
+      line-height: 21px;
+    }
+  }
+  
 `;
 export const BtnWrap = styled.div`
   width: fit-content !important;
