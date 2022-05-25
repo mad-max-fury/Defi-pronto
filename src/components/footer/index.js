@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useState } from "react";
 import { colors } from "../../colors";
 
 import { FaTwitter, FaTiktok } from "react-icons/fa";
@@ -36,10 +36,45 @@ import {
   FooterSocialLink,
   
 } from "./style";
+import { Toast } from "../toast";
 
-const Footer = () => {
+const Footer = ({
+  setConnectWalletModal,
+  connectWalletModal,
+}
+) => {
+    const [isOpen, setIsOpen] = useState(false);
+    const toggle = () => setIsOpen(!isOpen);
+    const [scrolled, setScrolled] = useState(false);
+    const [Warning, setWarning] = useState(false);
+    const [showToast, setShowToast] = useState(false);
+    window.addEventListener("scroll", () => {
+        if (window.scrollY > 1) {
+        setScrolled(true);
+        } else {
+        setScrolled(false);
+        }
+    });
+
+    const scrollWithOffset = (el, offset) => {
+        const elementPosition = el.offsetTop - offset;
+        window.scroll({
+        top: elementPosition,
+        left: 0,
+        behavior: "smooth",
+        });
+    };
+
   return (
+    <>
        <Container>  
+       <Toast
+          icon
+          info
+          showToast={showToast}
+          setShowToast={setShowToast}
+          message="Page  is  Coming  soon"
+        />
             <FooterWrapper>
     
                 <IntroContainer>
@@ -58,18 +93,57 @@ const Footer = () => {
 
                     <FooterMenu>
                         <MenuHeader> Company </MenuHeader>
-                            <FooterLink to='/'>
+                            <FooterLink 
+                            to='/about'
+                            >
                                 About
                             </FooterLink>
-                            <FooterLink to='/'>
+                            <FooterLink 
+                            to="/#how-it-work"
+                            activeStyle
+                            scroll={(el) => scrollWithOffset(el, -2850)}
+                            onClick={toggle}
+                            >
                                 How it works
                             </FooterLink>
-                            <FooterLink to='/'>
+                            <FooterLink 
+                            to="#"
+                            onClick={(e) => {
+                              e.preventDefault();
+                              toggle();
+                              setWarning(!Warning);
+                              setShowToast(!showToast);
+                            }}
+                            activeStyle
+                            >
                                 Projects
                             </FooterLink>
-                            <FooterLink to='/'>
+                            <FooterLink 
+                            to="#"
+                            onClick={(e) => {
+                              e.preventDefault();
+                              toggle();
+                              setWarning(!Warning);
+                              setShowToast(!showToast);
+                            }}
+                            activeStyle
+                            >
                                 Staking
                             </FooterLink>
+                            <FooterLink 
+                            to="#"
+                            onClick={(e) => {
+                              e.preventDefault();
+                              toggle();
+                              setWarning(!Warning);
+                              setShowToast(!showToast);
+                            }}
+                            activeStyle
+                            >
+                                Resources
+                            </FooterLink>
+
+
                         
                     </FooterMenu>
 
@@ -137,6 +211,7 @@ const Footer = () => {
                 </FooterSocial>
             </FooterCreditCont>
         </Container>
+        </>
   );
 };
 

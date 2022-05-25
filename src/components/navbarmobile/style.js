@@ -48,16 +48,12 @@ export const CloseIcon = styled(VscClose)`
   font-size: 2rem;
   width: 30px;
   height: 30px;
-  /* position: absolute;
-  top: 100%;
-  right: 25%;
-  margin-top: 18px; */
   margin: auto 0;
   `;
 
 export const Icon = styled.div`
   /* position: absolute; */
-  padding-right: 35px;
+  padding-right: 25px;
   top: 1.2rem;
   right: 1.5rem;
   background: transparent;
