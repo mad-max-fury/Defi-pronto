@@ -56,7 +56,7 @@ const Navbar = ({ connectWalletModal, setConnectWalletModal }) => {
           <NavHashLink
             to="/#how-it-work"
             activeStyle
-            scroll={(el) => scrollWithOffset(el, -2850)}
+            scroll={(el) => scrollWithOffset(el, -2150)}
           >
             <span>How it works</span>
           </NavHashLink>
