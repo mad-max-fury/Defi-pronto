@@ -35,7 +35,7 @@ const Navbar = ({ connectWalletModal, setConnectWalletModal }) => {
           info
           showToast={showToast}
           setShowToast={setShowToast}
-          message="Page  is  Coming  soon"
+          message="Page  is  coming  soon"
         />
 
         <NavLink to="/">
