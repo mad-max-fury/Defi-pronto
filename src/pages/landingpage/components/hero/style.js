@@ -155,7 +155,8 @@ export const BtnWrap = styled.div`
   display: flex;
   align-self: start;
   gap: 2rem;
-  & > button {
+
+  & > span > button {
     margin: 0;
   }
 `;

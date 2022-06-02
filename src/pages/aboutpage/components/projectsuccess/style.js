@@ -30,13 +30,13 @@ export const SuccesWrapper = styled.section`
       width: 90%;
       left: 5%;
       top: -3.2%;
-      }
+    }
   }
 
   @media screen and (max-width: 650px) {
-      flex-direction: column;
-      padding-top: 4.7rem;
-      }
+    flex-direction: column;
+    padding-top: 4.7rem;
+  }
 `;
 
 export const TextContainer = styled.div`
@@ -54,10 +54,10 @@ export const TextContainer = styled.div`
   }
 
   @media screen and (max-width: 1250px) {
-      padding-left: 20px;
-      padding-right: 20px;
-      width: 95%;
-      }
+    padding-left: 20px;
+    padding-right: 20px;
+    width: 95%;
+  }
 `;
 
 export const SuccessBox = styled.div`
@@ -86,10 +86,10 @@ export const SuccessBox = styled.div`
   }
 
   @media screen and (max-width: 1250px) {
-      padding-top: 45px;
-      flex-wrap: wrap;
-      width: 95%;
-      }
+    padding-top: 45px;
+    flex-wrap: wrap;
+    width: 95%;
+  }
 `;
 
 export const SuccessTitle = styled.h3`
@@ -106,7 +106,7 @@ export const SuccessTitle = styled.h3`
 export const SuccessText = styled.p`
   width: 100%;
   line-height: 1.8rem;
-
+  font-family: "DM Sans", sans-serif;
   @media screen and (max-width: 650px) {
     font-size: 12.8px;
     line-height: 21px;

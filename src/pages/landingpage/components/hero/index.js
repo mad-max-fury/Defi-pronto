@@ -54,9 +54,6 @@ const HeroSection = () => {
           </FooterSocial>
         </BtnWrap>
       </HeroInner>
-      {/* <BgWrap>
-        <img src={backG} />
-      </BgWrap> */}
     </HeroSectionWrap>
   );
 };
