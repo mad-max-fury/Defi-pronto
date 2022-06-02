@@ -20,16 +20,16 @@ const AboutPage = () => {
       <Tokenomics
         token={"Token Name"}
         pronto={"Defipronto"}
-        marketcap={"Market Cap"}
+        marketcap={"Total Supply"}
         figure1={"$1,000,000"}
-        initial={"Initial Supply"}
+        initial={"$DFP"}
         figure2={"400,000"}
-        current={"Current Total Supply"}
-        figure3={"200,000"}
-        burned={"Defipronto Burned"}
-        figure4={"30,000"}
-        circulation={"Defipronto in Circulation"}
-        figure5={"100,000"}
+        // current={"Current Total Supply"}
+        // figure3={"200,000"}
+        // burned={"Defipronto Burned"}
+        // figure4={"30,000"}
+        // circulation={"Defipronto in Circulation"}
+        // figure5={"100,000"}
       />
 
       <Allocation />
@@ -37,14 +37,25 @@ const AboutPage = () => {
       <AccordionContainer>
         <Divider />
         {[
-          "Governance",
-          "Staking",
-          "Deflationary Mechanics",
-          "Liquidity Farming",
-        ].map((item, index) => {
+          {
+            title: "Governance",
+            content: "$DFP token holders can create and vote on proposals",
+          },
+          {
+            title: "Staking",
+            content:
+              "Token holders can stake their tokens to get priority access to IDOs on Defipronto launchpad and also earn rewards in more $DFP tokens",
+          },
+          // {
+          //   title: "Deflationary Mechanics",
+          //   content: "",
+          // },
+          // "Liquidity Farming",
+        ].map(({ title, content }, index) => {
           return (
             <Accordion
-              heading={item}
+              heading={title}
+              content={content}
               active={index === active && true}
               func={() => handleClick(index)}
             />

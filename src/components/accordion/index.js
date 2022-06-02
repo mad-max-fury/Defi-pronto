@@ -3,7 +3,7 @@ import styled from "styled-components";
 import { useState } from "react";
 import { colors } from "../../colors";
 import { FaAngleDown } from "react-icons/fa";
-const Accordion = ({ heading, accordingContentFor, func, active }) => {
+const Accordion = ({ heading, accordingContentFor, func, active, content }) => {
   // const [Open, setOpen] = useState(false);
   // useEffect(() => {
   //   setOpen(!Open);
@@ -19,16 +19,7 @@ const Accordion = ({ heading, accordingContentFor, func, active }) => {
       </AccordionHeader>
       <AccordionContent active={active}>
         <>
-          <p>
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pretium
-            diam dui ut tellus tortor tristique tellus egestas. Nullam nullam
-            ullamcorper tortor mus. Donec quis vulputate congue malesuada urna
-            arcu quis. Mauris elit leo quis rhoncus in vestibulum maecenas.
-          </p>
-          <p>
-            In my free time I also play around some other things like Graphic
-            Design, Optimized Content Creation and Social Media Management.
-          </p>
+          <p>{content}</p>
         </>
       </AccordionContent>
     </AccordionWrapper>

@@ -16,9 +16,8 @@ const HeroSection = () => {
             Decentralized tokens built on the <span>cardano network</span>
           </h1>
           <p>
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Odio
-            imperdiet nibh at et neque. Sed adipiscing risus aenean neque
-            imperdiet amet fermentum.
+            Get early access to the most promising Cardano projects with
+            Highly-vetted ideas and teams you can trust.
           </p>
         </TextUp>
         <BtnWrap>

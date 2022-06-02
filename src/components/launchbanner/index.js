@@ -14,7 +14,7 @@ const LaunchBanner = () => {
           <Button
             filled={true}
             bgColor={colors.white}
-            text={"Apply To Launch Pad"}
+            text={"Apply To Launch"}
           />
         </span>
       </LaunchBannerContainer>

@@ -11,10 +11,11 @@ const RoadMap = () => {
         <div>
           <div>
             <MiniCardWrap>
-              <ItemHeading>Q1 - Launch Platform</ItemHeading>
+              <ItemHeading>Phase 1 - Launch Platform</ItemHeading>
               <ItemParagraph>
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Odio
-                imperdiet nibh at et neque.
+                DeFi Pronto Initial Announcement Defipronto Launchpad UI/UX
+                Wireframing Website Release Onepager Release Partnerships &
+                Integrations Private Seed Sale Community Building
               </ItemParagraph>
             </MiniCardWrap>
           </div>
@@ -22,10 +23,12 @@ const RoadMap = () => {
         <div>
           <div>
             <MiniCardWrap>
-              <ItemHeading>Q2 - Launch Token</ItemHeading>
+              <ItemHeading>Phase 2 - Launch Token</ItemHeading>
               <ItemParagraph>
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Odio
-                imperdiet nibh at et neque.
+                Defipronto Accelerator Program Initial Projects Selection
+                Tokenomics & Information About Selected Projects To be Launched
+                DFP Token Pre-Sale Exchange Listing CMC/Coin Gecko Listing
+                Initial Defipronto IDO Registration
               </ItemParagraph>
             </MiniCardWrap>
           </div>
@@ -33,10 +36,10 @@ const RoadMap = () => {
         <div>
           <div>
             <MiniCardWrap>
-              <ItemHeading>Q3 - Staking Begins</ItemHeading>
+              <ItemHeading>Phase 3 - Staking Begins</ItemHeading>
               <ItemParagraph>
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Odio
-                imperdiet nibh at et neque.
+                Project Team Token Lock As A Service Project Team Token Staking
+                As A Service NFT Launchpad Defipronto NFT Launchpad
               </ItemParagraph>
             </MiniCardWrap>
           </div>
@@ -44,10 +47,9 @@ const RoadMap = () => {
         <div>
           <div>
             <MiniCardWrap>
-              <ItemHeading>Q4 - Onboard Projects</ItemHeading>
+              <ItemHeading>Phase 4 - Onboard Projects</ItemHeading>
               <ItemParagraph>
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Odio
-                imperdiet nibh at et neque.
+                Further Partnerships Defipronto Launchpad As A Service
               </ItemParagraph>
             </MiniCardWrap>
           </div>
@@ -101,12 +103,12 @@ const Heading = styled.h2`
 const MapContainer = styled.section`
   display: flex;
   flex-direction: column;
-  height: 60rem;
+  height: 70rem;
   padding: 6rem 0;
   gap: 2rem;
   & > div {
     width: 5px;
-    height: 20rem;
+    height: 25rem;
     position: relative;
     &:before {
       content: "";
