@@ -1,6 +1,6 @@
 import styled from "styled-components";
 
-import {defiPronto } from "../../assets";
+import { defiPronto } from "../../assets";
 import { colors } from "../../colors";
 
 export const Container = styled.div`
@@ -25,19 +25,16 @@ export const Container = styled.div`
     background-position: center;
 
     @media screen and (max-width: 650px) {
-      
     }
   }
 
   @media screen and (max-width: 650px) {
     padding-top: 6.5rem;
-    }
+  }
 
-  &>aside{
-
-    &>h2{
+  & > aside {
+    & > h2 {
       font-size: 45px;
-      
     }
   }
 `;
@@ -64,8 +61,7 @@ export const ChartInfoContainer = styled.div`
 
   @media (max-width: 650px) {
     width: 80%;
-  };
-  
+  } ;
 `;
 
 export const ChartInfo = styled.div`
@@ -77,9 +73,8 @@ export const ChartInfo = styled.div`
   width: fit-content;
 
   @media (max-width: 650px) {
-    
-  };
-  
+  }
+
   /* padding-top: 20px; */
 `;
 
@@ -89,7 +84,18 @@ export const Purple = styled.div`
   border-radius: 50%;
   background-color: ${colors.purple};
   /* margin-right: 20px; */
-
+`;
+export const DeepBlue = styled.div`
+  width: 29px;
+  height: 29px;
+  border-radius: 50%;
+  background-color: #07cbf5;
+`;
+export const DeepGreen = styled.div`
+  width: 29px;
+  height: 29px;
+  border-radius: 50%;
+  background-color: #35a885;
 `;
 
 export const Blue = styled.div`
@@ -97,7 +103,6 @@ export const Blue = styled.div`
   height: 29px;
   border-radius: 50%;
   background-color: ${colors.blue};
-
 `;
 
 export const Yellow = styled.div`
@@ -105,7 +110,6 @@ export const Yellow = styled.div`
   height: 29px;
   border-radius: 50%;
   background-color: ${colors.yellow};
-
 `;
 
 export const Red = styled.div`
@@ -113,7 +117,6 @@ export const Red = styled.div`
   height: 29px;
   border-radius: 50%;
   background-color: ${colors.secondary};
-
 `;
 
 export const Lemon = styled.div`
@@ -121,10 +124,9 @@ export const Lemon = styled.div`
   height: 29px;
   border-radius: 50%;
   background-color: ${colors.lemon};
-
 `;
 
 export const ChartText = styled.p`
-  font-family: 'Monument Extended' DM Sans;
+  font-family: "Monument Extended" DM Sans;
   margin-left: 20px;
 `;

@@ -1,5 +1,5 @@
-import React from "react";
-import { Button } from "../../../../components";
+import React, { useState } from "react";
+import { Button, Toast } from "../../../../components";
 import { HeroSectionWrap, HeroInner, BgWrap, BtnWrap, TextUp } from "./style";
 
 import { aboutLooper } from "../../../../assets";
@@ -7,9 +7,18 @@ import { aboutLooper } from "../../../../assets";
 import { RiMoneyDollarCircleLine, RiFileList2Line } from "react-icons/ri";
 
 const HeroSection = () => {
+  const [showToast, setShowToast] = useState(false);
+
+  const handleClick = () => setShowToast(true);
   return (
     <HeroSectionWrap>
-      {/* <div className="image-wrap"></div> */}
+      <Toast
+        info={true}
+        icon
+        showToast={showToast}
+        setShowToast={setShowToast}
+        message="coming soon"
+      />
       <HeroInner>
         <TextUp>
           <h1>
@@ -21,18 +30,23 @@ const HeroSection = () => {
           </p>
         </TextUp>
         <BtnWrap>
-          <Button
-            text={"Buy DFP"}
-            Icon={RiMoneyDollarCircleLine}
-            size={20}
-            reverse
-          />
-          <Button
-            text={"White Paper"}
-            Icon={RiFileList2Line}
-            size={20}
-            reverse
-          />
+          <span onClick={handleClick}>
+            <Button
+              text={"Buy DFP"}
+              Icon={RiMoneyDollarCircleLine}
+              size={20}
+              reverse
+            />
+          </span>
+          <span onClick={handleClick}>
+            <Button
+              text={"White Paper"}
+              Icon={RiFileList2Line}
+              size={20}
+              bgColor={"#fff"}
+              reverse
+            />
+          </span>
         </BtnWrap>
       </HeroInner>
 

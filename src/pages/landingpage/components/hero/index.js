@@ -1,5 +1,5 @@
-import React from "react";
-import { Button } from "../../../../components";
+import React, { useState } from "react";
+import { Button, Toast } from "../../../../components";
 import {
   HeroSectionWrap,
   HeroInner,
@@ -7,15 +7,23 @@ import {
   TextUp,
   FooterSocial,
   FooterLink,
-  BgWrap,
 } from "./style";
 import { ImTelegram, ImTwitter } from "react-icons/im";
-import { RiDiscordFill } from "react-icons/ri";
-import { HeroPageBg, bg1, heroSection2, backG } from "../../../../assets";
+import { FaMedium } from "react-icons/fa";
 
 const HeroSection = () => {
+  const [showToast, setShowToast] = useState(false);
+
+  const handleClick = () => setShowToast(true);
   return (
     <HeroSectionWrap>
+      <Toast
+        info={true}
+        icon
+        showToast={showToast}
+        setShowToast={setShowToast}
+        message="coming soon"
+      />
       <div className="image-wrap"></div>
       <HeroInner>
         <TextUp>
@@ -28,14 +36,16 @@ const HeroSection = () => {
           </p>
         </TextUp>
         <BtnWrap>
-          <Button text={"Go To App"} />
+          <span onClick={handleClick}>
+            <Button text={"Go To App"} />
+          </span>
           <FooterSocial>
             <FooterLink to="/">
               <ImTelegram size="25px" />
             </FooterLink>
 
             <FooterLink to="/">
-              <RiDiscordFill size="25px" />
+              <FaMedium size="25px" />
             </FooterLink>
 
             <FooterLink to="/">

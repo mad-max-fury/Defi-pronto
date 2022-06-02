@@ -1,14 +1,5 @@
 import React, { useState } from "react";
-import { colors } from "../../colors";
-
-import { FaTwitter, FaTiktok } from "react-icons/fa";
-import {
-  RiDiscordLine,
-  RiRedditFill,
-  RiInstagramLine,
-  RiGoogleFill,
-  RiYoutubeFill,
-} from "react-icons/ri";
+import { FaMedium } from "react-icons/fa";
 
 import { ImTelegram, ImTwitter } from "react-icons/im";
 
@@ -150,7 +141,7 @@ const Footer = ({ setConnectWalletModal, connectWalletModal }) => {
             </FooterSocialLink>
 
             <FooterSocialLink to="/">
-              <RiDiscordLine size="30px" />
+              <FaMedium size="30px" />
             </FooterSocialLink>
 
             <FooterSocialLink to="/">

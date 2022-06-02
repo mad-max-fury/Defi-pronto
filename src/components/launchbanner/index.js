@@ -1,16 +1,27 @@
-import React from "react";
+import React, { useState } from "react";
 import styled from "styled-components";
 import { defiProntoWhite } from "../../assets";
 import { colors } from "../../colors";
 import { Button } from "../button";
+import { Toast } from "../toast";
 const LaunchBanner = () => {
+  const [showToast, setShowToast] = useState(false);
+
+  const handleClick = () => setShowToast(true);
   return (
     <LaunchBannerWrap>
+      <Toast
+        info={true}
+        icon
+        showToast={showToast}
+        setShowToast={setShowToast}
+        message="coming soon"
+      />
       <LaunchBannerContainer>
         <LaunchBannerHeading>
           Want to launch your project on DefiPronto?
         </LaunchBannerHeading>
-        <span>
+        <span onClick={handleClick}>
           <Button
             filled={true}
             bgColor={colors.white}

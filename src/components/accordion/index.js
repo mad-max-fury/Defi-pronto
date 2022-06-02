@@ -4,11 +4,6 @@ import { useState } from "react";
 import { colors } from "../../colors";
 import { FaAngleDown } from "react-icons/fa";
 const Accordion = ({ heading, accordingContentFor, func, active, content }) => {
-  // const [Open, setOpen] = useState(false);
-  // useEffect(() => {
-  //   setOpen(!Open);
-  // }, [active]);
-
   return (
     <AccordionWrapper>
       <AccordionHeader onClick={func}>

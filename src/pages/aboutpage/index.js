@@ -46,11 +46,6 @@ const AboutPage = () => {
             content:
               "Token holders can stake their tokens to get priority access to IDOs on Defipronto launchpad and also earn rewards in more $DFP tokens",
           },
-          // {
-          //   title: "Deflationary Mechanics",
-          //   content: "",
-          // },
-          // "Liquidity Farming",
         ].map(({ title, content }, index) => {
           return (
             <Accordion

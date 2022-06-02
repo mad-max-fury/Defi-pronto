@@ -15,8 +15,7 @@ import {
   FooterLink,
 } from "./style";
 import { ImTelegram, ImTwitter } from "react-icons/im";
-import { RiDiscordFill } from "react-icons/ri";
-
+import { FaMedium } from "react-icons/fa";
 const ProjectCard = ({
   progress,
   src,
@@ -57,7 +56,7 @@ const ProjectCard = ({
             </FooterLink>
 
             <FooterLink to="/">
-              <RiDiscordFill size="25px" />
+              <FaMedium size="25px" />
             </FooterLink>
 
             <FooterLink to="/">
