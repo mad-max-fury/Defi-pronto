@@ -111,24 +111,32 @@ const Footer = ({ setConnectWalletModal, connectWalletModal }) => {
                 }}
                 activeStyle
               >
-                Resources
+                Docs
               </FooterLink>
             </FooterMenu>
 
             <FooterMenu>
               <MenuHeader> Support </MenuHeader>
-              <FooterLink to="/">Documentation</FooterLink>
-              <FooterLink to="/">Tutorials & Guide</FooterLink>
-              <FooterLink to="/">FAQs</FooterLink>
-              <FooterLink to="/">Apply</FooterLink>
+              <FooterLink href="https://docs.defipronto.com/">
+                Documentation
+              </FooterLink>
+              <FooterLink href="https://docs.defipronto.com/tutorial/overview">
+                Tutorials & Guide
+              </FooterLink>
+              <FooterLink href="https://docs.defipronto.com/tutorial/faq">
+                FAQs
+              </FooterLink>
+              <FooterLink href="/">Apply</FooterLink>
             </FooterMenu>
 
             <FooterMenu>
               <MenuHeader> Social Media </MenuHeader>
-              <FooterLink to="/">Telegram</FooterLink>
-              <FooterLink to="/">Discord</FooterLink>
-              <FooterLink to="/">Twitter</FooterLink>
-              <FooterLink to="/">Github</FooterLink>
+              <FooterLink href="/">Telegram</FooterLink>
+              <FooterLink href="/">Discord</FooterLink>
+              <FooterLink href="/">Twitter</FooterLink>
+              <FooterLink href="https://github.com/Defipronto-Labs">
+                Github
+              </FooterLink>
             </FooterMenu>
           </FooterIntroWrap>
         </FooterWrapper>

@@ -94,7 +94,7 @@ const Navbar = ({ connectWalletModal, setConnectWalletModal }) => {
               setShowToast(!showToast);
             }}
           >
-            <span>Resources</span>
+            <span>Docs</span>
           </NavLink>
           <NavBtnLink
             id="connect-wallet"
