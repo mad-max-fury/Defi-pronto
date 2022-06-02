@@ -106,7 +106,32 @@ export const FooterIntro = styled.p`
   }
 `;
 
-export const FooterLink = styled.a`
+export const FooterLink = styled(Link)`
+  color: ${colors.white};
+  display: flex;
+  align-items: center;
+  text-decoration: none;
+  padding: 0 0 11px 0;
+  color: #a4a4a4;
+  width: max-content;
+  cursor: pointer;
+  transition: all 0.3s ease-in-out;
+  font-family: "DM Sans", sans-serif !important;
+
+  &:hover {
+    color: ${colors.secondary};
+    transition: all 0.3s ease-in-out;
+  }
+  &.active {
+    color: ${colors.secondary};
+    transition: all 0.3s ease-in-out;
+  }
+
+  &:span {
+    font-family: "DM Sans", sans-serif !important;
+  }
+`;
+export const FooterNormalLink = styled.a`
   color: ${colors.white};
   display: flex;
   align-items: center;
@@ -205,7 +230,7 @@ export const FooterSocial = styled.div`
   }
 `;
 
-export const FooterSocialLink = styled(Link)`
+export const FooterSocialLink = styled.a`
   color: ${colors.secondary};
   display: flex;
   align-items: center;

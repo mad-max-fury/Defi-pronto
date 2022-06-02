@@ -19,6 +19,7 @@ import {
   FooterCredit,
   FooterSocial,
   FooterSocialLink,
+  FooterNormalLink,
 } from "./style";
 import { Toast } from "../toast";
 
@@ -117,26 +118,32 @@ const Footer = ({ setConnectWalletModal, connectWalletModal }) => {
 
             <FooterMenu>
               <MenuHeader> Support </MenuHeader>
-              <FooterLink href="https://docs.defipronto.com/">
+              <FooterNormalLink href="https://docs.defipronto.com/">
                 Documentation
-              </FooterLink>
-              <FooterLink href="https://docs.defipronto.com/tutorial/overview">
+              </FooterNormalLink>
+              <FooterNormalLink href="https://docs.defipronto.com/tutorial/overview">
                 Tutorials & Guide
-              </FooterLink>
-              <FooterLink href="https://docs.defipronto.com/tutorial/faq">
+              </FooterNormalLink>
+              <FooterNormalLink href="https://docs.defipronto.com/tutorial/faq">
                 FAQs
-              </FooterLink>
-              <FooterLink href="/">Apply</FooterLink>
+              </FooterNormalLink>
+              <FooterLink to="#">Apply</FooterLink>
             </FooterMenu>
 
             <FooterMenu>
               <MenuHeader> Social Media </MenuHeader>
-              <FooterLink href="/">Telegram</FooterLink>
-              <FooterLink href="/">Discord</FooterLink>
-              <FooterLink href="/">Twitter</FooterLink>
-              <FooterLink href="https://github.com/Defipronto-Labs">
+              <FooterNormalLink href=" https://t.me/defipronto">
+                Telegram
+              </FooterNormalLink>
+              <FooterNormalLink href="https://medium.com/@defipronto">
+                Medium
+              </FooterNormalLink>
+              <FooterNormalLink href="https://twitter.com/defipronto">
+                Twitter
+              </FooterNormalLink>
+              <FooterNormalLink href="https://github.com/Defipronto-Labs">
                 Github
-              </FooterLink>
+              </FooterNormalLink>
             </FooterMenu>
           </FooterIntroWrap>
         </FooterWrapper>
@@ -144,15 +151,15 @@ const Footer = ({ setConnectWalletModal, connectWalletModal }) => {
           <FooterCredit>© 2021 Defipronto. All rights reserved</FooterCredit>
 
           <FooterSocial>
-            <FooterSocialLink to="/">
+            <FooterSocialLink href=" https://t.me/defipronto">
               <ImTelegram size="30px" />
             </FooterSocialLink>
 
-            <FooterSocialLink to="/">
+            <FooterSocialLink href="https://medium.com/@defipronto">
               <FaMedium size="30px" />
             </FooterSocialLink>
 
-            <FooterSocialLink to="/">
+            <FooterSocialLink href="https://twitter.com/defipronto">
               <ImTwitter size="30px" />
             </FooterSocialLink>
           </FooterSocial>
