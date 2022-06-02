@@ -191,7 +191,9 @@ export const ItemHeading = styled.h6`
 export const ItemParagraph = styled.p`
   text-align: start;
   line-height: unset;
-
+  font-size: 14px;
+  font-weight: 500;
+  line-height: 16.67px;
   @media (max-width: 650px) {
     font-size: 12.8px;
   }
