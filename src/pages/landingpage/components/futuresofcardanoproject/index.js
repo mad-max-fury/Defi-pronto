@@ -13,22 +13,25 @@ const FutureOfCardanoIntroSection = () => {
     {
       src: star,
       headingtext: "Vetted Projects",
-      paragraph: "Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
+      paragraph:
+        "We only accept and incubate vetted projects with unique use cases and utilities.",
     },
     {
       src: people,
       headingtext: "Community",
-      paragraph: "Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
+      paragraph:
+        "Enagage with the Defipronto community in AMA and Q&A sessions.",
     },
     {
       src: rocket,
       headingtext: "Launch Pad",
-      paragraph: "Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
+      paragraph:
+        "Launch On Defipronto Launchpad with priority access given to $DFP token holders.",
     },
     {
       src: speaker,
       headingtext: "Marketing",
-      paragraph: "Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
+      paragraph: "We also support projects with after launch marketing.",
     },
   ];
 
@@ -42,8 +45,8 @@ const FutureOfCardanoIntroSection = () => {
       <div>
         <Intro>
           <SectionIntroCards
-            title={"The Future of Cardano Projects"}
-            desc="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Odio imperdiet nibh at et neque. Sed adipiscing risus aenean neque imperdiet amet fermentum."
+            title={"Be Part Of The Future Of Cardano Ecosystem"}
+            desc="Join the Defipronto community and take part in a Bright, Unique, and Engaging IDO platform on Cardano to empower the most innovative projects."
           />
           <span>
             {data.map(({ src, headingtext, paragraph }) => (

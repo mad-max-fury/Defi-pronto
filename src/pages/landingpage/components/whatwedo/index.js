@@ -12,7 +12,7 @@ const Whatwedo = () => {
         <IntroWrap
           title={"What we do at DefiPronto"}
           desc={
-            "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Odio imperdiet nibh at et neque. Sed adipiscing risus aenean neque imperdiet amet fermentum. Nulla ut sagittis dignissim quisque scelerisque vitae tempor ante. Elementum, augue iaculis condimentum quis. Quis tortor ultricies placerat nam urna."
+            "We propel and accelerate the best projects, launching only high-quality projects on the Cardano blockchain. Stake $DFP tokens to get early-access to the most promising projects."
           }
         />
       </InnerWrap>

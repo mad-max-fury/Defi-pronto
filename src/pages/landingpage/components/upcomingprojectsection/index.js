@@ -15,30 +15,30 @@ const UpcomingProject = () => {
   const data = [
     {
       src: imageColors,
-      heading: "Hyper Drive Metaverse",
+      heading: "DefiPronto",
       paragraph:
-        "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Odio imperdiet nibh at et neque.",
+        "Launchpad & Accelerator to launch the most promising projects on the Cardano blockchain.",
       progress: null,
-      targetAmount: "20,000",
-      targetRaised: "0.00",
+      targetAmount: "TBA",
+      targetRaised: "TBA",
     },
     {
       src: imageSolid,
-      heading: "Hyper Drive Metaverse",
+      heading: "Solar Nodes",
       paragraph:
-        "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Odio imperdiet nibh at et neque.",
+        "Decentralizing Electricity through solar meshes that will also act as nodes that can generate and validate blocks on an 3rd generation POS blockchain.",
       progress: null,
-      targetAmount: "20,000",
-      targetRaised: "0.00",
+      targetAmount: "TBA",
+      targetRaised: "TBA",
     },
     {
       src: imageGalaxy,
-      heading: "Hyper Drive Metaverse",
+      heading: "Cryptogenie",
       paragraph:
-        "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Odio imperdiet nibh at et neque.",
+        "Programatically Smart NFTs that you can breed and mutate into new and smart genie NFTs",
       progress: null,
-      targetAmount: "20,000",
-      targetRaised: "0.00",
+      targetAmount: "TBA",
+      targetRaised: "TBA",
     },
   ];
   return (
