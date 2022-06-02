@@ -48,7 +48,7 @@ const Allocation = () => {
         </ChartInfo>
 
         <ChartInfo>
-          <Lemon /> <ChartText>DAO - 23%</ChartText>
+          <Lemon /> <ChartText>Team & Advisors - 23%</ChartText>
         </ChartInfo>
 
         <ChartInfo>

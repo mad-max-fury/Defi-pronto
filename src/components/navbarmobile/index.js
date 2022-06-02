@@ -36,14 +36,13 @@ const NavBarMobile = ({
   return (
     <>
       <NavBarMobileContainer isOpen={isOpen}>
-      <NavLogoContainer>
-        <LogoContainer src={dropLogo} />
+        <NavLogoContainer>
+          <LogoContainer src={dropLogo} />
           <Icon>
             <CloseIcon onClick={toggle} />
           </Icon>
-      </NavLogoContainer>
-        
-        
+        </NavLogoContainer>
+
         <NavBarLinksWrapper>
           <NavLinks>
             <NavLink to="/about" onClick={toggle} activeStyle>
@@ -100,9 +99,8 @@ const NavBarMobile = ({
               }}
               activeStyle
             >
-              <span>Resources</span>
+              <span>Docs</span>
             </NavLink>
-
           </NavLinks>
           <NavBtnLinkWrap>
             <NavBtnLink
