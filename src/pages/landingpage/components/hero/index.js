@@ -40,15 +40,15 @@ const HeroSection = () => {
             <Button text={"Go To App"} />
           </span>
           <FooterSocial>
-            <FooterLink to="/">
+            <FooterLink href="https://t.me/defipronto">
               <ImTelegram size="25px" />
             </FooterLink>
 
-            <FooterLink to="/">
+            <FooterLink href="https://medium.com/@defipronto">
               <FaMedium size="25px" />
             </FooterLink>
 
-            <FooterLink to="/">
+            <FooterLink href="https://twitter.com/defipronto">
               <ImTwitter size="25px" />
             </FooterLink>
           </FooterSocial>

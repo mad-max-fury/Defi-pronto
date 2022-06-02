@@ -42,11 +42,15 @@ const ProjectCard = ({
           <TextRow>
             <InnerTextCol>
               <h5>Target Amount</h5>
-              <h4>{targetAmount}</h4>
+              <h4 title={targetAmount === "TBA" && "To be announced"}>
+                {targetAmount}
+              </h4>
             </InnerTextCol>
             <InnerTextCol>
               <h5>Total Raised</h5>
-              <h4>{targetRaised}</h4>
+              <h4 title={targetRaised === "TBA" && "To be announced"}>
+                {targetRaised}
+              </h4>
             </InnerTextCol>
           </TextRow>
 

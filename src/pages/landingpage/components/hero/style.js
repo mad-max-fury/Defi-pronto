@@ -169,7 +169,7 @@ export const FooterSocial = styled.div`
     gap: 0.5rem;
   }
 `;
-export const FooterLink = styled(Link)`
+export const FooterLink = styled.a`
   color: ${colors.white};
   display: flex;
   justify-content: center;
