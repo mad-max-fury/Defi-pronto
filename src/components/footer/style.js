@@ -43,6 +43,7 @@ export const IntroContainer = styled.div`
   flex-direction: column;
   justify-content: flex-end;
   align-items: start;
+  align-self: flex-start;
 
   @media (max-width: 550px) {
     padding: 0px 20px;
@@ -54,7 +55,7 @@ export const IntroContainer = styled.div`
 `;
 
 export const FooterLogoLink = styled(Link)`
-  padding: 40px 20px 5px 0px;
+  padding: 0px 20px 5px 0px;
   color: #a4a4a4;
   width: max-content;
   cursor: pointer;
