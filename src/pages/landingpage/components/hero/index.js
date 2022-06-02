@@ -23,11 +23,8 @@ const HeroSection = () => {
             Decentralized Incubation and launchpad for <span>cardano</span>
           </h1>
           <p>
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Odio
-            imperdiet nibh at et neque. Sed adipiscing risus aenean neque
-            imperdiet amet fermentum. Nulla ut sagittis dignissim quisque
-            scelerisque vitae tempor ante. Elementum, augue iaculis condimentum
-            quis. Quis tortor ultricies placerat nam urna.
+            Get early access to the most promising Cardano projects with
+            Highly-vetted ideas and teams you can trust.
           </p>
         </TextUp>
         <BtnWrap>

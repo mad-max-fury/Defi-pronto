@@ -1,17 +1,9 @@
 import React from "react";
 import { Button } from "../../../../components";
-import {
-  HeroSectionWrap,
-  HeroInner,
-  BgWrap,
-  BtnWrap,
-  TextUp,
-  FooterSocial,
-  FooterLink,
-} from "./style";
+import { HeroSectionWrap, HeroInner, BgWrap, BtnWrap, TextUp } from "./style";
 
-import { aboutLooper } from "../../../../assets"
-// import { IoNewspaperOutline } from "react-icons/io";
+import { aboutLooper } from "../../../../assets";
+
 import { RiMoneyDollarCircleLine, RiFileList2Line } from "react-icons/ri";
 
 const HeroSection = () => {
@@ -26,13 +18,22 @@ const HeroSection = () => {
           <p>
             Lorem ipsum dolor sit amet, consectetur adipiscing elit. Odio
             imperdiet nibh at et neque. Sed adipiscing risus aenean neque
-            imperdiet amet fermentum.           
-            </p>
+            imperdiet amet fermentum.
+          </p>
         </TextUp>
         <BtnWrap>
-          <Button text={"Buy DFP"} Icon={RiMoneyDollarCircleLine} size={20} reverse />
-          <Button text={"White Paper"} Icon={RiFileList2Line} size={20} reverse />
-          
+          <Button
+            text={"Buy DFP"}
+            Icon={RiMoneyDollarCircleLine}
+            size={20}
+            reverse
+          />
+          <Button
+            text={"White Paper"}
+            Icon={RiFileList2Line}
+            size={20}
+            reverse
+          />
         </BtnWrap>
       </HeroInner>
 
