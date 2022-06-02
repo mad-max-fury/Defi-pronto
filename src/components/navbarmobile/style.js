@@ -25,28 +25,35 @@ export const NavBarMobileContainer = styled.div`
 `;
 
 export const NavLogoContainer = styled.div`
-
+  /* position: absolute; */
+  top: 0%;
+  left: 0%;
+  height: 70px;
+  display: flex;
+  width: 100%;
+  justify-content: space-between;
+  align-items: center;
 `;
 
 export const LogoContainer = styled.img`
   padding-left: 35px;
   width: 70px;
   height: 70px;
-  position: relative;
-  margin-top: -18px;
+  /* position: relative; */
+  /* margin-top: -18px; */
 `;
 
 export const CloseIcon = styled(VscClose)`
   color: #fff;
   font-size: 2rem;
-  position: absolute;
-  top: 100%;
-  right: 25%;
-  margin-top: 18px;
-`;
+  width: 30px;
+  height: 30px;
+  margin: auto 0;
+  `;
 
 export const Icon = styled.div`
-  position: absolute;
+  /* position: absolute; */
+  padding-right: 25px;
   top: 1.2rem;
   right: 1.5rem;
   background: transparent;
@@ -118,6 +125,7 @@ export const NavBtnLinkWrap = styled.div`
 `;
 export const NavBtnLink = styled(Link)`
   border-radius: 5px;
+  padding-top: 25px;
   width: fit-content;
   height: fit-content;
   text-decoration: none;

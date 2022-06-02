@@ -15,7 +15,7 @@ function App() {
         icon
         showToast={showToast}
         setShowToast={setShowToast}
-        message="Wallet Connect coming soon"
+        message="Wallet connect coming soon"
       />
       <WalletConnectModal
         isOpen={isWalletOpen}

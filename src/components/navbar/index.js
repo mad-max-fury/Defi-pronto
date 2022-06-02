@@ -35,7 +35,7 @@ const Navbar = ({ connectWalletModal, setConnectWalletModal }) => {
           info
           showToast={showToast}
           setShowToast={setShowToast}
-          message="Page  is  Coming  soon"
+          message="Page  is  coming  soon"
         />
 
         <NavLink to="/">
@@ -56,7 +56,7 @@ const Navbar = ({ connectWalletModal, setConnectWalletModal }) => {
           <NavHashLink
             to="/#how-it-work"
             activeStyle
-            scroll={(el) => scrollWithOffset(el, -2850)}
+            scroll={(el) => scrollWithOffset(el, -2150)}
           >
             <span>How it works</span>
           </NavHashLink>
@@ -82,6 +82,19 @@ const Navbar = ({ connectWalletModal, setConnectWalletModal }) => {
             }}
           >
             <span>Staking</span>
+          </NavLink>
+
+          <NavLink
+            style={{ color: "#fff" }}
+            to="#"
+            onClick={(e) => {
+              e.preventDefault();
+
+              setWarning(!Warning);
+              setShowToast(!showToast);
+            }}
+          >
+            <span>Resources</span>
           </NavLink>
           <NavBtnLink
             id="connect-wallet"
