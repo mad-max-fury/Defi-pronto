@@ -25,7 +25,7 @@ const Allocation = () => {
       <SectionIntroCards
         title={"Allocation & Utility"}
         desc={
-          "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Odio imperdiet nibh at et neque. Sed adipiscing risus aenean neque imperdiet amet fermentum."
+          "$DFP Token Distribution and how the token will be utilized in the Defipronto ecosystem."
         }
       />
       <AllocationChartImg src={allocationChart} />
