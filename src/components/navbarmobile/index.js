@@ -14,6 +14,7 @@ import {
   NavHashLink,
   NavBtnLinkWrap,
   NavBtnLink,
+  NavNormalLink,
 } from "./style";
 const NavBarMobile = ({
   toggle,
@@ -89,18 +90,15 @@ const NavBarMobile = ({
               <span>Staking</span>
             </NavLink>
 
-            <NavLink
-              to="#"
+            <NavNormalLink
+              href="https://docs.defipronto.com/"
               onClick={(e) => {
-                e.preventDefault();
                 toggle();
-                setWarning(!Warning);
-                setShowToast(!showToast);
               }}
               activeStyle
             >
               <span>Docs</span>
-            </NavLink>
+            </NavNormalLink>
           </NavLinks>
           <NavBtnLinkWrap>
             <NavBtnLink

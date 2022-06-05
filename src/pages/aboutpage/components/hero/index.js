@@ -22,7 +22,8 @@ const HeroSection = () => {
       <HeroInner>
         <TextUp>
           <h1>
-            Decentralized tokens built on the <span>cardano network</span>
+            Decentralized Incubation and launchpad for{" "}
+            <span>Cardano Projects</span>
           </h1>
           <p>
             Get early access to the most promising Cardano projects with

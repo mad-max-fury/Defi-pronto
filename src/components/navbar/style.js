@@ -39,15 +39,35 @@ export const NavLink = styled(Link)`
     transition: all 0.3s ease-in-out;
   }
 
-  & > img{
-      width: 60px;
-      height: 60px;
+  & > img {
+    width: 60px;
+    height: 60px;
 
     @media screen and (max-width: 650px) {
       width: 50px;
       height: 50px;
       padding-left: 8px;
     }
+  }
+`;
+export const NavNormalLink = styled.a`
+  color: #fff;
+  list-style: none;
+  text-decoration: none;
+  display: flex;
+  align-items: flex-start;
+  font-size: 1.5rem;
+  justify-content: start;
+  cursor: pointer;
+  font-family: "DM Sans", sans-serif;
+
+  transition: all 0.3s ease-in-out;
+  &:hover {
+    color: ${colors.secondary};
+    transition: all 0.3s ease-in-out;
+  }
+  &.active {
+    color: ${colors.secondary};
   }
 `;
 export const NavHashLink = styled(HashLink)`
@@ -82,7 +102,7 @@ export const Bars = styled(RiMenu3Line)`
     font-size: 1.8rem;
   }
 
-  & > span{
+  & > span {
     border: 3px solid red;
     @media (max-width: 950px) {
       display: block;

@@ -1,7 +1,15 @@
 import React, { useState } from "react";
 import { NavBarMobile } from "../navbarmobile";
 import { defiProntoLogo } from "../../assets";
-import { Nav, NavLink, Bars, NavMenu, NavBtnLink, NavHashLink } from "./style";
+import {
+  Nav,
+  NavLink,
+  Bars,
+  NavMenu,
+  NavBtnLink,
+  NavHashLink,
+  NavNormalLink,
+} from "./style";
 import { Button } from "../button";
 import { Toast } from "../toast";
 const Navbar = ({ connectWalletModal, setConnectWalletModal }) => {
@@ -84,18 +92,13 @@ const Navbar = ({ connectWalletModal, setConnectWalletModal }) => {
             <span>Staking</span>
           </NavLink>
 
-          <NavLink
+          <NavNormalLink
             style={{ color: "#fff" }}
-            to="#"
-            onClick={(e) => {
-              e.preventDefault();
-
-              setWarning(!Warning);
-              setShowToast(!showToast);
-            }}
+            href="https://docs.defipronto.com/"
+            onClick={(e) => {}}
           >
             <span>Docs</span>
-          </NavLink>
+          </NavNormalLink>
           <NavBtnLink
             id="connect-wallet"
             to="#"

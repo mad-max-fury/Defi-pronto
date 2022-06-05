@@ -21,9 +21,9 @@ const AboutPage = () => {
         token={"Token Name"}
         pronto={"Defipronto"}
         marketcap={"Total Supply"}
-        figure1={"$1,000,000"}
-        initial={"$DFP"}
-        figure2={"400,000"}
+        figure1={"$100,000,000"}
+        initial={"Ticker"}
+        figure2={"$DFP"}
         // current={"Current Total Supply"}
         // figure3={"200,000"}
         // burned={"Defipronto Burned"}

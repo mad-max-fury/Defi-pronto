@@ -49,7 +49,7 @@ export const CloseIcon = styled(VscClose)`
   width: 30px;
   height: 30px;
   margin: auto 0;
-  `;
+`;
 
 export const Icon = styled.div`
   /* position: absolute; */
@@ -80,6 +80,26 @@ export const NavLinks = styled.ul`
   }
 `;
 export const NavLink = styled(Link)`
+  color: #fff;
+  list-style: none;
+  text-decoration: none;
+  display: flex;
+  align-items: flex-start;
+  font-size: 1.5rem;
+  justify-content: start;
+  cursor: pointer;
+  font-family: "DM Sans", sans-serif;
+
+  transition: all 0.3s ease-in-out;
+  &:hover {
+    color: ${colors.secondary};
+    transition: all 0.3s ease-in-out;
+  }
+  &.active {
+    color: ${colors.secondary};
+  }
+`;
+export const NavNormalLink = styled.a`
   color: #fff;
   list-style: none;
   text-decoration: none;

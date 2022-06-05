@@ -102,18 +102,13 @@ const Footer = ({ setConnectWalletModal, connectWalletModal }) => {
               >
                 Staking
               </FooterLink>
-              <FooterLink
-                to="#"
-                onClick={(e) => {
-                  e.preventDefault();
-                  toggle();
-                  setWarning(!Warning);
-                  setShowToast(!showToast);
-                }}
+              <FooterNormalLink
+                href="https://docs.defipronto.com/"
+                onClick={(e) => {}}
                 activeStyle
               >
                 Docs
-              </FooterLink>
+              </FooterNormalLink>
             </FooterMenu>
 
             <FooterMenu>
