@@ -13,3 +13,4 @@ export * from "./allocation";
 export * from "./successcard";
 export * from "./toast";
 export * from "./gototop";
+export * from "./rangeslider"

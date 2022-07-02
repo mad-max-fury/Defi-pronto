@@ -11,7 +11,8 @@ import {
   ProjectCard,
   Tokenomics,
   Allocation,
-  SuccessCard
+  SuccessCard,
+  RangeSlider,
 } from "../../components";
 
 import { 
@@ -82,6 +83,7 @@ function Components() {
       <Tokenomics token={"Token Name"} pronto={"Defipronto"} marketcap={"Market Cap"} figure1={"$1,000,000"} initial={"Initial Supply"} figure2={"400,000"} current={"Current Total Supply"} figure3={"200,000"} burned={"Defipronto Burned"} figure4={"30,000"} circulation={"Defipronto in Circulation"} figure5={"100,000"} />
       <Allocation />
       <SuccessCard title={"Project Endorsement"} icon={<RiRocketLine size={"42px"}/>} caption={"Lorem ipsum dolor sit amet, consectetur adipiscing elit. Odio imperdiet nibh at et neque."  } />
+      <RangeSlider />
     </div>
   );
 }
