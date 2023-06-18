@@ -1,10 +1,10 @@
-import { AboutPage, Components, LandingPage } from "../../pages";
+import { AboutPage, Components, LandingPage, ProjectPage } from "../../pages";
 import { RequireAuth } from "./RequireAuth";
 
 const authRoutes = [
   { name: "Staking", path: "/staking", element: <div>staking</div> },
 
-  { name: "Projects", path: "/projects", element: <div>projects</div> },
+  { name: "Projects", path: "/projects", element: <ProjectPage /> },
   {
     name: "How It Works",
     path: "/how-it-works",

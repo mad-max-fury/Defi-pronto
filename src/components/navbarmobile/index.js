@@ -70,8 +70,8 @@ const NavBarMobile = ({
               onClick={(e) => {
                 e.preventDefault();
                 toggle();
-                setWarning(!Warning);
-                setShowToast(!showToast);
+                // setWarning(!Warning);
+                // setShowToast(!showToast);
               }}
               activeStyle
             >

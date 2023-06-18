@@ -69,13 +69,13 @@ const Navbar = ({ connectWalletModal, setConnectWalletModal }) => {
             <span>How it works</span>
           </NavHashLink>
           <NavLink
-            to="#"
+            to="/projects"
             style={{ color: "#fff" }}
-            onClick={(e) => {
-              e.preventDefault();
-              setWarning(true);
-              setShowToast(true);
-            }}
+            // onClick={(e) => {
+            // e.preventDefault();
+            // setWarning(true);
+            // setShowToast(true);
+            // }}
           >
             <span>Projects</span>
           </NavLink>

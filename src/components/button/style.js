@@ -2,7 +2,8 @@ import styled from "styled-components";
 import { colors } from "../../colors";
 
 export const ButtonWrapper = styled.button`
-  border-radius: 5px;
+  border-radius: ${({ borderRadiusSize }) =>
+    borderRadiusSize ? `${borderRadiusSize}px` : "5px"};
   padding: 15px 32px;
   background-color: ${({ filled, bgColor }) =>
     !filled && !bgColor
